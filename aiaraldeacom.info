@@ -60,7 +60,6 @@ stylesheets[all][]   = zen.css
 ; scripts[] = script.js
 scripts[] = js/goiko-menua.js
 scripts[] = js/node-albiste.js
-scripts[] = js/quicktabs-mouseover.js
 scripts[] = js/azala-bideoak.js
 scripts[] = js/egutegia.js
 
