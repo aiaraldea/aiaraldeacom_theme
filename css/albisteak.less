@@ -1,0 +1,398 @@
+@import "base.less"; 
+
+.view-albisteak-azala .views-row {
+    padding: 6px 0;
+}
+.view-albisteak-azala .views-field-tid {
+    display: inline;
+    font-weight: bold;
+}
+.view-albisteak-azala .views-field-created {
+    display: inline;
+}
+.view-albisteak-azala .views-field-created:before {
+    content: "(";
+}
+.view-albisteak-azala .views-field-created:after {
+    content: "):";
+}
+.view-albisteak-azala .views-field-title {
+    display: inline;
+}
+.view-albisteak-azala .views-field-tid a,
+.view-albisteak-azala .views-field-created a,
+.view-albisteak-azala .views-field-title a {
+    text-decoration: none;
+    font-size:1.5em;
+}
+
+/*mini pager*/
+#mini-panel-orri_nagusiko_bideo_berriak .view-albisteak .pager-next a,
+#mini-panel-orri_nagusiko_bideo_berriak .view-albisteak .pager-previous a,
+.view-albisteak-azala .pager-next a,
+.view-albisteak-azala .pager-previous a{
+    font-weight: bolder;
+    text-decoration: none;
+    padding: 0 2em;
+}
+
+.view-albisteak .pager-next a span,
+.view-albisteak .pager-previous a span,
+.view-albisteak-azala .pager-next a span,
+.view-albisteak-azala .pager-previous a span {
+    display: none;
+}
+
+#mini-panel-orri_nagusiko_bideo_berriak .view-albisteak .pager-next a,
+.view-albisteak-azala .pager-next a {
+    background-image: url(../img/hurrengoa.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.view-albisteak .pager-next a.views-throbbing,
+.view-albisteak-azala .pager-next a.views-throbbing {
+    background-image: url(../img/borobila.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+#mini-panel-orri_nagusiko_bideo_berriak .view-albisteak .pager-previous a,
+.view-albisteak-azala .pager-previous a {
+    background-image: url(../img/aurrekoa.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.view-albisteak .pager-previous a.views-throbbing,
+.view-albisteak-azala .pager-previous a.views-throbbing {
+    background-image: url(../img/borobila.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.view-albisteak .item-list .pager li,
+.view-albisteak-azala .item-list .pager li {
+    padding: 0.25em;
+}
+.view-albisteak .item-list .pager,
+.view-albisteak-azala .item-list .pager {
+    background-color: #cccc00;
+    padding: 0;
+    .arrow_background;
+}
+.view-albisteak .pager:after,
+.view-albisteak-azala .pager:after {
+    content: ".!";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+#mini-panel-orri_nagusiko_bideo_berriak .view-albisteak.view-display-id-block_1 .pager-previous a:after,
+.view-albisteak-azala .pager-previous a:after {
+    content: " berriagoak";
+}
+#mini-panel-orri_nagusiko_bideo_berriak .view-albisteak.view-display-id-block_1 .pager-next a:before,
+.view-albisteak-azala .pager-next a:before {
+    content: "zaharragoak";
+}
+#mini-panel-orri_nagusiko_bideo_berriak .view-albisteak .pager-next,
+.view-albisteak-azala .pager-next {
+    float: right;
+}
+#mini-panel-orri_nagusiko_bideo_berriak .view-albisteak li.pager-current,
+.view-albisteak-azala li.pager-current {
+    display: none;
+}
+#mini-panel-orri_nagusiko_bideo_berriak .view-albisteak .pager-previous ,
+.view-albisteak-azala .pager-previous {
+    float: left;
+}
+
+/* separator */
+#mini-panel-orri_nagusiko_albisteak_v_1_1 .panel-separator {
+    display: none;
+}
+
+/* Albisteen zerrendak */
+
+#azala_albisteak_izenburua_div {
+    padding-bottom: 6px;
+    background-image: url(../img/albiste_izenburua_atzealdea.png);
+    background-repeat: no-repeat;
+    background-position: 6em 100%;
+}
+
+#azala_albisteak_izenburua {
+    padding: .2em 2em;
+    background-color: #2d3c01;
+    .rounded_border;
+}
+#azala_albisteak_izenburua a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bolder;
+}
+#azala_albisteak_adi {
+    text-align: right;
+}
+#mini-panel-orri_nagusiko_bideo_berriak div.panel-separator {
+    display: none;
+}
+.view-albisteak .views-row {
+    padding-bottom: .6em;
+    clear: both;
+}
+
+#detail_albiste_izen_abizenak ,
+.view-albisteak-azala .views-field-value,
+.view-albisteak .views-field-value {
+    color: #7a6e0c;
+    display: inline;
+    font-variant: small-caps;
+}
+#detail_albiste_izen_abizenak:after ,
+.view-albisteak-azala .views-field-value:after,
+.view-albisteak .views-field-value:after {
+    content: ".";
+}
+
+#detail_etiketak_non,
+.view-albisteak-azala .views-field-tid,
+.view-albisteak .views-field-tid {
+    color: #7a6e0c;
+    font-weight: bolder;
+    display: inline;
+}
+
+#detail_albiste_data,
+.view-albisteak-azala .views-field-created,
+.view-albisteak .views-field-created {
+    color: #7a6e0c;
+    display: inline;
+}
+
+#detail_albiste_data:before,
+.view-albisteak-azala .views-field-created:before ,
+.view-albisteak .views-field-created:before {
+    content: ".";
+}
+
+.view-albisteak .views-field-comment-count {
+    text-align: right;
+}
+.view-albisteak .views-field-comment-count a {
+    color: #969e80;
+    font-weight: bolder;
+    text-decoration : none;
+    font-style: italic;
+}
+
+.view-albisteak .views-field-field-bideo-erlazionatuak-nid {
+    color: #2d3c01;
+    font-weight: bolder;
+    float: right;
+}
+
+.view-albisteak .views-field-field-erantsi-fid {
+    color: #2d3c01;
+    font-weight: bolder;
+    float: right;
+}
+
+.view-albisteak .views-field-field-embeddedimages-fid {
+    color: #2d3c01;
+    font-weight: bolder;
+    float: right;
+}
+
+.view-albisteak .views-field-title {
+    border-top: @brown solid 1px;
+/*    font-weight: bolder;*/
+    color: #2d3c01;
+    padding: 5px 0;
+    font-size: 20px;
+    line-height: 1em;
+    font-family: @news_title_fonts;
+}
+
+.view-albisteak .views-field-field-embeddedimages-fid-1 {
+    float: left;
+}
+.view-albisteak .views-field-field-embeddedimages-fid-1 img {
+    border: solid 7px @gray;
+    margin: 3px;
+}
+.azala-albisteak-1gunea .views-field-field-embeddedimages-fid-1 img,
+.azala-albisteak-elkarrizketak .views-field-field-embeddedimages-fid-1 img {
+    display: block;
+    margin: 0px 0px 6px 0px;
+}
+.azala-albisteak-2gunea .views-field-body {
+    padding-left: 205px;
+    margin-top: 4px;
+}
+
+.view-albisteak .views-field-title a {
+    color: #2d3c01;
+    text-decoration: none;
+}
+.view-albisteak .views-field-body {
+    color: #2d3c01;
+}
+
+/* Albiste nodoa */
+/* Node albiste */
+body.node-type-albiste div.panel-panel .inside {
+    margin: 0;
+}
+body.node-type-albiste div.panel-col-first {
+    width: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+body.node-type-albiste.albiste_has_sidebar div.panel-col-first {
+    width: 300px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+body.node-type-albiste div.panel-col {
+    width: 700px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top:1.6em;
+}
+body.node-type-albiste.albiste_has_sidebar div.panel-col {
+    width: 380px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top:1.6em;
+}
+body.node-type-albiste div.panel-col-last {
+    width:220px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#panel_detaile_albiste .submitted {
+    border-bottom: 2px solid #7a6e0c;
+    color: #7a6e0c;
+}
+
+#panel_detaile_albiste .field-field-embeddedimages .field-items,
+#panel_detaile_albiste .field-field-erantsi .field-items {
+    background-color: #cccc00;
+    padding: 10px;
+    .rounded_border;
+}
+#panel_detaile_albiste .field-field-bideo-erlazionatuak .field-items div.emvideo-preview,
+#panel_detaile_albiste .field-field-embeddedimages .field-items img {
+    border: solid 3px #2d3c01;
+}
+#panel_detaile_albiste .view-field-bideo-erlazionatuak {
+    background-color: #f5f5cc;
+    padding: 10px;
+    .rounded_border;
+}
+#panel_detaile_albiste .view-field-bideo-erlazionatuak li,
+#panel_detaile_albiste .view-field-bideo-erlazionatuak ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+#panel_detaile_albiste .view-field-bideo-erlazionatuak img {
+    border: solid 3px #2d3c01;
+}
+
+#panel_detaile_albiste .panel-col-last .pane-field-erlazionatuak h2,
+#panel_detaile_albiste .panel-col-last .pane-albisteak h2 {
+    padding-left: 20px;
+    color: #2d3c01;
+    margin: 0;
+    border-bottom: solid 1px #cccc00;
+    .arrow_background;
+}
+#panel_detaile_albiste .panel-col-last .pane-field-erlazionatuak,
+#panel_detaile_albiste .panel-col-last .pane-albisteak {
+    background-color: #e6e680;
+    padding: 10px 0 10px 0;
+    border: solid 1px #cccc00;
+    .rounded_border;
+}
+#panel_detaile_albiste .panel-col-last .view-albisteak .views-field-title {
+    border-top: none;
+    font-weight: normal;
+    font-size: 13px;
+    font-family: @body_fonts;
+    color: #2d3c01;
+}
+
+#panel_detaile_albiste .panel-col-last .view-albisteak .views-field-changed {
+    text-align: right;
+    display: block;
+}
+
+#panel_detaile_albiste .panel-col-last .view-albisteak .views-field-changed:before {
+    content: ">";
+}
+
+#panel_detaile_albiste .panel-col-last .field-field-erlazionatuak .field-item a,
+#panel_detaile_albiste .panel-col-last .view-albisteak .views-field-title a {
+    color: #2d3c01;
+    text-decoration: none;
+}
+
+#panel_detaile_albiste .panel-col-last .field-field-erlazionatuak .odd,
+#panel_detaile_albiste .panel-col-last .view-albisteak .views-row-odd {
+    background-color: #f5f5cc;
+}
+
+#panel_detaile_albiste .panel-col-last .field-field-erlazionatuak .even,
+#panel_detaile_albiste .panel-col-last .view-albisteak .views-row-even {
+    background-color: #e6e680;
+}
+
+#panel_detaile_albiste .panel-col-last .field-field-erlazionatuak .field-item,
+#panel_detaile_albiste .panel-col-last .view-albisteak .views-row {
+    padding: 10px;
+}
+
+#albiste_eranskin_mota {
+    float:right;
+    margin-top:-1.5em;
+    color:#969E80;
+    font-size:1.2em;
+}
+
+#albiste_iruzkin_zenbaketa {
+    float: right;
+    margin: .4em 0;
+    padding: .3em 0;
+    color:#969E60;
+}
+
+#deialdi_etiketak,
+#albiste_etiketak {
+    padding: .2em;
+}
+
+#deialdi_etiketak li,
+#albiste_etiketak li {
+    background-color:#F5F5CC;
+    display:inline-block;
+    margin: .4em;
+    padding: .3em;
+    .rounded_border;
+}
+
+#deialdi_etiketak a,
+#albiste_etiketak a {
+    color:#969E60;
+    text-decoration: none;
+}
+
+/* Azaleko albisteak 1.1*/
+.view-display-albisteak-2gunea {
+  .views-row {
+  }
+  
+}

@@ -1,0 +1,61 @@
+@dark_gray: #969e80;
+@gray: #6c764d;
+@pale_gray: #f5f5cc;
+@dark_green: #2d3c01;
+@brown: #7A6E0C;
+@green: #cccc00;
+@pale_green: #e6e680;
+
+@body_fonts: Tahoma, Verdana, Arial, Helvetica, "Bitstream Vera Sans", sans-serif;
+@news_title_fonts: Georgia, 'Times New Roman', Times, serif;
+
+.rounded_border () {
+    border-radius: 6px;
+    -ms-border-radius: 6px;
+    -khtml-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+}
+
+.arrow_background () {
+    background-image: url('../img/arrow_aiaraldea.png');
+    background-position: center left;
+    background-repeat: no-repeat;
+}
+.section_title {
+    font-size: 1em;
+    padding-left: 1em;
+    .arrow_background;
+    color: @dark_green;
+
+    a {
+        color: @dark_green;
+	text-decoration: none;
+    }
+
+    .section_title_marker {
+	color: @dark_green;
+	font-weight: bolder;
+	text-decoration: none;
+	text-align: right;
+	border-bottom: 2px solid @green;
+    }
+
+}
+.subtitled {
+    border-bottom: 2px solid @green;
+}
+
+.green_boxed_image {
+    border: solid 6px @green;
+}
+
+.list_item_title {
+    font-weight: bolder;
+    color: @dark_green;
+    padding-top: .4em;
+    a {
+        color: @dark_green;
+        text-decoration: none;
+    }
+}

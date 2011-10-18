@@ -1,0 +1,95 @@
+@import "base.less";
+
+/* Iruzkinak */
+#comment-form #edit-mail-wrapper,
+#comment-form #edit-homepage-wrapper,
+#comment-form #edit-subject-wrapper {
+    display: none;
+}
+
+#edit-comment {
+    height: 6em;
+}
+
+/* Iruzkinak */
+.pane-node-comment-form .pane-content .node {
+    display: none;
+}
+.pane-node-comment-form h2,
+#comments .box h2 {
+    color: #7a6e0c;
+    border-bottom: solid 2px #7a6e0c;
+    padding-bottom: .2em;
+    background-color: white;
+    padding-left: 46px;
+    background-image: url('../img/iruzkin.png');
+    background-repeat: no-repeat;
+}
+.pane-node-comment-form,
+#comments .box {
+    background-color: #dbdbb3;
+    margin-top: 4em;
+    .rounded_border;
+}
+div.pane-node-comment-form div {
+    padding: 0 .5%;
+}
+#comment-form label {
+    /*width: 22%;*/
+    float:left;
+    color: #2d3c01;
+}
+
+#comment-form label:before {
+    content: '> ';
+}
+
+#comment-form #edit-name {
+  display:block;
+  margin-left:25%;
+  width:75%;
+}
+
+#comment-form .resizable-textarea {
+    width: 75%;
+    margin-left: 25%;
+}
+
+div.comment {
+    background-color: #dbdbb3;
+    margin: .8em 0;
+    .rounded_border;
+}
+
+div.comment div.submitted {
+    padding: .6em .6em 0 .6em;
+    color: #2d3c01;
+}
+
+div.comment div.content {
+    border-top: solid 2px white;
+    padding: .6em;
+}
+
+div.comment li.comment_reply {
+    display: none;
+}
+div.comment h3.title {
+    display: none;
+}
+
+span.comment_datetime {
+    font-weight: bolder;
+}
+
+.view-azala-azken-iruzkinak-1-2 {
+    padding: 8px;
+    background-color: @pale_gray;
+    .rounded_border;
+}
+.view-azala-azken-iruzkinak-1-2 .views-field-cid {
+    font-style: italic;
+}
+.view-azala-azken-iruzkinak-1-2 .views-field-title {
+    margin-top: 3px;
+}

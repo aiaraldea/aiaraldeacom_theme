@@ -1,0 +1,215 @@
+@import "base.less"; 
+
+/* Bideoak */
+.pane-orri-nagusiko-bideoak,
+.pane-orri-nagusiko-bideoak-1-1,
+/*.pane-orri-nagusiko-bideoak-autumn-2011,*/
+#mini-panel-orri_nagusiko_bideo_berriak div.panel-col-first div.inside {
+    background-color: @green;
+    padding: 10px;
+    .rounded_border;
+}
+
+.pane-orri-nagusiko-bideoak-autumn-2011 {
+    background-color: transparent;
+    padding: 0px;
+    
+    .view-azken-bideoak-1-2.view-display-azken-bideoa {
+        background-color: transparent;
+        padding: 0 6px 6px 6px;
+        margin-left: -10px;
+        margin-right: -10px;
+        border-radius: 0px;
+        -ms-border-radius: 0px;
+        -khtml-border-radius: 0px;
+        -moz-border-radius: 0px;
+        -webkit-border-radius: 0px;
+        .views-field-field-bideo-embed {
+            margin-left: -6px;
+            margin-right: -6px;
+        }
+        .views-field-body {
+            background-color: @pale_gray;
+            margin: -6px;
+            padding: 6px;
+            float:none;
+        }
+        .views-field-comment-count {
+            background-color: @pale_gray;
+            margin: 0 -6px;
+            padding: 0 6px;
+            float:none;
+            text-align: right;
+        }
+    }
+    
+    .pane-content{
+        background-color: @green;
+        padding: 10px;
+        .rounded_border;
+    }
+    .pane-content .pane-content {
+        padding: 0px;
+    }
+}
+.pane-orri-nagusiko-bideoak div.view-azken-bideoak.view-display-id-block_2,
+.view-display-azken-bideoa,
+#mini-panel-orri_nagusiko_bideo_berriak div.view-azken-bideoak.view-display-id-block_2 {
+    background-color: @pale_gray;
+    padding: 6px;
+    margin-bottom: 10px;
+    .rounded_border;
+}
+
+#azala_bideoak_izenburua a {
+    float: left;
+    color: @dark_green;
+    font-weight: bolder;
+    text-decoration: none;
+}
+#azala_bideoak_tv {
+    color: @dark_green;
+    font-weight: bolder;
+    text-decoration: none;
+    text-align: right;
+}
+
+.emvideo-video {
+    border: black solid 2px;
+    width: 425px;
+}
+
+div.view-azken-bideoak.view-display-id-block_2 .views-field-field-bideo-embed {
+    margin-bottom: .8em;
+}
+div.view-display-azken-bideoa .views-field-title,
+div.view-azken-bideoak.view-display-id-block_2 .views-field-title {
+    color: @dark_green;
+    font-weight: bolder;
+    display: inline;
+}
+div.view-display-azken-bideoa .views-field-title a,
+div.view-azken-bideoak.view-display-id-block_2 .views-field-title a {
+    color: @dark_green;
+    text-decoration: none;
+}
+
+div.view-display-azken-bideoa .views-field-tid,
+div.view-azken-bideoak.view-display-id-block_2 .views-field-tid {
+    color: @dark_green;
+    font-weight: bolder;
+    display: inline;
+    padding-left: 1.5em;
+    .arrow_background;
+}
+div.view-display-azken-bideoa .views-field-tid:after,
+div.view-display-azken-bideoa .views-field-title:after,
+div.view-azken-bideoak.view-display-id-block_2 .views-field-tid:after,
+div.view-azken-bideoak.view-display-id-block_2 .views-field-title:after {
+    content: ".";
+}
+
+div.view-display-azken-bideoa .views-field-created,
+div.view-azken-bideoak.view-display-id-block_2 .views-field-created {
+    color: @dark_green;
+    font-weight: bolder;
+    display: inline;
+}
+
+div.view-display-azken-bideoa .views-field-comment-count,
+div.view-azken-bideoak.view-display-id-block_2 .views-field-comment-count {
+    float: right;
+}
+div.view-display-azken-bideoa .views-field-comment-count a,
+div.view-azken-bideoak.view-display-id-block_2 .views-field-comment-count a {
+    color: @dark_gray;
+    font-weight: bolder;
+    text-decoration : none;
+    font-style: italic;
+}
+
+div.view-azken-bideoak.view-display-id-block_2 div.views-field-body {
+    color: #979f81;
+    padding-left: 1.5em;
+}
+
+#video_name {
+    border-bottom: 2px solid @pale_gray;
+}
+
+#video_name .views-field-title {
+    color: #ffffff;
+    display: inline;
+}
+
+#video_name .views-field-tid {
+    color: #ffffff;
+    font-weight: bolder;
+    display: inline;
+}
+
+#video_name .views-field-title:before {
+    content: ".";
+}
+
+#video_name .views-field-created {
+    color: #ffffff;
+    font-weight: bolder;
+    display: inline;
+}
+#video_name .views-field-created:before {
+    content: ".";
+}
+
+div.pane-views-azken-bideoak-block-1 div.view-azken-bideoak.view-display-id-block_1 div.views-row {
+    display: inline-block;
+    padding-top: 10px;
+    display: block;
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+div.view-azken-bideoak.view-display-id-block_1 div.views-row.selected {
+    background-image: url('../img/arrow_aiaraldea_bideoak.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+/*Bideoen zerrendak */
+div.view-azken-bideoak.view-display-id-panel_pane_1 img {
+    .green_boxed_image;
+}
+
+div.view-azken-bideoak.view-display-id-panel_pane_1 table {
+    width: 100%;
+}
+div.view-azken-bideoak.view-display-id-panel_pane_1 td {
+    width: 25%;
+    padding-bottom:3em;
+    vertical-align: top;
+}
+div.view-azken-bideoak.view-display-id-panel_pane_1 div.views-field-field-bideo-embed{
+    text-align: center;
+}
+
+div.view-azken-bideoak.view-display-id-panel_pane_1 .views-field-tid {
+    display: none;
+}
+div.view-azken-bideoak.view-display-id-panel_pane_1 .views-field-title {
+    margin: 0 2.5em;
+    padding: 0 1em;
+    .arrow_background;
+}
+
+div.view-azken-bideoak.view-display-id-panel_pane_1 .views-field-created {
+    margin: 0 2.5em;
+    padding: 0 1em;
+    font-weight: bolder;
+}
+
+#video_name div {
+    display: inline;
+}
+
+

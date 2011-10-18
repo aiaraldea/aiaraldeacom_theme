@@ -1,0 +1,1382 @@
+@import "base.less";
+
+/* $Id: zen.css,v 1.14.2.6 2009/11/05 11:03:32 johnalbin Exp $ */
+
+/*
+ * ZEN STYLES
+ *
+ * This is an example stylesheet. Sub-themes should NOT include the zen/zen.css
+ * file, but instead copy this CSS to their own stylesheets.
+ *
+ * In this stylesheet, we have included all of the classes and IDs from this
+ * theme's tpl.php files. We have also included many of the useful Drupal core
+ * styles to make it easier for theme developers to see them.
+ *
+ * Many of these styles are over-riding Drupal's core stylesheets, so if you
+ * remove a declaration from here, the styles may still not be what you want
+ * since Drupal's core stylesheets are still styling the element. See the
+ * drupal6-reference.css file for a list of all Drupal 5.x core styles.
+ *
+ * In addition to the style declarations in this file, other Drupal styles that
+ * you might want to override or augment are those for:
+ *
+ *   Book Navigation  See line 74  of Zen's drupal6-reference.css file
+ *   Forum            See line 197 of Zen's drupal6-reference.css file
+ *   Menus            See line 667 of Zen's drupal6-reference.css file
+ *   News Aggregator  See line 20  of Zen's drupal6-reference.css file
+ *   Polls            See line 287 of Zen's drupal6-reference.css file
+ *   Search           See line 320 of Zen's drupal6-reference.css file
+ *   User Profiles    See line 945 of Zen's drupal6-reference.css file
+*/
+
+
+/** body **/
+body
+{
+    margin: 0;
+    padding: 10px;
+    font-size:100%;
+    line-height:1.125em;
+    font-size:14px;
+    /*font-family: 'BPreplayRegular', sans-serif;*/
+}
+
+#page
+{
+}
+
+#page-inner
+{
+}
+
+a {
+    color: #2d3c01;
+}
+
+/** header **/
+#header
+{
+}
+
+#header-inner
+{
+}
+
+#logo-title /* Wrapper for logo, website name, and slogan */
+{
+}
+
+#logo /* Wrapper for logo */
+{
+    margin: 0 10px 0 0;
+    padding: 0;
+}
+
+#logo-image /* The actual logo image */
+{
+}
+
+h1#site-name, div#site-name /* The name of the website */
+{
+    margin: 0;
+    font-size: 2em;
+    line-height: 1.3em;
+}
+
+#site-name a:link,
+#site-name a:visited
+{
+    color: #000;
+    text-decoration: none;
+}
+
+#site-name a:hover
+{
+    text-decoration: underline;
+}
+
+#site-slogan /* The slogan (or tagline) of a website */
+{
+}
+
+#header-blocks /* Wrapper for any blocks placed in the header region */
+{
+}
+
+/** main (container for everything else) **/
+#main
+{
+}
+
+#main-inner
+{
+}
+
+/** content **/
+#content
+{
+}
+
+#content-inner
+{
+}
+
+#mission /* The mission statement of the site (displayed on homepage) */
+{
+}
+
+#content-top /* Wrapper for any blocks placed in the "content top" region */
+{
+}
+
+#content-header /* Wrapper for breadcrumb, title, messages, tabs, and help */
+{
+}
+
+.breadcrumb /* The path to the current page in the form of a list of links */
+{
+    padding-bottom: 0; /* Undo system.css */
+}
+
+h1.title, /* The title of the page */
+h2.title, /* Block title or the title of a piece of content when it is given in a list of content */
+h3.title /* Comment title */
+{
+    margin: 0;
+}
+
+div.messages /* Important messages (status, warning, and error) for the user */
+{
+}
+
+div.status /* Normal priority messages */
+{
+}
+
+div.warning, tr.warning /* Medium priority messages */
+{
+    /* border: 1px solid #f0c020; */ /* Drupal core uses: 1px solid #f0c020 */
+}
+
+div.error, tr.error /* High priority messages. See also the .error declaration below. */
+{
+}
+
+div.tabs /* See also the tabs.css file. */
+{
+}
+
+.help /* Help text on a page */
+{
+    margin: 1em 0;
+}
+
+.more-help-link /* Link to more help */
+{
+    font-size: 0.85em;
+    text-align: right;
+}
+
+#content-area /* Wrapper for the actual page content */
+{
+}
+
+ul.links /* List of links */
+{
+    margin: 1em 0;
+    padding: 0;
+}
+
+ul.links.inline
+{
+    margin: 0;
+    display: inline;
+}
+
+ul.links li
+{
+    display: inline;
+    list-style-type: none;
+    padding: 0 0.5em;
+}
+
+.pager /* A list of page numbers when more than 1 page of content is available */
+{
+    clear: both;
+    margin: 1em 0;
+    text-align: center;
+}
+
+.pager a, .pager strong.pager-current
+{
+    padding: 0.5em;
+}
+
+.feed-icons /* The links to the RSS or Atom feeds for the current list of content */
+{
+    margin: 1em 0;
+}
+
+#content-bottom /* Wrapper for any blocks placed in the "content bottom" region */
+{
+}
+
+/** navbar **/
+#navbar
+{
+}
+
+#navbar-inner
+{
+}
+
+#search-box /* Wrapper for the search form */
+{
+}
+
+#edit-search-theme-form-1-wrapper label /* Label that says "Search this site:" */
+{
+    display: none;
+}
+
+#primary /* Primary links */
+{
+}
+
+#secondary /* Secondary links */
+{
+}
+
+/** sidebar-left **/
+#sidebar-left
+{
+}
+
+#sidebar-left-inner
+{
+}
+
+/** sidebar-right **/
+#sidebar-right
+{
+}
+
+#sidebar-right-inner
+{
+}
+
+/** footer **/
+#footer
+{
+}
+
+#footer-inner
+{
+}
+
+#footer-message /* Wrapper for the footer message from Drupal's "Site information"
+                   and for any blocks placed in the footer region */
+{
+}
+
+/** closure **/
+#closure-blocks /* Wrapper for any blocks placed in the closure region */
+{
+}
+
+/** Drupal nodes **/
+.node /* Node wrapper */
+{
+}
+
+.node-inner /* Additional wrapper for node */
+{
+}
+
+.sticky /* A sticky node (displayed before others in a list) */
+{
+}
+
+.node-unpublished /* Unpublished nodes */
+{
+    /* background-color: #fff4f4; */ /* Drupal core uses a #fff4f4 background */
+}
+
+.node-unpublished div.unpublished, /* The word "Unpublished" displayed beneath the content. */
+.comment-unpublished div.unpublished
+{
+    height: 0;
+    overflow: visible;
+    color: #d8d8d8;
+    font-size: 75px;
+    line-height: 1;
+    font-family: Impact, "Arial Narrow", Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    word-wrap: break-word; /* A very nice CSS3 property */
+}
+
+.node-mine /* A node created by the current user */
+{
+}
+
+.node-teaser /* A node displayed as teaser */
+{
+}
+
+/* All nodes are given a node-type-FOO class that describes the type of
+ * content that it is. If you create a new content type called
+ * "my-custom-type", it will receive a "node-type-my-custom-type" class.
+*/
+.node-type-page /* Page content node */
+{
+}
+
+.node-type-story /* Story content node */
+{
+}
+
+.node h2.title /* Node title */
+{
+}
+
+.marker /* "New" or "Updated" marker for content that is new or updated for the current user */
+{
+    color: #c00;
+}
+
+.node .picture /* The picture of the node author */
+{
+}
+
+.node.node-unpublished .picture,
+.comment.comment-unpublished .picture
+{
+    position: relative; /* Otherwise floated pictures will appear below the "Unpublished" text. */
+}
+
+.node .meta /* Wrapper for submitted and terms data */
+{
+}
+
+.node .submitted /* The "posted by" information */
+{
+}
+
+.node .terms /* Node terms (taxonomy) */
+{
+}
+
+.node .content /* Node's content wrapper */
+{
+}
+
+.node ul.links /* Node links. See also the ul.links declaration above. */
+{
+}
+
+.preview .node /* Preview of the content before submitting new or updated content */
+{
+    /* background-color: #ffffea; */ /* Drupal core uses a #ffffea background */
+}
+
+/** Drupal comments **/
+#comments /* Wrapper for the list of comments and its title */
+{
+    margin: 1em 0;
+}
+
+#comments-title /* Heading for the list of comments */
+{
+}
+
+.comment /* Wrapper for a single comment */
+{
+}
+
+.comment-inner /* Additional wrapper for a single comment */
+{
+}
+
+.comment-preview /* Preview of the comment before submitting new or updated comment */
+{
+}
+
+.comment.new /* A new comment since the user last viewed the page. */
+{
+}
+
+.comment.odd /* An odd-numbered comment in the list of comments */
+{
+}
+
+.comment.even /* An even-numbered comment in the list of comments */
+{
+}
+
+.comment.first /* The first comment in the list of comments */
+{
+}
+
+.comment.last /* The last comment in the list of comments */
+{
+}
+
+.comment-unpublished /* Unpublished comments */
+{
+    /* background-color: #fff4f4; */ /* Drupal core uses a #fff4f4 background */
+}
+
+.comment-unpublished div.unpublished /* The word "Unpublished" displayed beneath the content. See also the div.unpublished declaration in the node section above. */
+{
+}
+
+.comment-published /* Published comments */
+{
+}
+
+.comment-by-anon /* A comment created by an anonymous user */
+{
+}
+
+.comment-by-author /* A comment created by the node's author */
+{
+}
+
+.comment-mine /* A comment created by the current user */
+{
+}
+
+.comment h3.title /* Comment title */
+{
+}
+
+.new /* "New" marker for comments that are new for the current user */
+{
+    color: #c00;
+}
+
+.comment .picture /* The picture of the comment author */
+{
+}
+
+.comment .submitted /* The "posted by" information */
+{
+}
+
+.comment .content /* Comment's content wrapper */
+{
+}
+
+.comment .user-signature /* The user's signature */
+{
+}
+
+.comment ul.links /* Comment links. See also the ul.links declaration above. */
+{
+    margin: 1em 0;
+}
+
+.indented /* Nested comments are indented */
+{
+    /* margin-left: 25px; */ /* Drupal core uses a 25px left margin */
+}
+
+.preview .comment /* Preview of the comment before submitting new or updated comment */
+{
+    /* background-color: #ffffea; */ /* Drupal core uses a #ffffea background */
+}
+
+/** Drupal blocks **/
+.block /* Block wrapper */
+{
+    margin-bottom: 1em;
+}
+
+.block.region-odd /* Zebra striping for each block in the region */
+{
+}
+
+.block.region-even /* Zebra striping for each block in the region */
+{
+}
+
+.block.odd /* Zebra striping independent of each region */
+{
+}
+
+.block.even /* Zebra striping independent of each region */
+{
+}
+
+.region-count-1 /* Incremental count for each block in the region */
+{
+}
+
+.count-1 /* Incremental count independent of each region */
+{
+}
+
+.block-inner /* Additional wrapper for block */
+{
+}
+
+.block h2.title /* Block title */
+{
+}
+
+.block .content /* Block's content wrapper */
+{
+}
+
+#block-aggregator-category-1 /* Block for the latest news items in the first category */
+{
+}
+
+#block-aggregator-feed-1 /* Block for the latest news items in the first feed */
+{
+}
+
+#block-block-1 /* First administrator-defined block */
+{
+}
+
+#block-blog-0 /* "Recent blog posts" block */
+{
+}
+
+#block-book-0 /* "Book navigation" block for the current book's table of contents */
+{
+}
+
+#block-comment-0 /* "Recent comments" block */
+{
+}
+
+#block-forum-0 /* "Active forum topics" block */
+{
+}
+
+#block-forum-1 /* "New forum topics" block */
+{
+}
+
+#block-menu-primary-links /* "Primary links" block */
+{
+}
+
+#block-menu-secondary-links /* "Secondary links" block */
+{
+}
+
+#block-node-0 /* "Syndicate" block for primary RSS feed */
+{
+}
+
+#block-poll-0 /* "Most recent poll" block */
+{
+}
+
+#block-profile-0 /* "Author information" block for the profile of the page's author */
+{
+}
+
+#block-search-0 /* "Search form" block */
+{
+}
+
+#block-statistics-0 /* "Popular content" block */
+{
+}
+
+#block-user-0 /* "User login form" block */
+{
+}
+
+#block-user-1 /* "Navigation" block for Drupal navigation menu */
+{
+}
+
+#block-user-2 /* "Who's new" block for a list of the newest users */
+{
+}
+
+#block-user-3 /* "Who's online" block for a list of the online users */
+{
+}
+
+/** Drupal boxes **/
+/* Wrapper for Comment form, Comment viewing options, Menu admin, and
+ * Search results.
+*/
+.box /* Wrapper for box */
+{
+}
+
+.box-inner /* Additional wrapper for box */
+{
+}
+
+.box h2.title /* Box title */
+{
+}
+
+.box .content /* Box's content wrapper */
+{
+}
+
+/** Miscellaneous Drupal styles **/
+.error /* Errors that are separate from div.messages status messages (see above.) */
+{
+    /* color: #e55; */ /* Drupal core uses a #e55 background */
+}
+
+.warning /* Warnings that are separate from div.messages status messages (see above.) */
+{
+    /* color: #e09010; */ /* Drupal core uses a #e09010 background */
+}
+
+.more-link /* Aggregator, blog, and forum more link */
+{
+  text-align: right;
+  border-radius: 6px;
+  -ms-border-radius: 6px;
+  -khtml-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  background-color:#CCCC00;
+  padding: 4px 8px;
+  margin: 8px 0;
+}
+.more-link a /* Aggregator, blog, and forum more link */
+{
+    background-image: url(../img/hurrengoa.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 0 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+tr.even /* Some tables have rows marked even or odd. */
+{
+    /* background-color: #eee; */ /* Drupal core uses a #eee background */
+}
+
+tr.odd
+{
+    /* background-color: #eee; */ /* Drupal core uses a #eee background */
+}
+
+li a.active /* The active item in a Drupal menu */
+{
+    color: #000;
+}
+
+
+/** Drupal forms **/
+.form-item, /* Wrapper for a form element (or group of form elements) and its label */
+.form-checkboxes,
+.form-radios
+{
+    margin: 1em 0;
+}
+
+.form-item input.error, /* Highlight the form elements that caused a form submission error */
+.form-item textarea.error,
+.form-item select.error
+{
+    border: 2px solid #c00;
+}
+
+.form-item label /* The label for a form element */
+{
+    display: block;
+    font-weight: bold;
+}
+
+.form-item label.option /* The label for a radio button or checkbox */
+{
+    display: inline;
+    font-weight: normal;
+}
+
+.form-required /* The part of the label that indicates a required field */
+{
+    color: #c00;
+}
+
+.form-item .description /* The descriptive help text (separate from the label) */
+{
+    font-size: 0.85em;
+}
+
+.form-checkboxes .form-item, /* Pack groups of checkboxes and radio buttons closer together */
+.form-radios .form-item
+{
+    margin: 0.4em 0;
+}
+
+.form-submit /* The submit button */
+{
+}
+
+.container-inline div, .container-inline label /* Inline labels and form divs */
+{
+    display: inline;
+}
+
+.tips /* Tips for Drupal's input formats */
+{
+    margin: 0;
+    padding: 0;
+    font-size: 0.9em;
+}
+
+/** OpenID **/
+/* The default styling for the OpenID login link seems to assume Garland's
+ * styling of list items.
+*/
+#user-login-form ul /* OpenID creates a new ul above the login form's links. */
+{
+    margin-bottom: 0; /* Position OpenID's ul next to the rest of the links. */
+}
+
+#user-login-form li.openid-link /* The "Log in using OpenID" links. */
+{
+    margin-top: 1em;
+    margin-left: -20px; /* Un-do some of the padding on the ul list. */
+}
+
+#user-login-form li.user-link /* The "Cancel OpenID login" links. */
+{
+    margin-top: 1em;
+}
+
+#user-login ul
+{
+    margin: 1em 0;
+}
+
+#user-login li.openid-link, /* The OpenID links on the /user form. */
+#user-login li.user-link
+{
+    margin-left: -2em; /* Un-do all of the padding on the ul list. */
+}
+
+/** Drupal admin tables **/
+/* We overrode these styles in html-elements.css, but restore them for the
+ * forms on the site.
+*/
+form tbody
+{
+    border-top: 1px solid #ccc;
+}
+
+form th
+{
+    text-align: left;
+    padding-right: 1em;
+    border-bottom: 3px solid #ccc;
+}
+
+form tbody th
+{
+    border-bottom: 1px solid #ccc;
+}
+
+form thead th
+{
+    text-align: left;
+    padding-right: 1em;
+    border-bottom: 3px solid #ccc;
+}
+
+/* Honaino elementu generikoak
+   Hemendik aurrera aiaraldearen elementoak */
+/* orrien burua */
+#site-name {
+    display: none;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color:#2D3C01;
+}
+
+h1.title{
+    border-bottom: 2px solid #969E80;
+    color: #969E80;
+    padding: .1em .6em;
+    /*font-weight: bold;*/
+    font-weight: bolder;
+    font-size: 1.6em;
+}
+
+/* Goiko menua */
+/* goiko menuaren menu nagusia */
+#block-dynamic_persistent_menu-0 {
+  background-color: #969E80;
+  min-height: 3.6em;
+  border-radius: .5em;
+  -webkit-border-radius: .5em;
+  -moz-border-radius: .5em;
+  -ms-border-radius: .5em;
+  -khtml-border-radius: .5em;
+}
+.block-dynamic_persistent_menu ul.dynamic-persistent-menu-menu {
+    margin: 0;
+    padding: 0.2em;
+    background-color: #cccc00;
+    border-radius: .5em .5em 0em 0em;
+    -webkit-border-top-left-radius: .5em;
+    -webkit-border-top-right-radius: .5em;
+    -moz-border-radius: .5em .5em 0em 0em;
+    -ms-border-radius: .5em .5em 0em 0em;
+    -khtml-border-radius: .5em .5em 0em 0em;
+  border-bottom: solid 1px white;
+}
+.block-dynamic_persistent_menu ul.dynamic-persistent-menu-menu li {
+    list-style: none;
+    padding: 0.2em .6em;
+    border-right: #ffffff solid 1px;
+}
+.block-dynamic_persistent_menu ul.dynamic-persistent-menu-menu li a {
+    color: #969e60;
+    /*font-weight: bold;*/
+    font-weight: bolder;
+    text-decoration: none;
+    padding: .2em .5em;
+    border-radius: .5em .5em 0em 0em;
+    -webkit-border-top-left-radius: .5em;
+    -webkit-border-top-right-radius: .5em;
+    -moz-border-radius: .5em .5em 0em 0em;
+    -ms-border-radius: .5em .5em 0em 0em;
+    -khtml-border-radius: .5em .5em 0em 0em;
+}
+.block-dynamic_persistent_menu ul.dynamic-persistent-menu-menu li.dynamic-persistent-menu-children-active a {
+    background-color: #969e80;
+    color: #2d3c01;
+}
+.block-dynamic_persistent_menu ul.dynamic-persistent-menu-menu li.active-trail a,
+.block-dynamic_persistent_menu ul.dynamic-persistent-menu-menu li a.active {
+    color: #2d3c01;
+}
+
+.block-dynamic_persistent_menu ul.dynamic-persistent-menu-sub-menu {
+  margin-top: 1px;
+    background-color: #969e80;
+    padding: 0.2em;
+    border-radius: .5em .5em 0em 0em;
+    -webkit-border-bottom-left-radius: .5em;
+    -webkit-border-bottom-right-radius: .5em;
+    -moz-border-radius: 0em 0em .5em .5em;
+    -ms-border-radius: 0em 0em .5em .5em;
+    -khtml-border-radius: 0em 0em .5em .5em;
+}
+
+.block-dynamic_persistent_menu ul.dynamic-persistent-menu-sub-menu li {
+  border: none;
+}
+.block-dynamic_persistent_menu ul.dynamic-persistent-menu-sub-menu li a {
+    color: #2d3c01;
+    font-weight: bolder;
+    text-decoration: none;
+}
+.block-dynamic_persistent_menu ul.dynamic-persistent-menu-sub-menu li {
+    padding: 0.2em 1.5em;
+}
+
+
+
+#block-menu-menu-goiko-menua,
+.goiko-menua {
+    margin-bottom: .1em;
+}
+#block-menu-menu-goiko-menua li {
+    display: inline;
+    list-style: none;
+    padding: 0.2em .6em;
+    border-right: #ffffff solid 1px;
+}
+#block-menu-menu-goiko-menua li.last,
+.goiko-menua li.last {
+    display: inline;
+    list-style: none;
+    border-right: none;
+}
+#block-menu-menu-goiko-menua li.active-trail a,
+.goiko-menua li.active-trail a {
+    color: #2d3c01;
+}
+#block-menu-menu-goiko-menua li a {
+    color: @dark_green;
+    /*font-weight: bold;*/
+    font-weight: bolder;
+    text-decoration: none;
+    padding: .2em .5em;
+    border-radius: .5em .5em 0em 0em;
+    -webkit-border-top-left-radius: .5em;
+    -webkit-border-top-right-radius: .5em;
+    -moz-border-radius: .5em .5em 0em 0em;
+    -ms-border-radius: .5em .5em 0em 0em;
+    -khtml-border-radius: .5em .5em 0em 0em;
+}
+#block-menu-menu-goiko-menua ul {
+    margin: 0;
+    padding: 0.2em;
+    background-color: #cccc00;
+    border-radius: .5em .5em 0em 0em;
+    -webkit-border-top-left-radius: .5em;
+    -webkit-border-top-right-radius: .5em;
+    -moz-border-radius: .5em .5em 0em 0em;
+    -ms-border-radius: .5em .5em 0em 0em;
+    -khtml-border-radius: .5em .5em 0em 0em;
+}
+
+/* goiko menuaren herrien zerrenda */
+.view-menuaren-herri-zerrenda div {
+    display: inline;
+}
+
+#block-views-menuaren_herri_zerrenda-block_3 h2,
+#block-views-menuaren_herri_zerrenda-block_2 h2,
+#block-views-menuaren_herri_zerrenda-block_1 h2,
+#block-panels_mini-proposamenak_menu h2 {
+    display: none;
+}
+
+#block-block-1 {
+    height: 1.2em;
+    background-color: #969e80;
+    padding: 0.2em;
+    border-radius: .5em .5em 0em 0em;
+    -webkit-border-bottom-left-radius: .5em;
+    -webkit-border-bottom-right-radius: .5em;
+    -moz-border-radius: 0em 0em .5em .5em;
+    -ms-border-radius: 0em 0em .5em .5em;
+    -khtml-border-radius: 0em 0em .5em .5em;
+}
+
+#block-views-menuaren_herri_zerrenda-block_3,
+#block-views-menuaren_herri_zerrenda-block_2,
+#block-views-menuaren_herri_zerrenda-block_1,
+#block-panels_mini-proposamenak_menu {
+    display: none;
+    background-color: #969e80;
+    padding: 0.2em;
+    border-radius: .5em .5em 0em 0em;
+    -webkit-border-bottom-left-radius: .5em;
+    -webkit-border-bottom-right-radius: .5em;
+    -moz-border-radius: 0em 0em .5em .5em;
+    -ms-border-radius: 0em 0em .5em .5em;
+    -khtml-border-radius: 0em 0em .5em .5em;
+}
+
+#block-views-menuaren_herri_zerrenda-block_3 a,
+#block-views-menuaren_herri_zerrenda-block_2 a,
+#block-views-menuaren_herri_zerrenda-block_1 a,
+#block-panels_mini-proposamenak_menu a {
+    color: #2d3c01;
+    font-weight: bolder;
+    text-decoration: none;
+}
+#block-views-menuaren_herri_zerrenda-block_3 .views-row,
+#block-views-menuaren_herri_zerrenda-block_2 .views-row,
+#block-views-menuaren_herri_zerrenda-block_1 .views-row,
+#block-panels_mini-proposamenak_menu .views-row {
+    padding: 0.2em 1.5em;
+}
+
+#block-menu-menu-goiko-menua .goiko_menua_irekia a {
+    background-color: #969e80;
+    color: #2d3c01;
+}
+#block-menu-menu-goiko-menua .goiko_menua_irekia a {
+}
+
+/* Goiko menuaren proposamen motak */
+#block-panels_mini-proposamenak_menu {
+    height: 1.2em;
+}
+#block-panels_mini-proposamenak_menu div {
+    display: inline;
+}
+#block-panels_mini-proposamenak_menu div.views-admin-links {
+    display: none;
+}
+/* Goiko menuaren bukaera */
+
+/* Albisteen zerrendak */
+#mini-panel-orri_nagusiko_bideo_berriak div.panel-separator {
+    display: none;
+}
+
+#detail_etiketak_non a {
+    text-decoration: none;
+    color: #7a6e0c;
+}
+#detail_etiketak_non li {
+    padding: 0;
+}
+
+/* pager */
+div.view-azken-bideoak.view-display-id-block_1 .pager {
+    background-color: transparent;
+}
+div.view-azken-bideoak.view-display-id-block_1 .pager-previous a:after {
+    content: " berriagoak";
+}
+div.view-azken-bideoak.view-display-id-block_1 .pager-next a:before {
+    content: "zaharragoak";
+}
+div.view-azken-bideoak.view-display-id-block_1 .pager-previous {
+    float: left;
+}
+div.view-azken-bideoak.view-display-id-block_1 .pager-current {
+    display: none;
+}
+div.view-azken-bideoak.view-display-id-block_1 .pager-next {
+    float: right;
+}
+div.view-azken-bideoak.view-display-id-block_1 .pager {
+    padding: 0;
+}
+
+div.view-azken-bideoak.view-display-id-block_1 .pager:after {
+    content: ".hi!!";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+div.view-azken-bideoak.view-display-id-block_1 .pager-next a,
+div.view-azken-bideoak.view-display-id-block_1 .pager-previous a {
+    color: #cccc00;
+    text-decoration: none;
+    background-color: #f5f5cc;
+    border-radius: 6px;
+    -ms-border-radius: 6px;
+    -khtml-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    /* no htc */
+    padding: .2em 1.5em;
+    font-weight: bolder;
+}
+div.view-azken-bideoak.view-display-id-block_1 .pager-next a span,
+div.view-azken-bideoak.view-display-id-block_1 .pager-previous a span {
+    display: none;
+}
+div.view-azken-bideoak.view-display-id-block_1 .pager-next a {
+    background-image: url(../img/hurrengoa.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+div.view-azken-bideoak.view-display-id-block_1 .pager-next a.views-throbbing {
+    background-image: url(../img/borobila.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+div.view-azken-bideoak.view-display-id-block_1 .pager-previous a {
+    background-image: url(../img/aurrekoa.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+div.view-azken-bideoak.view-display-id-block_1 .pager-previous a.views-throbbing {
+    background-image: url(../img/borobila.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+/* orrien oina */
+#footer {
+    padding: .5em .5em .5em 6em;
+    background-color: #cccc00;
+    margin-top: 10px;
+    border-radius: 6px;
+    -ms-border-radius: 6px;
+    -khtml-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+}
+
+#closure-blocks {
+    width: 960px;
+    background-color: #2d3c01;
+    background-image: url('../img/oinarenlogotipoa.png');
+    background-position:left bottom;
+    background-repeat:no-repeat;
+    margin:1em auto;
+    border-radius: 6px;
+    -ms-border-radius: 6px;
+    -khtml-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    /* no htc */
+}
+
+#oina_eposta_helbideak a {
+    color: #E6E680;
+    text-decoration: none;
+}
+#oina_eposta_helbideak {
+    width: 40%;
+    float: left;
+    padding: 40px 2em .5em 2em;
+    margin-left: 100px;
+    color: #E6E680;
+}
+
+#oina_helbide_fisikoa {
+    background-image: url('../img/oinarenatzekoaldea.png');
+    background-position: right top;
+    background-repeat: no-repeat;
+    text-align: right;
+    color: #969e80;
+    padding: 40px 2em .5em 2em;
+}
+
+body.front #user-login-form div.item-list {
+    width: 400px;
+}
+
+
+/* pager */
+.item-list .pager {
+    clear:both;
+    padding:0.4em;
+    text-align:center;
+    border-radius: 6px;
+    -ms-border-radius: 6px;
+    -khtml-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    /* no htc ?? */
+    background-color:#F5F5CC;
+}
+
+/* bideo nodoa */
+
+.most_viewed_pane h2.pane-title,
+#detail_bideo_ikusienak h2.pane-title {
+    background-color: white;
+    background-image: url('../img/arrow_aiaraldea.png');
+    background-position: left;
+    background-repeat: no-repeat;
+    padding-left: 14px;
+    color: #969e80;
+    border-bottom: solid 2px #969e80;
+    margin-bottom: 6px;
+}
+.most_viewed_pane .pane-content,
+#detail_bideo_ikusienak .pane-content{
+    background-color: #f5f5cc;
+    border-radius: 6px;
+    -ms-border-radius: 6px;
+    -khtml-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+}
+#detail_bideo_ikusienak .views-row {
+    width: 162px;
+    display: inline-block;
+    padding: 32px;
+    vertical-align:top;
+}
+/*
+#detail_bideo_ikusienak .views-row-odd {
+    border-top: solid 4px white;
+    border-right: solid 2px white;
+}
+
+#detail_bideo_ikusienak .views-row-even {
+    border-top: solid 4px white;
+    border-left: solid 2px white;
+}
+
+#detail_bideo_ikusienak .views-row-1,
+#detail_bideo_ikusienak .views-row-2 {
+    border-top: none;
+}*/
+
+.most_viewed_pane img,
+#detail_bideo_ikusienak img {
+    .green_boxed_image;
+}
+
+.most_viewed_pane .views-field-title,
+#detail_bideo_ikusienak .views-field-title {
+    background-image: url('../img/arrow_aiaraldea.png');
+    background-position: left top;
+    background-repeat: no-repeat;
+    padding-left: 14px;
+    margin-top: 8px;
+    color: #2d3c01;
+}
+
+.most_viewed_pane .views-field-title a,
+#detail_bideo_ikusienak .views-field-title a {
+    color: #2d3c01;
+    text-decoration: none;
+}
+#detail_bideo_ikusienak .views-field-created {
+    padding-left: 14px;
+    color: #2d3c01;
+    font-weight: bold;
+}
+
+#detail_bideo_koadro {
+    border-radius: 6px;
+    -ms-border-radius: 6px;
+    -khtml-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    background-color:#cccc00;
+    padding: 10px;
+}
+
+#detail_bideo_bideo {
+    border-radius: 6px;
+    -ms-border-radius: 6px;
+    -khtml-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    background-color:#f5f5cc;
+    margin-bottom:10px;
+    padding: 6px;
+    text-align: center
+}
+#detail_bideo_body {
+    color: #2D3C01;
+    padding: 12px;
+}
+
+#detail_service_links,
+#detail_bideo_service_links,
+#detail_proposamena_service_links {
+    color: #cccc00;
+}
+#detail_service_links ul,
+#detail_bideo_service_links ul,
+#detail_proposamena_service_links ul {
+    border-bottom: solid 2px #cccc00;
+    border-top: solid 2px #cccc00;
+    margin-top: 0;
+    padding: 6px 0;
+}
+
+#detail_bideo_referrers_title {
+    margin-top: 12px;
+    color: #cccc00;
+}
+#detail_bideo_referrers ul {
+    border-bottom: solid 2px #cccc00;
+    border-top: solid 2px #cccc00;
+    margin-top: 0;
+    padding: 6px 18px;
+    color: #2d3c01;
+}
+#detail_bideo_referrers a {
+    text-decoration: none;
+    color: #2d3c01;
+}
+
+/* Agenda */
+div.view-egutegia {
+    background-color: #cccc00;
+    padding: 1em 0;
+    border-radius: 6px;
+    -ms-border-radius: 6px;
+    -khtml-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+}
+
+div.view-egutegia div.attachment{
+    padding: 1em;
+    color: #2d3c01;
+}
+
+div.view-egutegia div.attachment a {
+    color: #2d3c01;
+    text-decoration: none;
+}
+
+div.pane-egutegia > h2,
+#agenda_agenda_proposamena_pane > h2,
+#agenda_albokobarra_harremanetan > h2,
+#panel_detaile_albiste .panel-col-first .panel-pane > h2 {
+    background-image: url('../img/arrow_aiaraldea.png');
+    background-position: left;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    color: #2d3c01;
+    border-bottom: solid 2px #2d3c01;
+}
+
+#agenda_albokobarra_harremanetan div.pane-content {
+    background-color: #969e80;
+    border-radius: 6px;
+    -ms-border-radius: 6px;
+    -khtml-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    padding: 10px;
+}
+#agenda_albokobarra_harremanetan .agenda_eposta {
+    text-align: right;
+    color:#e6e680;
+    font-size: 125%;
+}
+#agenda_albokobarra_harremanetan .agenda_eposta a {
+    color:#e6e680;
+    text-decoration:none;
+}
+
+#detail_noiz_etiketa,
+#detail_non_etiketa,
+#detail_lekua_etiketa,
+#detail_mota_etiketa,
+#detail_erantsiak_etiketa {
+    background-image: url('../img/arrow_aiaraldea.png');
+    background-position: left;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    margin: .5em;
+    color: #cccc00;
+    font-weight: bold;
+}
+
+#detail_deialdi_non,
+#detail_deialdi_lekua,
+#detail_deialdi_mota,
+#detail_deialdi_noiz {
+    font-weight: bold;
+    padding-left: 20px;    
+}
+
+#detail_deialdi_non li,
+#detail_deialdi_lekua li,
+#detail_deialdi_mota li,
+#detail_deialdi_noiz li {
+    padding-left: 0px;
+}
+
+#detail_deialdi_non li a,
+#detail_deialdi_lekua li a,
+#detail_deialdi_mota li a,
+#detail_deialdi_noiz li a {
+    text-decoration: none;
+    color: #2d3c01;
+}
+
+#detail_deialdi_irudia img {
+    border: solid 3px #2d3c01;
+}
+
+.panel-region-separator {
+  height: 8px;
+}

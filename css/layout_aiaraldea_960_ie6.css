@@ -1,0 +1,55 @@
+/* 
+    Document   : layout_aiaraldea_960
+    Created on : Mar 28, 2010, 8:22:48 PM
+    Author     : inaki
+    Description:
+        Purpose of the stylesheet follows.
+*/
+#mini-panel-orri_nagusiko_agenda_proposamena .panel-col-first,
+#mini-panel-orri_nagusiko_agenda_proposamena .panel-col-last,
+#panels_pages_agenda .panel-col-first,
+#panels_pages_agenda .panel-col-last,
+body.node-type-deialdi #content .panel-2col .panel-col-first,
+body.node-type-deialdi #content .panel-2col .panel-col-last,
+body.node-type-bideo #content .panel-2col .panel-col-first,
+body.node-type-bideo #content .panel-2col .panel-col-last
+{
+    width: 460px;
+    margin: 5px !important;
+}
+
+#mini-panel-orri_nagusiko_agenda_proposamena .panel-col-first .inside,
+#mini-panel-orri_nagusiko_agenda_proposamena .panel-col-last .inside,
+#panels_pages_agenda .panel-col-first .inside,
+#panels_pages_agenda .panel-col-last .inside,
+body.node-type-deialdi #content .panel-2col .panel-col-first .inside,
+body.node-type-deialdi #content .panel-2col .panel-col-last .inside,
+body.node-type-bideo #content .panel-2col .panel-col-first .inside,
+body.node-type-bideo #content .panel-2col .panel-col-last .inside,
+body.node-type-proposamena div.panel-col-first .inside,
+body.node-type-proposamena div.panel-col-last .inside {
+    margin: 0px;
+}
+
+body.node-type-proposamena #content .panel-2col div.panel-col-first {
+    width: 620px;
+    margin: 10px;
+}
+
+body.node-type-proposamena #content .panel-2col div.panel-col-last {
+    width: 300px;
+    margin: 10px;
+}
+
+#main_autumn_2011_panel .panels-flexible-row-container_12-main-row-inside {
+    width: 960px !important;
+}
+
+#main_summer_2011_panel {
+    width: 960px !important;
+    margin: auto;
+}
+root { 
+    display: block;
+}
+

@@ -1,0 +1,309 @@
+@import "base.less"; 
+
+#orri_nagusiko_proposamenak .quicktabs_wrapper,
+#mini-panel-orri_nagusiko_proposamenak .quicktabs_wrapper,
+#mini-panel-orri_nagusiko_agenda_proposamena .quicktabs_wrapper {
+    padding: 1em;
+    background-color: @dark_green;
+    .rounded_border;
+}
+
+#orri_nagusiko_proposamenak ul.quicktabs_tabs,
+#mini-panel-orri_nagusiko_proposamenak ul.quicktabs_tabs,
+#mini-panel-orri_nagusiko_agenda_proposamena ul.quicktabs_tabs {
+    margin-bottom: .4em;
+    padding: 0 10px;
+    height: 1.6em;
+}
+
+#orri_nagusiko_proposamenak ul.quicktabs_tabs li.first,
+#mini-panel-orri_nagusiko_proposamenak ul.quicktabs_tabs li.first{
+    margin: 0 3px 0 0;
+}
+#orri_nagusiko_proposamenak ul.quicktabs_tabs li.last,
+#mini-panel-orri_nagusiko_proposamenak ul.quicktabs_tabs li.last {
+    margin: 0 0 0 3px;
+}
+#orri_nagusiko_proposamenak ul.quicktabs_tabs li,
+#mini-panel-orri_nagusiko_proposamenak ul.quicktabs_tabs li,
+#mini-panel-orri_nagusiko_agenda_proposamena ul.quicktabs_tabs li {
+    display: block;
+    height: 1.4em;
+    float: left;
+    margin: 0 3px;
+    width: 99px;
+    padding: 3px 0px;
+    text-align: center;
+    border-radius: .5em .5em 0em 0em;
+    -webkit-border-top-left-radius: .5em;
+    -webkit-border-top-right-radius: .5em;
+    -moz-border-radius: .5em .5em 0em 0em;
+    -ms-border-radius: .5em .5em 0em 0em;
+    -khtml-border-radius: .5em .5em 0em 0em;
+    -webkit-border-radius: .5em .5em 0em 0em;
+    background-color: @pale_green;
+}
+
+#orri_nagusiko_agenda_proposamena .quicktabs_main,
+#mini-panel-orri_nagusiko_agenda_proposamena .quicktabs_main,
+#mini-panel-orri_nagusiko_proposamenak .quicktabs_main {
+    background-color: @green;
+    /*margin-top: 14px;*/
+    padding: 1em;
+    clear: both;
+    .rounded_border;
+}
+
+#orri_nagusiko_proposamenak ul.quicktabs_tabs li.active,
+#mini-panel-orri_nagusiko_proposamenak ul.quicktabs_tabs li.active,
+#mini-panel-orri_nagusiko_agenda_proposamena ul.quicktabs_tabs li.active {
+    background-color: @green;
+}
+
+#orri_nagusiko_proposamenak ul.quicktabs_tabs li a,
+#mini-panel-orri_nagusiko_proposamenak ul.quicktabs_tabs li a,
+#mini-panel-orri_nagusiko_agenda_proposamena ul.quicktabs_tabs li a {
+    text-decoration: none;
+    color: @dark_green;
+    font-weight: bolder;
+}
+
+#orri_nagusiko_proposamenak div.views-field-field-kolaboratzaile-value,
+#mini-panel-orri_nagusiko_proposamenak div.views-field-field-kolaboratzaile-value {
+    float: right;
+    font-weight: bold;
+    color: white;
+    font-variant: small-caps;
+}
+div.views-field-field-kolaboratzaile-value {
+    float: right;
+}
+
+/* Proposamenak */
+#azala_proposamenak_izenburua_div_1_2 {
+    .section_title;
+    .subtitled ;
+}
+#azala_proposamenak_izenburua_div {
+    .section_title;
+}
+
+#azala_proposamenak_kulturleihoa {
+    font-weight: bolder;
+    float: left;
+    color: @dark_green;
+}
+
+#azala_proposamenak_kulturlehioa {
+    font-weight: bolder;
+    float: left;
+    color: @dark_green;
+}
+#azala_proposamenak_proposamenak {
+    float: left;
+    color: @dark_green;
+}
+#azala_proposamenak_adi {
+    font-weight: bolder;
+    text-align: right;
+    border-bottom: @green solid 2px;
+    color: @dark_green;
+}
+#azala_proposamenak_adi_1_1 {
+    font-weight: bolder;
+    text-align: right;
+    color: @dark_green;
+}
+
+div.pane-proposamenak-list div.views-field-title {
+    font-size: 120%;
+}
+body.front div.pane-proposamenak-list,
+#proposamenak_orri_nagusia div.pane-proposamenak-list div.pane-content {
+    color: white;
+    background-color: @dark_green;
+    padding: 1em;
+    margin: 1em .4em;
+    .rounded_border;
+}
+
+#proposamenak_orri_nagusia div.pane-proposamenak-list h2 {
+    padding-left: 20px;
+    margin: .5em;
+    color: @dark_green;
+    border-bottom: solid 2px @dark_green;
+    .arrow_background;
+}
+div.views-field-field-kolaboratzaile-value {
+    float: right;
+}
+div.view-proposamenak-list .views-field-field-proposamena-irudia-fid img {
+    border: solid 3px @green;
+    margin: 3px;
+}
+div.view-proposamenak-list div.views-field-field-proposamena-irudia-fid {
+    float: left;
+}
+
+div.view-proposamenak-list div.views-field-title {
+    padding-left: 105px;
+    padding-bottom: .4em;
+}
+div.view-proposamenak-list div.views-field-title a {
+    font-weight: bolder;
+    color: #ffffff;
+    text-decoration: none;
+}
+div.view-proposamenak-list div.views-field-field-audio-fid {
+    padding-left: 105px;
+}
+div.view-proposamenak-list div.views-field-body {
+    padding-left: 105px;
+}
+#detail_proposamena_audio div.filefield-file {
+    padding: 8px 0;
+}
+#detail_proposamena_audio div.filefield-file a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Proposamenen nodoa */
+#detail_proposamena_title {
+    padding-left: 20px;
+    margin: .5em 0;
+    color: @dark_green;
+    border-bottom: solid 2px @dark_green;
+    .arrow_background;
+}
+#detail_proposamena_date {
+    color: @dark_green;
+    float: right;
+    margin: -2.4em .5em .5em .5em;
+}
+
+#detail_proposamena_content {
+    margin: 1em .5em;
+    padding: 1.5em;
+    background-color:@dark_green;
+    .rounded_border;
+}
+
+#detail_proposamena_fitxa_teknikoa {
+    color: white;
+    padding-left: 100px;
+}
+
+#detail_proposamena_fitxa_teknikoa_label {
+    color: @green;
+}
+
+#detail_proposamena_irudia {
+    float: left;
+}
+
+#detail_proposamena_irudia img {
+    border: solid 3px @green;
+}
+
+#detail_proposamena_kolaboratzaile {
+    clear: both;
+    color: white;
+    text-align: right;
+    border-top: solid 2px white;
+    margin: .5em 0;
+}
+
+
+#detail_proposamena_body {
+    color: white;
+}
+
+body.node-type-proposamena div.panel-col-first {
+    width: 620px;
+    margin: 10px;
+}
+
+body.node-type-proposamena div.panel-col-last {
+    width: 300px;
+    margin: 10px;
+}
+#detail_proposamena_zaharragoak h2 {
+    padding-left: 20px;
+    color: @dark_green;
+    border-bottom: solid 2px @dark_green;
+    .arrow_background;
+}
+
+#detail_proposamena_zaharragoak ul {
+    margin: 0;
+    padding: 0;
+}
+
+#detail_proposamena_zaharragoak li {
+    list-style: none;
+    display: block;
+    clear: both;
+    background-color: @pale_green;
+    padding: .5em;
+    margin: .5em 0;
+    .rounded_border;
+}
+
+#detail_proposamena_zaharragoak  div.views-field-title {
+    margin-left: 55px;
+    padding: 0;
+    font-size: 100%;
+    color: @dark_green;
+    border-bottom: solid 2px @dark_green;
+}
+
+#detail_proposamena_zaharragoak  div.views-field-title a {
+    color: @dark_green;
+}
+
+#detail_proposamena_zaharragoak  div.views-field-created {
+    color: @dark_green;
+    float: right;
+}
+#detail_proposamena_zaharragoak  div.views-field-field-kolaboratzaile-value {
+    color: @dark_green;
+    float: right;
+}
+#detail_proposamena_zaharragoak  div.views-field-field-audio-fid {
+    margin-left: 55px;
+    padding-left: 0;
+}
+
+/*// Azaleko proposamenak 1.2*/
+
+.pane-proposamenak-azala-1-1 {
+    background-color: @pale_gray;
+    .rounded_border;
+}
+.view-proposamenak-azala-1-1 .views-field-field-kolaboratzaile-value {
+    color: @dark_green;
+}
+.pane-proposamenak-azala-1-1 .views-field-title {
+    .list_item_title;
+}
+.pane-proposamenak-azala-1-1 .views-field-field-proposamena-irudia-fid img {
+    .green_boxed_image;
+}
+.pane-proposamenak-azala-1-1 .pane-content{
+    padding: 6px;
+}
+.pane-proposamenak-azala-1-1 h2.pane-title {
+    color: white;
+    font-weight: bold;
+    padding: 3px 10px 1px 10px;
+    background-image: none;
+    border-color: @gray;
+    background: @gray;
+    border-radius: .5em .5em 0em 0em;
+    -webkit-border-top-left-radius: .5em;
+    -webkit-border-top-right-radius: .5em;
+    -moz-border-radius: .5em .5em 0em 0em;
+    -ms-border-radius: .5em .5em 0em 0em;
+    -khtml-border-radius: .5em .5em 0em 0em;
+}
