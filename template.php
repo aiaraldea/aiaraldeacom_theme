@@ -211,7 +211,7 @@ function aiaraldeacom_comment_submitted($comment) {
   return t('<span class="comment_username">!username</span> &nbsp; <span class="comment_datetime">@datetime</span>',
     array(
     '!username' => theme('username', $comment),
-    '@datetime' => format_date($comment->timestamp, 'custom' , 'y.M.d H:m')
+    '@datetime' => format_date($comment->timestamp, 'custom' , 'y.M.d H:i')
   ));
 }
 

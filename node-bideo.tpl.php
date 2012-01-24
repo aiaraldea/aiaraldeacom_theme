@@ -76,6 +76,9 @@
         <div id="detail_bideo_body">
         <?php print $node->content['body']['#value']; ?>
         </div>
+        <div id="detail_bideo_deskarga">
+        <?php print $node->field_deskarga[0]['view']; ?>
+        </div>
       </div>
 
       <?php if (count($node->field_rererrers) > 0): ?>

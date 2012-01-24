@@ -640,14 +640,10 @@ ul.links li
 .more-link /* Aggregator, blog, and forum more link */
 {
   text-align: right;
-  border-radius: 6px;
-  -ms-border-radius: 6px;
-  -khtml-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
   background-color:#CCCC00;
   padding: 4px 8px;
   margin: 8px 0;
+    .rounded_border;
 }
 .more-link a /* Aggregator, blog, and forum more link */
 {
@@ -819,11 +815,7 @@ h1.title{
 #block-dynamic_persistent_menu-0 {
   background-color: #969E80;
   min-height: 3.6em;
-  border-radius: .5em;
-  -webkit-border-radius: .5em;
-  -moz-border-radius: .5em;
-  -ms-border-radius: .5em;
-  -khtml-border-radius: .5em;
+  .rounded_border;
 }
 .block-dynamic_persistent_menu ul.dynamic-persistent-menu-menu {
     margin: 0;
@@ -1021,86 +1013,12 @@ h1.title{
     padding: 0;
 }
 
-/* pager */
-div.view-azken-bideoak.view-display-id-block_1 .pager {
-    background-color: transparent;
-}
-div.view-azken-bideoak.view-display-id-block_1 .pager-previous a:after {
-    content: " berriagoak";
-}
-div.view-azken-bideoak.view-display-id-block_1 .pager-next a:before {
-    content: "zaharragoak";
-}
-div.view-azken-bideoak.view-display-id-block_1 .pager-previous {
-    float: left;
-}
-div.view-azken-bideoak.view-display-id-block_1 .pager-current {
-    display: none;
-}
-div.view-azken-bideoak.view-display-id-block_1 .pager-next {
-    float: right;
-}
-div.view-azken-bideoak.view-display-id-block_1 .pager {
-    padding: 0;
-}
-
-div.view-azken-bideoak.view-display-id-block_1 .pager:after {
-    content: ".hi!!";
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden;
-}
-
-div.view-azken-bideoak.view-display-id-block_1 .pager-next a,
-div.view-azken-bideoak.view-display-id-block_1 .pager-previous a {
-    color: #cccc00;
-    text-decoration: none;
-    background-color: #f5f5cc;
-    border-radius: 6px;
-    -ms-border-radius: 6px;
-    -khtml-border-radius: 6px;
-    -moz-border-radius: 6px;
-    -webkit-border-radius: 6px;
-    /* no htc */
-    padding: .2em 1.5em;
-    font-weight: bolder;
-}
-div.view-azken-bideoak.view-display-id-block_1 .pager-next a span,
-div.view-azken-bideoak.view-display-id-block_1 .pager-previous a span {
-    display: none;
-}
-div.view-azken-bideoak.view-display-id-block_1 .pager-next a {
-    background-image: url(../img/hurrengoa.png);
-    background-repeat: no-repeat;
-    background-position: right;
-}
-div.view-azken-bideoak.view-display-id-block_1 .pager-next a.views-throbbing {
-    background-image: url(../img/borobila.png);
-    background-repeat: no-repeat;
-    background-position: right;
-}
-div.view-azken-bideoak.view-display-id-block_1 .pager-previous a {
-    background-image: url(../img/aurrekoa.png);
-    background-repeat: no-repeat;
-    background-position: left;
-}
-div.view-azken-bideoak.view-display-id-block_1 .pager-previous a.views-throbbing {
-    background-image: url(../img/borobila.png);
-    background-repeat: no-repeat;
-    background-position: left;
-}
-
 /* orrien oina */
 #footer {
     padding: .5em .5em .5em 6em;
     background-color: #cccc00;
     margin-top: 10px;
-    border-radius: 6px;
-    -ms-border-radius: 6px;
-    -khtml-border-radius: 6px;
-    -moz-border-radius: 6px;
-    -webkit-border-radius: 6px;
+    .rounded_border;
 }
 
 #closure-blocks {
@@ -1110,12 +1028,7 @@ div.view-azken-bideoak.view-display-id-block_1 .pager-previous a.views-throbbing
     background-position:left bottom;
     background-repeat:no-repeat;
     margin:1em auto;
-    border-radius: 6px;
-    -ms-border-radius: 6px;
-    -khtml-border-radius: 6px;
-    -moz-border-radius: 6px;
-    -webkit-border-radius: 6px;
-    /* no htc */
+    .rounded_border;
 }
 
 #oina_eposta_helbideak a {
@@ -1149,36 +1062,16 @@ body.front #user-login-form div.item-list {
     clear:both;
     padding:0.4em;
     text-align:center;
-    border-radius: 6px;
-    -ms-border-radius: 6px;
-    -khtml-border-radius: 6px;
-    -moz-border-radius: 6px;
-    -webkit-border-radius: 6px;
-    /* no htc ?? */
     background-color:#F5F5CC;
+    .rounded_border;
 }
 
 /* bideo nodoa */
 
-.most_viewed_pane h2.pane-title,
-#detail_bideo_ikusienak h2.pane-title {
-    background-color: white;
-    background-image: url('../img/arrow_aiaraldea.png');
-    background-position: left;
-    background-repeat: no-repeat;
-    padding-left: 14px;
-    color: #969e80;
-    border-bottom: solid 2px #969e80;
-    margin-bottom: 6px;
-}
 .most_viewed_pane .pane-content,
 #detail_bideo_ikusienak .pane-content{
     background-color: #f5f5cc;
-    border-radius: 6px;
-    -ms-border-radius: 6px;
-    -khtml-border-radius: 6px;
-    -moz-border-radius: 6px;
-    -webkit-border-radius: 6px;
+    .rounded_border;
 }
 #detail_bideo_ikusienak .views-row {
     width: 162px;
@@ -1229,25 +1122,17 @@ body.front #user-login-form div.item-list {
 }
 
 #detail_bideo_koadro {
-    border-radius: 6px;
-    -ms-border-radius: 6px;
-    -khtml-border-radius: 6px;
-    -moz-border-radius: 6px;
-    -webkit-border-radius: 6px;
     background-color:#cccc00;
     padding: 10px;
+    .rounded_border;
 }
 
 #detail_bideo_bideo {
-    border-radius: 6px;
-    -ms-border-radius: 6px;
-    -khtml-border-radius: 6px;
-    -moz-border-radius: 6px;
-    -webkit-border-radius: 6px;
     background-color:#f5f5cc;
     margin-bottom:10px;
     padding: 6px;
-    text-align: center
+    text-align: center;
+    .rounded_border;
 }
 #detail_bideo_body {
     color: #2D3C01;
@@ -1288,11 +1173,7 @@ body.front #user-login-form div.item-list {
 div.view-egutegia {
     background-color: #cccc00;
     padding: 1em 0;
-    border-radius: 6px;
-    -ms-border-radius: 6px;
-    -khtml-border-radius: 6px;
-    -moz-border-radius: 6px;
-    -webkit-border-radius: 6px;
+    .rounded_border;
 }
 
 div.view-egutegia div.attachment{
@@ -1305,26 +1186,10 @@ div.view-egutegia div.attachment a {
     text-decoration: none;
 }
 
-div.pane-egutegia > h2,
-#agenda_agenda_proposamena_pane > h2,
-#agenda_albokobarra_harremanetan > h2,
-#panel_detaile_albiste .panel-col-first .panel-pane > h2 {
-    background-image: url('../img/arrow_aiaraldea.png');
-    background-position: left;
-    background-repeat: no-repeat;
-    padding-left: 20px;
-    color: #2d3c01;
-    border-bottom: solid 2px #2d3c01;
-}
-
 #agenda_albokobarra_harremanetan div.pane-content {
     background-color: #969e80;
-    border-radius: 6px;
-    -ms-border-radius: 6px;
-    -khtml-border-radius: 6px;
-    -moz-border-radius: 6px;
-    -webkit-border-radius: 6px;
     padding: 10px;
+    .rounded_border;
 }
 #agenda_albokobarra_harremanetan .agenda_eposta {
     text-align: right;
@@ -1341,13 +1206,11 @@ div.pane-egutegia > h2,
 #detail_lekua_etiketa,
 #detail_mota_etiketa,
 #detail_erantsiak_etiketa {
-    background-image: url('../img/arrow_aiaraldea.png');
-    background-position: left;
-    background-repeat: no-repeat;
     padding-left: 20px;
     margin: .5em;
     color: #cccc00;
     font-weight: bold;
+    .arrow_background;
 }
 
 #detail_deialdi_non,

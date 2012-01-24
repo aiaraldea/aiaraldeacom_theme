@@ -159,9 +159,21 @@
 #detail_etiketak_non,
 .view-albisteak-azala .views-field-tid,
 .view-albisteak .views-field-tid {
-    color: #7a6e0c;
-    font-weight: bolder;
     display: inline;
+    .label;
+}
+.view-albisteak-etiketak .view-content {
+    column-count: 2;
+    -webkit-column-count: 2;
+}
+
+.view-albisteak-etiketak .views-row.views-row-first {
+    margin-top: 0;
+}
+.view-albisteak-etiketak .views-row {
+    .label_container;
+    .label;
+    a { text-decoration:none;}
 }
 
 #detail_albiste_data,
@@ -207,7 +219,7 @@
 
 .view-albisteak .views-field-title {
     border-top: @brown solid 1px;
-/*    font-weight: bolder;*/
+    /*    font-weight: bolder;*/
     color: #2d3c01;
     padding: 5px 0;
     font-size: 20px;
@@ -377,11 +389,8 @@ body.node-type-albiste div.panel-col-last {
 
 #deialdi_etiketak li,
 #albiste_etiketak li {
-    background-color:#F5F5CC;
     display:inline-block;
-    margin: .4em;
-    padding: .3em;
-    .rounded_border;
+    .label_container;
 }
 
 #deialdi_etiketak a,
@@ -392,7 +401,7 @@ body.node-type-albiste div.panel-col-last {
 
 /* Azaleko albisteak 1.1*/
 .view-display-albisteak-2gunea {
-  .views-row {
-  }
-  
+    .views-row {
+}
+
 }

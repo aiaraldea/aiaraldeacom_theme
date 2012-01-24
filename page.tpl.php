@@ -98,7 +98,7 @@
     <?php endif; ?>
 
       <?php if ($absolute_top): ?>
-        <div id="header-blocks" class="region region-header">
+        <div id="top-blocks" class="region region-header">
           <?php print $absolute_top; ?>
         </div> <!-- /#header-blocks -->
       <?php endif; ?>

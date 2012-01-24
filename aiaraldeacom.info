@@ -45,6 +45,8 @@ stylesheets[all][]   = css/base.less
 stylesheets[all][]   = css/bideoak.less
 stylesheets[all][]   = css/argazkiak.less
 stylesheets[all][]   = css/comments.less
+stylesheets[all][]   = css/ads.css
+stylesheets[all][]   = css/short_notices.less
 stylesheets[print][] = css/print.css
 conditional-stylesheets[if lt IE 7][all][] = css/layout_aiaraldea_960_ie6.css
   ; To prevent stylesheets of a base theme or of a module from being included in

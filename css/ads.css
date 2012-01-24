@@ -1,0 +1,29 @@
+#top-blocks {
+/*    height: 100px;*/
+/*    background-color: red;*/
+}
+
+#top-blocks .block-openx {
+    display: block;
+    margin-bottom: 2px;
+    float: left;
+}
+#top-blocks .block-openx .content {
+    background: url(../img/publizitatea_b.gif) no-repeat left;
+    padding-left: 10px;
+    height: 90px;
+/*    border: 1px solid blue;*/
+/*    float: left;*/
+}
+
+#block-openx-0 {
+    width: 736px;
+    height: 90px;
+    border: 1px solid #000;
+    margin-right: 6px;
+}
+#block-openx-1 {
+    width: 214px;
+    height: 90px;
+    border: 1px solid green;
+}
