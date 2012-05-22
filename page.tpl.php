@@ -254,7 +254,7 @@
         <div class="udalak">
             <p class="babesten">Ondorengo instituzioek web-gune hau babesten dute:</p>
             <ul>
-                <li class="kuadrila"><a href="http://www.cuadrilladeayala.com/index.php/eu/hasiera.html"><span>Aiarako Kuadrila</span></a></li>
+                <li class="kuadrila"><a href="http://www.cuadrilladeayala.com/index.php/eu/hasiera.html"><span>Aiarako Eskualdea</span></a></li>
                 <li class="orozko"><a href="http://www.orozkoudala.com/eu-ES/Orrialdeak/default.aspx"><span>Orozkoko Udala</span></a></li>
                 <li class="arrankudiaga"><a href="http://www.arrankudiaga.org/eu-ES/Orrialdeak/default.aspx"><span>Arrankudiaga-Zolloko Udala</span></a></li>
                 <li class="arakaldo"><a href="http://www.arakaldo.org/eu-ES/Orrialdeak/default.aspx"><span>Arakaldoko Udala</span></a></li>
