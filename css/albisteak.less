@@ -1,170 +1,31 @@
 @import "base.less"; 
 
-.view-albisteak-azala .views-row {
-    padding: 6px 0;
-}
-.view-albisteak-azala .views-field-tid {
-    display: inline;
-    font-weight: bold;
-}
-.view-albisteak-azala .views-field-created {
-    display: inline;
-}
-.view-albisteak-azala .views-field-created:before {
-    content: "(";
-}
-.view-albisteak-azala .views-field-created:after {
-    content: "):";
-}
-.view-albisteak-azala .views-field-title {
-    display: inline;
-}
-.view-albisteak-azala .views-field-tid a,
-.view-albisteak-azala .views-field-created a,
-.view-albisteak-azala .views-field-title a {
-    text-decoration: none;
-    font-size:1.5em;
-}
-
-/*mini pager*/
-#mini-panel-orri_nagusiko_bideo_berriak .view-albisteak .pager-next a,
-#mini-panel-orri_nagusiko_bideo_berriak .view-albisteak .pager-previous a,
-.view-albisteak-azala .pager-next a,
-.view-albisteak-azala .pager-previous a{
-    font-weight: bolder;
-    text-decoration: none;
-    padding: 0 2em;
-}
-
-.view-albisteak .pager-next a span,
-.view-albisteak .pager-previous a span,
-.view-albisteak-azala .pager-next a span,
-.view-albisteak-azala .pager-previous a span {
-    display: none;
-}
-
-#mini-panel-orri_nagusiko_bideo_berriak .view-albisteak .pager-next a,
-.view-albisteak-azala .pager-next a {
-    background-image: url(../img/hurrengoa.png);
-    background-repeat: no-repeat;
-    background-position: right;
-}
-.view-albisteak .pager-next a.views-throbbing,
-.view-albisteak-azala .pager-next a.views-throbbing {
-    background-image: url(../img/borobila.png);
-    background-repeat: no-repeat;
-    background-position: right;
-}
-#mini-panel-orri_nagusiko_bideo_berriak .view-albisteak .pager-previous a,
-.view-albisteak-azala .pager-previous a {
-    background-image: url(../img/aurrekoa.png);
-    background-repeat: no-repeat;
-    background-position: left;
-}
-.view-albisteak .pager-previous a.views-throbbing,
-.view-albisteak-azala .pager-previous a.views-throbbing {
-    background-image: url(../img/borobila.png);
-    background-repeat: no-repeat;
-    background-position: left;
-}
-
-.view-albisteak .item-list .pager li,
-.view-albisteak-azala .item-list .pager li {
-    padding: 0.25em;
-}
-.view-albisteak .item-list .pager,
-.view-albisteak-azala .item-list .pager {
-    background-color: #cccc00;
-    padding: 0;
-    .arrow_background;
-}
-.view-albisteak .pager:after,
-.view-albisteak-azala .pager:after {
-    content: ".!";
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden;
-}
-
-#mini-panel-orri_nagusiko_bideo_berriak .view-albisteak.view-display-id-block_1 .pager-previous a:after,
-.view-albisteak-azala .pager-previous a:after {
-    content: " berriagoak";
-}
-#mini-panel-orri_nagusiko_bideo_berriak .view-albisteak.view-display-id-block_1 .pager-next a:before,
-.view-albisteak-azala .pager-next a:before {
-    content: "zaharragoak";
-}
-#mini-panel-orri_nagusiko_bideo_berriak .view-albisteak .pager-next,
-.view-albisteak-azala .pager-next {
-    float: right;
-}
-#mini-panel-orri_nagusiko_bideo_berriak .view-albisteak li.pager-current,
-.view-albisteak-azala li.pager-current {
-    display: none;
-}
-#mini-panel-orri_nagusiko_bideo_berriak .view-albisteak .pager-previous ,
-.view-albisteak-azala .pager-previous {
-    float: left;
-}
-
-/* separator */
-#mini-panel-orri_nagusiko_albisteak_v_1_1 .panel-separator {
-    display: none;
-}
-
-/* Albisteen zerrendak */
-
-#azala_albisteak_izenburua_div {
-    padding-bottom: 6px;
-    background-image: url(../img/albiste_izenburua_atzealdea.png);
-    background-repeat: no-repeat;
-    background-position: 6em 100%;
-}
-
-#azala_albisteak_izenburua {
-    padding: .2em 2em;
-    background-color: #2d3c01;
-    .rounded_border;
-}
-#azala_albisteak_izenburua a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: bolder;
-}
-#azala_albisteak_adi {
-    text-align: right;
-}
-#mini-panel-orri_nagusiko_bideo_berriak div.panel-separator {
-    display: none;
-}
 .view-albisteak .views-row {
     padding-bottom: .6em;
     clear: both;
 }
 
 #detail_albiste_izen_abizenak ,
-.view-albisteak-azala .views-field-value,
 .view-albisteak .views-field-value {
     color: #7a6e0c;
     display: inline;
     font-variant: small-caps;
 }
 #detail_albiste_izen_abizenak:after ,
-.view-albisteak-azala .views-field-value:after,
 .view-albisteak .views-field-value:after {
     content: ".";
 }
 
 #detail_etiketak_non,
-.view-albisteak-azala .views-field-tid,
 .view-albisteak .views-field-tid {
     display: inline;
     .label;
 }
+
 .view-albisteak-etiketak .view-content {
     column-count: 2;
     -webkit-column-count: 2;
+    -moz-column-count: 2;
 }
 
 .view-albisteak-etiketak .views-row.views-row-first {
@@ -176,14 +37,14 @@
     a { text-decoration:none;}
 }
 
-#detail_albiste_data,
+.node_date,
 .view-albisteak-azala .views-field-created,
 .view-albisteak .views-field-created {
-    color: #7a6e0c;
+    color: @brown;
     display: inline;
 }
 
-#detail_albiste_data:before,
+.node_date:before,
 .view-albisteak-azala .views-field-created:before ,
 .view-albisteak .views-field-created:before {
     content: ".";
@@ -257,6 +118,9 @@
 body.node-type-albiste div.panel-panel .inside {
     margin: 0;
 }
+body.node-type-albiste div.panel-col-first .pane-field-embeddedimages h2 {
+    margin-top: 2px;
+}
 body.node-type-albiste div.panel-col-first {
     width: 0px;
     margin-left: 0px;
@@ -271,23 +135,17 @@ body.node-type-albiste div.panel-col {
     width: 700px;
     margin-left: 0px;
     margin-right: 0px;
-    padding-top:1.6em;
+    padding-top: 10px;
 }
 body.node-type-albiste.albiste_has_sidebar div.panel-col {
     width: 380px;
     margin-left: 10px;
     margin-right: 10px;
-    padding-top:1.6em;
 }
 body.node-type-albiste div.panel-col-last {
     width:220px;
     margin-left: 10px;
     margin-right: 10px;
-}
-
-#panel_detaile_albiste .submitted {
-    border-bottom: 2px solid #7a6e0c;
-    color: #7a6e0c;
 }
 
 #panel_detaile_albiste .field-field-embeddedimages .field-items,
@@ -301,7 +159,7 @@ body.node-type-albiste div.panel-col-last {
     border: solid 3px #2d3c01;
 }
 #panel_detaile_albiste .view-field-bideo-erlazionatuak {
-    background-color: #f5f5cc;
+    background-color: @pale_gray;
     padding: 10px;
     .rounded_border;
 }
@@ -317,7 +175,7 @@ body.node-type-albiste div.panel-col-last {
 
 #panel_detaile_albiste .panel-col-last .pane-field-erlazionatuak h2,
 #panel_detaile_albiste .panel-col-last .pane-albisteak h2 {
-    padding-left: 20px;
+    padding-bottom: 2px;
     color: #2d3c01;
     margin: 0;
     border-bottom: solid 1px #cccc00;
@@ -325,9 +183,9 @@ body.node-type-albiste div.panel-col-last {
 }
 #panel_detaile_albiste .panel-col-last .pane-field-erlazionatuak,
 #panel_detaile_albiste .panel-col-last .pane-albisteak {
-    background-color: #e6e680;
-    padding: 10px 0 10px 0;
-    border: solid 1px #cccc00;
+    background-color: @pale_green;
+    padding: 2px 0 10px 0;
+    border: solid 1px @green;
     .rounded_border;
 }
 #panel_detaile_albiste .panel-col-last .view-albisteak .views-field-title {
@@ -335,7 +193,7 @@ body.node-type-albiste div.panel-col-last {
     font-weight: normal;
     font-size: 13px;
     font-family: @body_fonts;
-    color: #2d3c01;
+    color: @dark_green;
 }
 
 #panel_detaile_albiste .panel-col-last .view-albisteak .views-field-changed {
@@ -349,13 +207,13 @@ body.node-type-albiste div.panel-col-last {
 
 #panel_detaile_albiste .panel-col-last .field-field-erlazionatuak .field-item a,
 #panel_detaile_albiste .panel-col-last .view-albisteak .views-field-title a {
-    color: #2d3c01;
+    color: @dark_green;
     text-decoration: none;
 }
 
 #panel_detaile_albiste .panel-col-last .field-field-erlazionatuak .odd,
 #panel_detaile_albiste .panel-col-last .view-albisteak .views-row-odd {
-    background-color: #f5f5cc;
+    background-color: @pale_gray;
 }
 
 #panel_detaile_albiste .panel-col-last .field-field-erlazionatuak .even,
@@ -371,7 +229,7 @@ body.node-type-albiste div.panel-col-last {
 #albiste_eranskin_mota {
     float:right;
     margin-top:-1.5em;
-    color:#969E80;
+    color:@dark_gray;
     font-size:1.2em;
 }
 
@@ -379,7 +237,7 @@ body.node-type-albiste div.panel-col-last {
     float: right;
     margin: .4em 0;
     padding: .3em 0;
-    color:#969E60;
+    color:@dark_gray;
 }
 
 #deialdi_etiketak,
@@ -395,13 +253,6 @@ body.node-type-albiste div.panel-col-last {
 
 #deialdi_etiketak a,
 #albiste_etiketak a {
-    color:#969E60;
+    color:@dark_gray;
     text-decoration: none;
-}
-
-/* Azaleko albisteak 1.1*/
-.view-display-albisteak-2gunea {
-    .views-row {
-}
-
 }

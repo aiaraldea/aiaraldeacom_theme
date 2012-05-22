@@ -1,8 +1,3 @@
-#top-blocks {
-/*    height: 100px;*/
-/*    background-color: red;*/
-}
-
 #top-blocks .block-openx {
     display: block;
     margin-bottom: 2px;
@@ -12,18 +7,22 @@
     background: url(../img/publizitatea_b.gif) no-repeat left;
     padding-left: 10px;
     height: 90px;
-/*    border: 1px solid blue;*/
-/*    float: left;*/
 }
 
 #block-openx-0 {
-    width: 736px;
+    width: 738px;
     height: 90px;
-    border: 1px solid #000;
-    margin-right: 6px;
+    border: 1px solid #f5f5cc;
+    margin-right: 4px;
 }
 #block-openx-1 {
     width: 214px;
     height: 90px;
-    border: 1px solid green;
+    border: 1px solid #f5f5cc;
+}
+.pane-openx-2 .pane-content a {width:300px; height: 250px;display: block;}
+.pane-openx-2 .pane-content {
+    background: url(../img/publizitatea_h.gif) no-repeat right top;
+    padding: 10px 0 0 0;
+    a {width:300px; height: 250px;display: block;}
 }

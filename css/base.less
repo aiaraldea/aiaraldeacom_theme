@@ -5,6 +5,7 @@
 @brown: #7A6E0C;
 @green: #cccc00;
 @pale_green: #e6e680;
+@aiark01: #B3AC77;
 
 @body_fonts: Tahoma, Verdana, Arial, Helvetica, "Bitstream Vera Sans", sans-serif;
 @news_title_fonts: Georgia, 'Times New Roman', Times, serif;
@@ -61,13 +62,23 @@
 }
 
 .label_container {
-    background-color: #F5F5CC;
     margin: .4em;
     padding: .3em;
+    background-color: @pale_gray;
     .rounded_border;
 }
 
 .label() {
-    color: #7a6e0c;
+    color: @brown;
     font-weight: bolder;
+}
+.gradient() {
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffffff 0%, #f6f6f6 62%, #ededed 75%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(62%,#f6f6f6), color-stop(75%,#ededed)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#f6f6f6 62%,#ededed 75%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #ffffff 0%,#f6f6f6 62%,#ededed 75%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #ffffff 0%,#f6f6f6 62%,#ededed 75%); /* IE10+ */
+    background: linear-gradient(top,  #ffffff 0%,#f6f6f6 62%,#ededed 75%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
 }

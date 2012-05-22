@@ -57,7 +57,7 @@
     </h2>
     <div class="submitted">
       <span class="node_date" id="detail_proposamena_date">
-            <?php print format_date($node->created, 'custom' , 'y.m.d'); ?>
+            <?php print format_date($node->created, 'custom' , 'Y.M.d'); ?>
       </span>
     </div>
     <?php if ($unpublished): ?>
@@ -67,9 +67,6 @@
     <?php if ($submitted || $terms): ?>
     <?php endif; ?>
 
-      <div id="detail_proposamena_service_links">
-      <?php print $node->service_links_rendered; ?>
-      </div>
     <div class="content" id="detail_proposamena_content">
       <div id="detail_proposamena_irudia">
       <?php print $node->field_proposamena_irudia[0]['view']; ?>
@@ -89,6 +86,9 @@
       </div>
 
     </div>
+      <div id="detail_proposamena_service_links">
+      <?php print $node->service_links_rendered; ?>
+      </div>
 
     <?php print $links; ?>
 

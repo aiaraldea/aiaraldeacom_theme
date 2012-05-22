@@ -60,15 +60,15 @@
     <?php endif; ?>
 
     <div class="submitted">
+        <span id="detail_etiketak_non">
+              <?php print aiaraldeacom_taxonomy_links($node, 2, "bideoak/"); ?>
+        </span>
       <span class="node_date" id="detail_bideo_date">
-         > <?php print format_date($node->created, 'custom' , 'y.m.d'); ?>
+          <?php print format_date($node->created, 'custom' , 'Y.M.d'); ?>
       </span>
     </div>
     <div class="content" id="detail_bideo_content">
 
-      <div id="detail_bideo_service_links">
-      <?php print $node->service_links_rendered; ?>
-      </div>
       <div id="detail_bideo_koadro">
         <div id="detail_bideo_bideo">
         <?php print $node->field_bideo[0]['view']; ?>
@@ -92,6 +92,9 @@
         </div>
       <?php endif ?>
 
+      <div id="detail_bideo_service_links">
+      <?php print $node->service_links_rendered; ?>
+      </div>
     </div>
 
     <?php print $links; ?>

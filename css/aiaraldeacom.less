@@ -49,10 +49,6 @@ body
 {
 }
 
-a {
-    color: #2d3c01;
-}
-
 /** header **/
 #header
 {
@@ -1021,35 +1017,37 @@ h1.title{
     .rounded_border;
 }
 
+.gradient_footer() {
+    background: #eddfc6; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffffff 0%, #eddfc6 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#eddfc6)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#eddfc6 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #ffffff 0%,#eddfc6 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #ffffff 0%,#eddfc6 100%); /* IE10+ */
+    background: linear-gradient(top,  #ffffff 0%,#eddfc6 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eddfc6',GradientType=0 ); /* IE6-9 */
+}
 #closure-blocks {
+    color: @aiark01;
     width: 960px;
-    background-color: #2d3c01;
-    background-image: url('../img/oinarenlogotipoa.png');
-    background-position:left bottom;
-    background-repeat:no-repeat;
-    margin:1em auto;
-    .rounded_border;
+    margin: 10px auto;
+    a {
+        color: @aiark01;
+    }
+    .adr_cnt {
+        .rounded_border;
+        .gradient_footer();
+    }
+    address {
+        padding: 60px 0 10px 0;
+        background-image: url('../img/oinarenlogotipoa2.png');
+        background-position:left bottom;
+        background-repeat:no-repeat;
+    }
 }
 
-#oina_eposta_helbideak a {
-    color: #E6E680;
-    text-decoration: none;
-}
-#oina_eposta_helbideak {
-    width: 40%;
-    float: left;
-    padding: 40px 2em .5em 2em;
-    margin-left: 100px;
-    color: #E6E680;
-}
-
-#oina_helbide_fisikoa {
-    background-image: url('../img/oinarenatzekoaldea.png');
-    background-position: right top;
-    background-repeat: no-repeat;
-    text-align: right;
-    color: #969e80;
-    padding: 40px 2em .5em 2em;
+.street-address , .tel{
+    display: block;
 }
 
 body.front #user-login-form div.item-list {
@@ -1062,82 +1060,10 @@ body.front #user-login-form div.item-list {
     clear:both;
     padding:0.4em;
     text-align:center;
-    background-color:#F5F5CC;
+    background-color:@pale_gray;
     .rounded_border;
 }
 
-/* bideo nodoa */
-
-.most_viewed_pane .pane-content,
-#detail_bideo_ikusienak .pane-content{
-    background-color: #f5f5cc;
-    .rounded_border;
-}
-#detail_bideo_ikusienak .views-row {
-    width: 162px;
-    display: inline-block;
-    padding: 32px;
-    vertical-align:top;
-}
-/*
-#detail_bideo_ikusienak .views-row-odd {
-    border-top: solid 4px white;
-    border-right: solid 2px white;
-}
-
-#detail_bideo_ikusienak .views-row-even {
-    border-top: solid 4px white;
-    border-left: solid 2px white;
-}
-
-#detail_bideo_ikusienak .views-row-1,
-#detail_bideo_ikusienak .views-row-2 {
-    border-top: none;
-}*/
-
-.most_viewed_pane img,
-#detail_bideo_ikusienak img {
-    .green_boxed_image;
-}
-
-.most_viewed_pane .views-field-title,
-#detail_bideo_ikusienak .views-field-title {
-    background-image: url('../img/arrow_aiaraldea.png');
-    background-position: left top;
-    background-repeat: no-repeat;
-    padding-left: 14px;
-    margin-top: 8px;
-    color: #2d3c01;
-}
-
-.most_viewed_pane .views-field-title a,
-#detail_bideo_ikusienak .views-field-title a {
-    color: #2d3c01;
-    text-decoration: none;
-}
-#detail_bideo_ikusienak .views-field-created {
-    padding-left: 14px;
-    color: #2d3c01;
-    font-weight: bold;
-}
-
-#detail_bideo_koadro {
-    background-color:#cccc00;
-    padding: 10px;
-    .rounded_border;
-}
-
-#detail_bideo_bideo {
-    background-color:#f5f5cc;
-    margin-bottom:10px;
-    padding: 6px;
-    text-align: center;
-    .rounded_border;
-}
-#detail_bideo_body {
-    color: #2D3C01;
-    padding: 12px;
-}
 
 #detail_service_links,
 #detail_bideo_service_links,
@@ -1151,22 +1077,6 @@ body.front #user-login-form div.item-list {
     border-top: solid 2px #cccc00;
     margin-top: 0;
     padding: 6px 0;
-}
-
-#detail_bideo_referrers_title {
-    margin-top: 12px;
-    color: #cccc00;
-}
-#detail_bideo_referrers ul {
-    border-bottom: solid 2px #cccc00;
-    border-top: solid 2px #cccc00;
-    margin-top: 0;
-    padding: 6px 18px;
-    color: #2d3c01;
-}
-#detail_bideo_referrers a {
-    text-decoration: none;
-    color: #2d3c01;
 }
 
 /* Agenda */

@@ -14,8 +14,8 @@ body.front #content-area > .panel-2col  .panel-col-first,
 #panels_pages_agenda .panel-col-last,
 body.node-type-deialdi #content .panel-2col .panel-col-first,
 body.node-type-deialdi #content .panel-2col .panel-col-last,
-body.node-type-bideo #content .panel-2col .panel-col-first,
-body.node-type-bideo #content .panel-2col .panel-col-last {
+body.node-type-bideo #content .panel-2col-stacked .panel-col-first,
+body.node-type-bideo #content .panel-2col-stacked .panel-col-last {
     width: 460px;
     margin: 10px;
 }
@@ -26,8 +26,8 @@ body.node-type-bideo #content .panel-2col .panel-col-last {
 #panels_pages_agenda .panel-col-last .inside,
 body.node-type-deialdi #content .panel-2col .panel-col-first .inside,
 body.node-type-deialdi #content .panel-2col .panel-col-last .inside,
-body.node-type-bideo #content .panel-2col .panel-col-first .inside,
-body.node-type-bideo #content .panel-2col .panel-col-last .inside,
+body.node-type-bideo #content .panel-2col-stacked .panel-col-first .inside,
+body.node-type-bideo #content .panel-2col-stacked .panel-col-last .inside,
 body.node-type-proposamena div.panel-col-first .inside,
 body.node-type-proposamena div.panel-col-last .inside {
     margin: 0px;

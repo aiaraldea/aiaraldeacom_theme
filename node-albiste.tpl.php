@@ -83,8 +83,8 @@
         <span id="detail_etiketak_non">
               <?php print aiaraldeacom_taxonomy_links($node, 2, "albisteak/"); ?>
         </span>
-        <span id="detail_albiste_data">
-              <?php print format_date($node->created, 'custom' , 'y.M.d h:m'); ?>
+        <span id="detail_albiste_data" class="node_date">
+              <?php print format_date($node->created, 'custom' , 'Y.M.d h:m'); ?>
         </span>
       </div>
         <?php endif; ?>

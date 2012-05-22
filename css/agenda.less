@@ -11,7 +11,7 @@
     float: left;
 }
 #azala_agenda_agenda a {
-    color: #2d3c01;
+    color: @dark_green;
     font-weight: bolder;
     text-decoration: none;
 }
@@ -19,24 +19,34 @@
     float: left;
 }
 #azala_agenda_deialdiak a {
-    color: #2d3c01;
+    color: @dark_green;
     text-decoration: none;
 }
 #azala_agenda_adi {
-    color: #2d3c01;
+    color: @dark_green;
     font-weight: bolder;
     text-align: right;
     border-bottom: #cccc00 solid 2px;
 }
 
-div.pane-views-agenda-block-1 div.view-display-id-block_1 {
-    background-color: #e6e680;
-    padding: 1em;
+div.pane-orri-nagusiko-agenda > .pane-content {
+    background-color: @pale_green;
+    padding: 10px;
     border-radius: 6px;
     -ms-border-radius: 6px;
     -khtml-border-radius: 6px;
     -moz-border-radius: 6px;
     -webkit-border-radius: 6px;
+
+    .deialdi-nabarmena {
+        background-color: @green;
+            margin: 0 -10px;
+            padding: 0 10px 10px 10px;
+        img {
+            margin: 0 -10px;
+            padding: 0 -10px;
+        }
+    }
 }
 
 div.view-agenda div.views-field-tid-1 {

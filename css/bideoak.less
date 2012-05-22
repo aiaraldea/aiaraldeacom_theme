@@ -10,7 +10,12 @@
     .rounded_border;
 }
 
-.pane-orri-nagusiko-bideoak-autumn-2011 {
+#mini-panel-orri_nagusiko_mult_geh .view-azken-bideoak-1-2 {
+        background-color: @green;
+        padding: 10px;
+        .rounded_border;
+}
+.pane-orri-nagusiko-bideoak-a2011 {
     background-color: transparent;
     padding: 0px;
     
@@ -27,19 +32,6 @@
         .views-field-field-bideo-embed {
             margin-left: -6px;
             margin-right: -6px;
-        }
-        .views-field-body {
-            background-color: @pale_gray;
-            margin: -6px;
-            padding: 6px;
-            float:none;
-        }
-        .views-field-comment-count {
-            background-color: @pale_gray;
-            margin: 0 -6px;
-            padding: 0 6px;
-            float:none;
-            text-align: right;
         }
     }
     
@@ -227,5 +219,96 @@ div.view-azken-bideoak.view-display-id-panel_pane_1 .views-field-created {
 #detail_bideo_ikusienak h2.pane-title {
     background-color: white;
     margin-bottom: 6px;
+    margin-top: -8px;   
 }
+
+/* bideo nodoa */
+
+.most_viewed_pane .pane-content,
+#detail_bideo_ikusienak .pane-content{
+    background-color: @pale_gray;
+    .rounded_border;
+}
+#detail_bideo_ikusienak .views-row {
+    width: 162px;
+    display: inline-block;
+    padding: 32px;
+    vertical-align:top;
+}
+/*
+#detail_bideo_ikusienak .views-row-odd {
+    border-top: solid 4px white;
+    border-right: solid 2px white;
+}
+
+#detail_bideo_ikusienak .views-row-even {
+    border-top: solid 4px white;
+    border-left: solid 2px white;
+}
+
+#detail_bideo_ikusienak .views-row-1,
+#detail_bideo_ikusienak .views-row-2 {
+    border-top: none;
+}*/
+
+.most_viewed_pane img,
+#detail_bideo_ikusienak img {
+    .green_boxed_image;
+}
+
+.most_viewed_pane .views-field-title,
+#detail_bideo_ikusienak .views-field-title {
+    background-image: url('../img/arrow_aiaraldea.png');
+    background-position: left top;
+    background-repeat: no-repeat;
+    padding-left: 14px;
+    margin-top: 8px;
+    color: @dark_green;
+}
+
+.most_viewed_pane .views-field-title a,
+#detail_bideo_ikusienak .views-field-title a {
+    color: @dark_green;
+    text-decoration: none;
+}
+#detail_bideo_ikusienak .views-field-created {
+    padding-left: 14px;
+    color: @dark_green;
+    font-weight: bold;
+}
+
+#detail_bideo_koadro {
+    margin: 10px 0;
+    padding: 10px;
+    background-color:@green;
+    .rounded_border;
+}
+
+#detail_bideo_bideo {
+    margin-bottom:10px;
+    padding: 6px;
+    text-align: center;
+    background-color: @pale_gray;
+    .rounded_border;
+}
+#detail_bideo_body {
+    color: @dark_green;
+    padding: 12px;
+}
+#detail_bideo_referrers_title {
+    margin-top: 12px;
+    color: #cccc00;
+}
+#detail_bideo_referrers ul {
+    border-bottom: solid 2px #cccc00;
+    border-top: solid 2px #cccc00;
+    margin-top: 0;
+    padding: 6px 18px;
+    color: @dark_green;
+}
+#detail_bideo_referrers a {
+    text-decoration: none;
+    color: @dark_green;
+}
+
 

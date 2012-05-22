@@ -110,11 +110,16 @@
       <div id="skip-to-nav"><a href="#navigation"><?php print t('Skip to Navigation'); ?></a></div>
     <?php endif; ?>
 
+      <?php if ($absolute_top): ?>
+        <div id="top-blocks" class="region region-header clearfix">
+          <?php print $absolute_top; ?>
+        </div> <!-- /#header-blocks -->
+      <?php endif; ?>
     <div id="header"><div id="header-inner" class="clear-block">
 
       <?php if ($logo || $site_name || $site_slogan): ?>
-        <div id="logo-title">
-
+        <div id="logo-title" class="container_12">
+          <div class="grid_6">
           <?php if ($logo): ?>
             <div id="logo"><a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" id="logo-image" /></a></div>
           <?php endif; ?>
@@ -138,7 +143,20 @@
           <?php if ($site_slogan): ?>
             <div id="site-slogan"><?php print $site_slogan; ?></div>
           <?php endif; ?>
-
+          </div>
+            <div id="search-box-a">
+              <?php print $search_box; ?>
+            </div> <!-- /#search-box -->
+          <div id="header-social-networks-c">
+            <ul id="header-social-networks">
+              <li class="sprite-rss"><a href="<?php print $base_path ?>rss-jarioak" title="Aiaraldearen RSS jarioak"></a></li>
+              <li class="sprite-facebook"><a href="http://www.facebook.com/aiaraldea" title="Aiaraldea Facebook-en"></a></li>
+              <li class="sprite-twitter"><a href="http://twitter.com/aiaraldea" title="Jarraitu Aiaraldea Twitter-ren"></a></li>
+              <li class="sprite-youtube"><a href="http://www.youtube.com/user/aiaraldeacom" title="Ikusi Aiaraldeko bideoak Youtuben"></a></li>
+              <li class="sprite-livestream"><a href="http://www.livestream.com/aiaraldea" title="Aiaraldea zuzenean Livestream-en"></a></li>
+              <li class="sprite-flickr"><a href="http://www.flickr.com/photos/aiaraldea/" title="Aiaraldeko argazkiak Flickr-en"></a></li>
+            </ul>
+            </div>
         </div> <!-- /#logo-title -->
       <?php endif; ?>
 
@@ -150,7 +168,7 @@
 
     </div></div> <!-- /#header-inner, /#header -->
 
-    <div id="main"><div id="main-inner" class="clear-block<?php if ($search_box || $primary_links || $secondary_links || $navbar) { print ' with-navbar'; } ?>">
+    <div id="main"><div id="main-inner" class="clear-block<?php if ($primary_links || $secondary_links || $navbar) { print ' with-navbar'; } ?>">
 
       <div id="content"><div id="content-inner">
 
@@ -170,29 +188,6 @@
             <?php if ($title): ?>
               <h1 class="title"><?php print $title; ?></h1>
             <?php endif; ?>
-              <span id="albiste_eranskin_mota">
-              <?php if($node->field_embeddedimages[0]['fid'] != NULL): ?>
-                [.jpg]
-              <?php endif; ?>
-              <?php if($node->field_bideo_erlazionatuak[0]['nid'] != NULL): ?>
-                [.tv]
-              <?php endif; ?>
-              <?php if($node->field_erantsi[0]['fid'] != NULL): ?>
-                [.pdf]
-              <?php endif; ?>
-              </span>
-              <span id="albiste_etiketak">
-              <?php
-                  $etiketak_vocabulary_id = 1;
-                  $etiketak_terms = taxonomy_node_get_terms_by_vocabulary($node, $etiketak_vocabulary_id);
-              ?>
-              <?php if (!empty($etiketak_terms)): ?>
-                  <?php print aiaraldeacom_taxonomy_links($node, $etiketak_vocabulary_id, "albisteak/"); ?>
-              <?php endif; ?>
-               </span>
-              <?php if($node->comment_count > 0):?>
-              <span id="albiste_iruzkin_zenbaketa"><?php print $node->comment_count?> erantzun</span>
-              <?php endif; ?>
             <?php print $messages; ?>
             <?php if ($tabs): ?>
               <div class="tabs"><?php print $tabs; ?></div>
@@ -217,16 +212,10 @@
 
       </div></div> <!-- /#content-inner, /#content -->
 
-      <?php if ($search_box || $primary_links || $secondary_links || $navbar): ?>
+      <?php if ($primary_links || $secondary_links || $navbar): ?>
         <div id="navbar"><div id="navbar-inner" class="clear-block region region-navbar">
 
           <a name="navigation" id="navigation"></a>
-
-          <?php if ($search_box): ?>
-            <div id="search-box">
-              <?php print $search_box; ?>
-            </div> <!-- /#search-box -->
-          <?php endif; ?>
 
           <?php if ($primary_links): ?>
             <div id="primary" class="clear-block">
