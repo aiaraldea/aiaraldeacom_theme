@@ -262,8 +262,8 @@
                 <li class="arrankudiaga"><a href="http://www.arrankudiaga.org/eu-ES/Orrialdeak/default.aspx"><span>Arrankudiaga-Zolloko Udala</span></a></li>
                 <li class="arakaldo"><a href="http://www.arakaldo.org/eu-ES/Orrialdeak/default.aspx"><span>Arakaldoko Udala</span></a></li>
                 <li class="aiara"><a href="http://www.aiarakoudala.com/index.php?option=com_k2&view=itemlist&layout=category&task=category&id=11&Itemid=2&lang=eu"><span>Aiarako Udala</span></a></li>
-                <li class="artziniega"><a href="http://www.artziniegakoudala.com/index.php?option=com_k2&view=itemlist&layout=category&task=category&id=11&Itemid=2&lang=eu"><span>Artziniegako Udala</span></a></li>
                 <li class="laudio"><a href="http://www.laudiokoudala.net/general/index_e.shtml"><span>Laudioko Udala</span></a></li>
+                <li class="artziniega"><a href="http://www.artziniegakoudala.com/index.php?option=com_k2&view=itemlist&layout=category&task=category&id=11&Itemid=2&lang=eu"><span>Artziniegako Udala</span></a></li>
                 <li class="okondo"><a href="http://www.okondokoudala.com/index.php?option=com_k2&view=itemlist&layout=category&task=category&id=11&Itemid=1&lang=eu"><span>Okondoko Udala</span></a></li>
                 <li class="amurrio"><a href="http://www.amurrio.org/eu/"><span>Amurrioko Udala</span></a></li>
                 <li class="urduña"><a href="http://www.urduna.com/euskera/08/intro.html"><span>Urduñako Udala</span></a></li>
