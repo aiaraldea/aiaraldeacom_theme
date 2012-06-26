@@ -3,43 +3,43 @@ $(document).ready(function () {
     // Albisteak
     $("#block-menu-menu-goiko-menua ul.menu li.first").mouseover(function() {
         $("#block-block-1").hide();
-        $("#block-views-menuaren_herri_zerrenda-block_1").hide();
-        $("#block-views-menuaren_herri_zerrenda-block_3").hide();
+        $("#block-views-menu_herri_zerrenda-b_deialdiak").hide();
+        $("#block-views-menu_herri_zerrenda-b_bideoak").hide();
         $("#block-panels_mini-proposamenak_menu").hide();
-        $("#block-views-menuaren_herri_zerrenda-block_2").show();
+        $("#block-views-menu_herri_zerrenda-b_albisteak").show();
     });
 
     // Agenda
     $($("#block-menu-menu-goiko-menua ul.menu li")[1]).mouseover(function() {
         $("#block-block-1").hide();
-        $("#block-views-menuaren_herri_zerrenda-block_2").hide();
-        $("#block-views-menuaren_herri_zerrenda-block_3").hide();
+        $("#block-views-menu_herri_zerrenda-b_albisteak").hide();
+        $("#block-views-menu_herri_zerrenda-b_bideoak").hide();
         $("#block-panels_mini-proposamenak_menu").hide();
-        $("#block-views-menuaren_herri_zerrenda-block_1").show();
+        $("#block-views-menu_herri_zerrenda-b_deialdiak").show();
     });
 
     // Bideoak
     $($("#block-menu-menu-goiko-menua ul.menu li")[2]).mouseover(function() {
         $("#block-block-1").hide();
-        $("#block-views-menuaren_herri_zerrenda-block_1").hide();
-        $("#block-views-menuaren_herri_zerrenda-block_2").hide();
+        $("#block-views-menu_herri_zerrenda-b_albisteak").hide();
+        $("#block-views-menu_herri_zerrenda-b_deialdiak").hide();
         $("#block-panels_mini-proposamenak_menu").hide();
-        $("#block-views-menuaren_herri_zerrenda-block_3").show();
+        $("#block-views-menu_herri_zerrenda-b_bideoak").show();
     });
 
     // Proposamenak
     $($("#block-menu-menu-goiko-menua ul.menu li")[4]).mouseover(function() {
         $("#block-block-1").hide();
-        $("#block-views-menuaren_herri_zerrenda-block_1").hide();
-        $("#block-views-menuaren_herri_zerrenda-block_2").hide();
-        $("#block-views-menuaren_herri_zerrenda-block_3").hide();
+        $("#block-views-menu_herri_zerrenda-b_albisteak").hide();
+        $("#block-views-menu_herri_zerrenda-b_deialdiak").hide();
+        $("#block-views-menu_herri_zerrenda-b_bideoak").hide();
         $("#block-panels_mini-proposamenak_menu").show();
     });
 
     showPlaceholder = function() {
-        $("#block-views-menuaren_herri_zerrenda-block_1").hide();
-        $("#block-views-menuaren_herri_zerrenda-block_2").hide();
-        $("#block-views-menuaren_herri_zerrenda-block_3").hide();
+        $("#block-views-menu_herri_zerrenda-b_albisteak").hide();
+        $("#block-views-menu_herri_zerrenda-b_deialdiak").hide();
+        $("#block-views-menu_herri_zerrenda-b_bideoak").hide();
         $("#block-panels_mini-proposamenak_menu").hide();
         $("#block-block-1").show();
     };
@@ -58,55 +58,55 @@ $(document).ready(function () {
     }));
 
     // Show only some towns for news
-    $("#block-views-menuaren_herri_zerrenda-block_2").css("overflow", "hidden");
-    $("#block-views-menuaren_herri_zerrenda-block_2").css("height", "1.2em");
-    $("#block-views-menuaren_herri_zerrenda-block_2").prepend("<div id='expand_herriak' style='float: right;'>[gehiago+]</div>");
+    $("#block-views-menu_herri_zerrenda-b_deialdiak").css("overflow", "hidden");
+    $("#block-views-menu_herri_zerrenda-b_deialdiak").css("height", "1.2em");
+    $("#block-views-menu_herri_zerrenda-b_deialdiak").prepend("<div id='expand_herriak' style='float: right;'>[gehiago+]</div>");
 
     var news_status = 0;
     $("#expand_herriak").click(function() {
         if (news_status == 0) {
             news_status = 1;
-            $("#block-views-menuaren_herri_zerrenda-block_2").css("height", "");
+            $("#block-views-menu_herri_zerrenda-b_deialdiak").css("height", "");
 	    $("#expand_herriak").text("[gutxiago-]");
         } else {
             news_status = 0;
-            $("#block-views-menuaren_herri_zerrenda-block_2").css("height", "1.2em");
+            $("#block-views-menu_herri_zerrenda-b_deialdiak").css("height", "1.2em");
 	    $("#expand_herriak").text("[gehiago+]");
         }
     });
 
     // Show only some towns for the videos
-    $("#block-views-menuaren_herri_zerrenda-block_3").css("overflow", "hidden");
-    $("#block-views-menuaren_herri_zerrenda-block_3").css("height", "1.2em");
-    $("#block-views-menuaren_herri_zerrenda-block_3").prepend("<div id='expand_bideoak' style='float: right;'>[gehiago+]</div>");
+    $("#block-views-menu_herri_zerrenda-b_bideoak").css("overflow", "hidden");
+    $("#block-views-menu_herri_zerrenda-b_bideoak").css("height", "1.2em");
+    $("#block-views-menu_herri_zerrenda-b_bideoak").prepend("<div id='expand_bideoak' style='float: right;'>[gehiago+]</div>");
 
     var bideoak_status = 0;
     $("#expand_bideoak").click(function() {
         if (bideoak_status == 0) {
             bideoak_status = 1;
-            $("#block-views-menuaren_herri_zerrenda-block_3").css("height", "");
+            $("#block-views-menu_herri_zerrenda-b_bideoak").css("height", "");
 	    $("#expand_bideoak").text("[gutxiago-]");
         } else {
             bideoak_status = 0;
-            $("#block-views-menuaren_herri_zerrenda-block_3").css("height", "1.2em");
+            $("#block-views-menu_herri_zerrenda-b_bideoak").css("height", "1.2em");
 	    $("#expand_bideoak").text("[gehiago+]");
         }
     });
 
     // Show only some towns for the agenda
-    $("#block-views-menuaren_herri_zerrenda-block_1").css("overflow", "hidden");
-    $("#block-views-menuaren_herri_zerrenda-block_1").css("height", "1.2em");
-    $("#block-views-menuaren_herri_zerrenda-block_1").prepend("<div id='expand_agenda' style='float: right;'>[gehiago+]</div>");
+    $("#block-views-menu_herri_zerrenda-b_albisteak").css("overflow", "hidden");
+    $("#block-views-menu_herri_zerrenda-b_albisteak").css("height", "1.2em");
+    $("#block-views-menu_herri_zerrenda-b_albisteak").prepend("<div id='expand_agenda' style='float: right;'>[gehiago+]</div>");
 
     var agenda_status = 0;
     $("#expand_agenda").click(function() {
         if (agenda_status == 0) {
             agenda_status = 1;
-            $("#block-views-menuaren_herri_zerrenda-block_1").css("height", "");
+            $("#block-views-menu_herri_zerrenda-b_albisteak").css("height", "");
 	    $("#expand_agenda").text("[gutxiago-]");
         } else {
             agenda_status = 0;
-            $("#block-views-menuaren_herri_zerrenda-block_1").css("height", "1.2em");
+            $("#block-views-menu_herri_zerrenda-b_albisteak").css("height", "1.2em");
 	    $("#expand_agenda").text("[gehiago+]");
         }
     });
