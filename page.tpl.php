@@ -266,6 +266,7 @@
                 <li class="urduña"><a href="http://www.urduna.com/euskera/08/intro.html"><span>Urduñako Udala</span></a></li>
             </ul>
         </div>
+        <div id="ej_logo" style="text-align: right"><a href="http://euskadi.net"></a></div>
     </div>
   <?php endif; ?>
 
