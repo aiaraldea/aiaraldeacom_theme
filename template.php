@@ -119,11 +119,12 @@ function aiaraldeacom_preprocess_page(&$vars, $hook) {
     $vars['template_files'][] = 'page-nodetype-'. $vars['node']->type;
   }
 
-drupal_add_feed(url('feed'), t('Guztiak'));
-drupal_add_feed(url('feed/albiste'), t('Albisteak'));
-drupal_add_feed(url('feed/deialdi'), t('Agenda'));
-drupal_add_feed(url('feed/proposamena'), t('Kultur Leihoa'));
-drupal_add_feed(url('feed/bideo'), t('Bideoak'));
+drupal_add_feed(url('feed'), t('Aiaraldea Komunikazio Leihoa'));
+drupal_add_feed(url('feed/albiste'), t('Aiaraldea - Albisteak'));
+drupal_add_feed(url('feed/deialdi'), t('Aiaraldea - Agenda'));
+drupal_add_feed(url('feed/proposamena'), t('Aiaraldea - Kultur Leihoa'));
+drupal_add_feed(url('feed/bideo'), t('Aiaraldea - Bideoak'));
+drupal_add_feed(url('feed/flickr_image_set'), t('Aiaraldea - Argazki bildumak'));
 
   $vars['head'] = drupal_get_html_head();
 }
