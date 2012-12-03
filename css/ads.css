@@ -1,28 +1,33 @@
-#top-blocks .block-openx {
+#top-blocks .block-openx,
+#top-blocks .block-adzerk {
     display: block;
     margin-bottom: 2px;
     float: left;
 }
-#top-blocks .block-openx .content {
+#top-blocks .block-openx .content,
+#top-blocks .block-adzerk .content {
     background: url(../img/publizitatea_b.gif) no-repeat left;
     padding-left: 10px;
     height: 90px;
 }
 
-#block-openx-0 {
+#block-openx-0, 
+#block-adzerk-azk24056 {
     width: 738px;
     height: 90px;
     border: 1px solid #f5f5cc;
     margin-right: 4px;
 }
-#block-openx-1 {
+#block-openx-1,
+#block-adzerk-azk22008 {
     width: 214px;
     height: 90px;
     border: 1px solid #f5f5cc;
 }
+.pane-adzerk-azk49793 a,
 .pane-openx-2 .pane-content a {width:300px; height: 250px;display: block;}
+.pane-adzerk-azk49793 .pane-content,
 .pane-openx-2 .pane-content {
     background: url(../img/publizitatea_h.gif) no-repeat right top;
     padding: 10px 0 0 0;
-    a {width:300px; height: 250px;display: block;}
 }
