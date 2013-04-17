@@ -48,7 +48,7 @@ $(document).ready(function () {
     $($("#block-menu-menu-goiko-menua ul.menu li")[3]).mouseover(showPlaceholder);
     $($("#block-menu-menu-goiko-menua ul.menu li")[5]).mouseover(showPlaceholder);
     $($("#block-menu-menu-goiko-menua ul.menu li")[6]).mouseover(showPlaceholder);
-//    $($("#block-menu-menu-goiko-menua ul.menu li")[7]).mouseover(showPlaceholder);
+    $($("#block-menu-menu-goiko-menua ul.menu li")[7]).mouseover(showPlaceholder);
 //    $($("#block-menu-menu-goiko-menua ul.menu li")[8]).mouseover(showPlaceholder);
     
     // Guztiak
