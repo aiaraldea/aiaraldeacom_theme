@@ -47,7 +47,10 @@ stylesheets[all][]   = css/argazkiak.less
 stylesheets[all][]   = css/comments.less
 stylesheets[all][]   = css/ads.css
 stylesheets[all][]   = css/short_notices.less
+stylesheets[all][]   = css/irratia.less
+stylesheets[all][]   = mediaelement/mediaelementplayer.min.css
 stylesheets[print][] = css/print.css
+
 conditional-stylesheets[if lt IE 7][all][] = css/layout_aiaraldea_960_ie6.css
   ; To prevent stylesheets of a base theme or of a module from being included in
   ; our sub-theme, we specify it in our .info file (and we don't need to have a
@@ -64,6 +67,8 @@ scripts[] = js/goiko-menua.js
 scripts[] = js/node-albiste.js
   ; scripts[] = js/azala-bideoak.js
 scripts[] = js/egutegia.js
+scripts[] = mediaelement/mediaelement-and-player.min.js
+scripts[] = js/irratia.js
 
   ; The regions defined in Zen's default page.tpl.php file.  The name in
   ; brackets is the name of the variable in the page.tpl.php file, (e.g.
