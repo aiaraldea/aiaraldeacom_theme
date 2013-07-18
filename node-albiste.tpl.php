@@ -103,6 +103,9 @@
       </div>
       <?php // print $content; ?>
     </div>
+    <?php if(user_is_anonymous()): ?>
+    <div id="comment-form" class="comentar-link"> <a href="/komunitatea-login">Sartu</a> edo <a href="/komunitatea-login/">erregistratu</a> iruzkina idazteko </div>
+    <?php endif ?>
 
     <?php print $links; ?>
 

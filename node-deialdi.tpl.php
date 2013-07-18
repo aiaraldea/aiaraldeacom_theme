@@ -131,6 +131,14 @@
 
     </div>
 
+  <div class="k-koment">
+    <?php if(user_is_anonymous()): ?>
+      <div id="comment-form" class="comentar-link"> <a href="/komunitatea-login">Sartu</a> edo <a href="/komunitatea-login/">erregistratu</a> iruzkina idazteko </div>
+    <?php else: ?>
+    <div id="comment-form" class="comentar-link"> <?php print l(t('Komentatu'), 'node/'.$node->nid, array('fragment' => 'comment-form')) ?></div>
+    <?php endif ?>
+ </div>
+
     <?php print $links; ?>
 
   </div></div> <!-- /node-inner, /node -->

@@ -412,4 +412,12 @@ function aiaraldeacom_menu_item($link, $has_children, $menu = '', $in_active_tra
   }
 
   return '<li class="'. $class .'">'. $link . $menu ."</li>\n";
-} 
+}
+
+//sobre escribimos el theme del twitter para que no devualva nada y no aparezca el enlace
+function aiaraldeacom_twitter_signin_button() {
+  $img_path = drupal_get_path('module', 'twitter_signin') . '/images/';
+  $img = $img_path . variable_get('twitter_signin_button', 'Sign-in-with-Twitter-lighter-small.png');
+
+  //return l(theme('image', $img, t('Sign in with Twitter')), 'twitter/redirect/ddd', array('html' => TRUE));
+}

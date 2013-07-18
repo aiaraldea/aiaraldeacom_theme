@@ -50,53 +50,62 @@
 ?>
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?>"><div class="node-inner">
 
-    <?php print $picture; ?>
+  <?php print $picture; ?>
 
-    <?php if ($unpublished): ?>
+ 
+
+  <?php if ($unpublished): ?>
     <div class="unpublished"><?php print t('Unpublished'); ?></div>
-    <?php endif; ?>
+  <?php endif; ?>
 
-    <?php if ($submitted || $terms): ?>
-    <?php endif; ?>
+  <?php if ($submitted || $terms): ?>
+    <div class="meta">
+      <?php if ($submitted): ?>
+           <div class="submitted">
 
-    <div class="submitted">
-        <span id="detail_etiketak_non">
-              <?php print aiaraldeacom_taxonomy_links($node, 2, "bideoak/"); ?>
+            <?php
+            $nodeUser->uid = $node->uid;
+            profile_load_profile($nodeUser);
+            $user = user_load($node->uid);
+            ?>
+
+        <span id="detail_albiste_img">
+          <?php print theme_image($user->picture); ?>
         </span>
-      <span class="node_date" id="detail_bideo_date">
-          <?php print format_date($node->created, 'custom' , 'Y.M.d'); ?>
-      </span>
-    </div>
-    <div class="content" id="detail_bideo_content">
-
-      <div id="detail_bideo_koadro">
-        <div id="detail_bideo_bideo">
-        <?php print $node->field_bideo[0]['view']; ?>
-        </div>
-        <div id="detail_bideo_body">
-        <?php print $node->content['body']['#value']; ?>
-        </div>
-        <div id="detail_bideo_deskarga">
-        <?php print $node->field_deskarga[0]['view']; ?>
-        </div>
+        <span id="detail_albiste_izen_abizenak">
+              <?php print $user->name; ?>
+        </span>
+        <span id="detail_etiketak_non">
+              <?php print aiaraldeacom_taxonomy_links($node, 9, "komunitatea/"); ?>
+        </span>
+        <span id="detail_etiketak_non_arloak">
+              <?php print aiaraldeacom_taxonomy_links($node, 7, "komunitatea/"); ?>
+        </span>
+        <span id="detail_albiste_data" class="node_date">
+              <?php print format_date($node->created, 'custom' , 'Y.M.d h:m'); ?>
+        </span>
       </div>
+      <?php endif; ?>
 
-      <?php if (count($node->field_rererrers) > 0): ?>
-        <div id="detail_bideo_referrers_title">Eduki erlazionatuak:</div>
-        <div id="detail_bideo_referrers">
-        <?php
-        foreach ($node->field_rererrers as $referrer) {
-          print $referrer['view'];
-        }
-        ?>
-        </div>
-      <?php endif ?>
-
-      <div id="detail_bideo_service_links">
-      <?php print $node->service_links_rendered; ?>
-      </div>
     </div>
-    
-    <?php print $links; ?>
+  <?php endif; ?>
 
-  </div></div> <!-- /node-inner, /node -->
+   <?php if (!$page): ?>
+    <h2 class="title">
+      <a href="<?php print $node_url; ?>" title="<?php print $title ?>"><?php print $title; ?></a>
+    </h2>
+  <?php endif; ?>
+
+  <div class="content">
+    <?php print $content; ?>
+  </div>
+  <div class="k-koment">
+    <?php if(user_is_anonymous()): ?>
+      <div id="comment-form" class="comentar-link"> <a href="/komunitatea-login">Sartu</a> edo <a href="/komunitatea-login/">erregistratu</a> iruzkina idazteko </div>
+    <?php else: ?>
+    <div id="comment-form" class="comentar-link"> <?php print l(t('Komentatu'), 'node/'.$node->nid, array('fragment' => 'comment-form')) ?></div>
+    <?php endif ?>
+  </div>
+  
+
+</div></div> <!-- /node-inner, /node -->

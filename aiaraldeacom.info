@@ -48,6 +48,7 @@ stylesheets[all][]   = css/comments.less
 stylesheets[all][]   = css/ads.css
 stylesheets[all][]   = css/short_notices.less
 stylesheets[all][]   = css/irratia.less
+stylesheets[all][]   = css/komunitatea.less
 stylesheets[all][]   = mediaelement/mediaelementplayer.min.css
 stylesheets[print][] = css/print.css
 
