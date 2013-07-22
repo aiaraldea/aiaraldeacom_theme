@@ -142,6 +142,7 @@
               <li class="sprite-youtube"><a href="http://www.youtube.com/user/aiaraldeacom" title="Ikusi Aiaraldeko bideoak Youtuben"></a></li>
               <li class="sprite-livestream"><a href="http://www.livestream.com/aiaraldea" title="Aiaraldea zuzenean Livestream-en"></a></li>
               <li class="sprite-flickr"><a href="http://www.flickr.com/photos/aiaraldea/" title="Aiaraldeko argazkiak Flickr-en"></a></li>
+              <li class="sprite-komunitatea"><a href="/komunitatea" title="Aiaraldea Komunitatea"></a></li>
             </ul>
             </div>
         </div> <!-- /#logo-title -->
