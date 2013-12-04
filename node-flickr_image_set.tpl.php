@@ -61,24 +61,15 @@
   <?php if ($unpublished): ?>
     <div class="unpublished"><?php print t('Unpublished'); ?></div>
   <?php endif; ?>
-
-    <div id="detail_service_links">
-      <?php print $service_links_rendered; ?>
+    
+    <div class="submitted">
+        <span id="detail_etiketak_non">
+              <?php print aiaraldeacom_taxonomy_links($node, 2, "argazkiak/"); ?>
+        </span>
+      <span class="node_date" id="detail_bideo_date">
+          <?php print format_date($node->created, 'custom' , 'Y.M.d'); ?>
+      </span>
     </div>
-  <?php if ($submitted || $terms): ?>
-    <div class="meta">
-      <?php if ($submitted): ?>
-        <div class="submitted">
-          <?php print $submitted; ?>
-        </div>
-      <?php endif; ?>
-
-      <?php if ($terms): ?>
-        <div class="terms terms-inline"><?php print t(' in ') . $terms; ?></div>
-      <?php endif; ?>
-    </div>
-  <?php endif; ?>
-
   <div class="content">
     <div id="detail_node_body">
     <?php print $node->content['body']['#value']; ?>
@@ -86,6 +77,12 @@
     <?php print $field_photo_set_rendered; ?>
   </div>
 
+    <span id="detail_etiketak_etiketak" class="etiketak">
+              <?php print aiaraldeacom_taxonomy_links($node, 1, "argazkiak/"); ?>
+        </span>
+    <div id="detail_service_links">
+      <?php print $service_links_rendered; ?>
+    </div>
   <?php print $links; ?>
 
 </div></div> <!-- /node-inner, /node -->
