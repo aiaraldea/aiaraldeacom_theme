@@ -68,7 +68,18 @@
             profile_load_profile($nodeUser);
             $user = user_load($node->uid);
             ?>
-
+          <span id="detail_albiste_img">
+           <?php print theme_image($user->picture); ?>
+         </span>
+         <span id="detail_albiste_izen_abizenak">
+               <?php print $user->name; ?>
+         </span>
+         <span id="detail_etiketak_non">
+               <?php print aiaraldeacom_taxonomy_links($node, 9, "komunitatea/"); ?>
+         </span>
+         <span id="detail_etiketak_non_arloak">
+               <?php print aiaraldeacom_taxonomy_links($node, 7, "komunitatea/"); ?>
+         </span>
         <span id="detail_albiste_data" class="node_date">
               <?php print format_date($node->created, 'custom' , 'Y.M.d h:m'); ?>
         </span>
