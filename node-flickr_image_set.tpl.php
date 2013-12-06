@@ -83,6 +83,10 @@
     <div id="detail_service_links">
       <?php print $service_links_rendered; ?>
     </div>
+    
+    <?php if(user_is_anonymous()): ?>
+    <div id="comment-form" class="comentar-link"> <a href="/komunitatea-login">Sartu</a> edo <a href="/komunitatea-login/">erregistratu</a> iruzkina idazteko </div>
+    <?php endif ?>
   <?php print $links; ?>
 
 </div></div> <!-- /node-inner, /node -->
