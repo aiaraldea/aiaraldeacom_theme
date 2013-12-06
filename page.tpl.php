@@ -87,6 +87,7 @@
   <?php print $head; ?>
   <?php print $styles; ?>
   <?php print $scripts; ?>
+  <meta property="twitter:account_id" content="1512917237" />
 </head>
 <body class="<?php print $body_classes; ?>">
 

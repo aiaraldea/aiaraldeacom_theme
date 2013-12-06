@@ -28,7 +28,7 @@ $(document).ready(function () {
     });
 
     // Proposamenak
-    $($("#block-menu-menu-goiko-menua ul.menu li")[4]).mouseover(function() {
+    $($("#block-menu-menu-goiko-menua ul.menu li")[3]).mouseover(function() {
         $("#block-block-1").hide();
         $("#block-views-menu_herri_zerrenda-b_albisteak").hide();
         $("#block-views-menu_herri_zerrenda-b_deialdiak").hide();
@@ -45,11 +45,12 @@ $(document).ready(function () {
     };
 
     // Nor gara
-    $($("#block-menu-menu-goiko-menua ul.menu li")[3]).mouseover(showPlaceholder);
+    $($("#block-menu-menu-goiko-menua ul.menu li")[4]).mouseover(showPlaceholder);
     $($("#block-menu-menu-goiko-menua ul.menu li")[5]).mouseover(showPlaceholder);
     $($("#block-menu-menu-goiko-menua ul.menu li")[6]).mouseover(showPlaceholder);
     $($("#block-menu-menu-goiko-menua ul.menu li")[7]).mouseover(showPlaceholder);
-//    $($("#block-menu-menu-goiko-menua ul.menu li")[8]).mouseover(showPlaceholder);
+    $($("#block-menu-menu-goiko-menua ul.menu li")[8]).mouseover(showPlaceholder);
+    $($("#block-menu-menu-goiko-menua ul.menu li")[9]).mouseover(showPlaceholder);
     
     // Guztiak
     $("#block-menu-menu-goiko-menua ul.menu li").bind('mouseover', (function() {
