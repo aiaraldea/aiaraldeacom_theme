@@ -5,6 +5,7 @@ $(document).ready(function () {
         $("#block-block-1").hide();
         $("#block-views-menu_herri_zerrenda-b_deialdiak").hide();
         $("#block-views-menu_herri_zerrenda-b_bideoak").hide();
+        $("#block-views-menu_herri_zerrenda-b_argazkiak").hide();
         $("#block-panels_mini-proposamenak_menu").hide();
         $("#block-views-menu_herri_zerrenda-b_albisteak").show();
     });
@@ -14,6 +15,7 @@ $(document).ready(function () {
         $("#block-block-1").hide();
         $("#block-views-menu_herri_zerrenda-b_albisteak").hide();
         $("#block-views-menu_herri_zerrenda-b_bideoak").hide();
+        $("#block-views-menu_herri_zerrenda-b_argazkiak").hide();
         $("#block-panels_mini-proposamenak_menu").hide();
         $("#block-views-menu_herri_zerrenda-b_deialdiak").show();
     });
@@ -23,6 +25,7 @@ $(document).ready(function () {
         $("#block-block-1").hide();
         $("#block-views-menu_herri_zerrenda-b_albisteak").hide();
         $("#block-views-menu_herri_zerrenda-b_deialdiak").hide();
+        $("#block-views-menu_herri_zerrenda-b_argazkiak").hide();
         $("#block-panels_mini-proposamenak_menu").hide();
         $("#block-views-menu_herri_zerrenda-b_bideoak").show();
     });
@@ -32,20 +35,32 @@ $(document).ready(function () {
         $("#block-block-1").hide();
         $("#block-views-menu_herri_zerrenda-b_albisteak").hide();
         $("#block-views-menu_herri_zerrenda-b_deialdiak").hide();
+        $("#block-views-menu_herri_zerrenda-b_argazkiak").hide();
         $("#block-views-menu_herri_zerrenda-b_bideoak").hide();
         $("#block-panels_mini-proposamenak_menu").show();
+    });
+
+    // Argazki bildumak
+    $($("#block-menu-menu-goiko-menua ul.menu li")[4]).mouseover(function() {
+        $("#block-block-1").hide();
+        $("#block-views-menu_herri_zerrenda-b_albisteak").hide();
+        $("#block-views-menu_herri_zerrenda-b_deialdiak").hide();
+        $("#block-views-menu_herri_zerrenda-b_argazkiak").show();
+        $("#block-views-menu_herri_zerrenda-b_bideoak").hide();
+        $("#block-panels_mini-proposamenak_menu").hide();
     });
 
     showPlaceholder = function() {
         $("#block-views-menu_herri_zerrenda-b_albisteak").hide();
         $("#block-views-menu_herri_zerrenda-b_deialdiak").hide();
+        $("#block-views-menu_herri_zerrenda-b_argazkiak").hide();
         $("#block-views-menu_herri_zerrenda-b_bideoak").hide();
         $("#block-panels_mini-proposamenak_menu").hide();
         $("#block-block-1").show();
     };
 
     // Nor gara
-    $($("#block-menu-menu-goiko-menua ul.menu li")[4]).mouseover(showPlaceholder);
+//    $($("#block-menu-menu-goiko-menua ul.menu li")[4]).mouseover(showPlaceholder);
     $($("#block-menu-menu-goiko-menua ul.menu li")[5]).mouseover(showPlaceholder);
     $($("#block-menu-menu-goiko-menua ul.menu li")[6]).mouseover(showPlaceholder);
     $($("#block-menu-menu-goiko-menua ul.menu li")[7]).mouseover(showPlaceholder);
@@ -111,7 +126,29 @@ $(document).ready(function () {
 	    $("#expand_agenda").text("[gehiago+]");
         }
     });
-    
+   
+
+    // Show only some towns for the photos
+    $("#block-views-menu_herri_zerrenda-b_argazkiak").css("overflow", "hidden");
+    $("#block-views-menu_herri_zerrenda-b_argazkiak").css("height", "1.2em");
+    $("#block-views-menu_herri_zerrenda-b_argazkiak").prepend("<div id='expand_argazkiak' style='float: right;'>[gehiago+]</div>");
+
+    var argazkiak_status = 0;
+    $("#expand_argazkiak").click(function() {
+        if (argazkiak_status == 0) {
+            argazkiak_status = 1;
+            $("#block-views-menu_herri_zerrenda-b_argazkiak").css("height", "");
+            $("#expand_argazkiak").text("[gutxiago-]");
+        } else {
+            argazkiak_status = 0;
+            $("#block-views-menu_herri_zerrenda-b_argazkiak").css("height", "1.2em");
+            $("#expand_argazkiak").text("[gehiago+]");
+        }
+    });
+
+
+
+ 
     $(".block-dynamic_persistent_menu ul.dynamic-persistent-menu-sub-menu").css("overflow", "hidden");
     $(".block-dynamic_persistent_menu ul.dynamic-persistent-menu-sub-menu").css("height", "1.2em");
     $(".block-dynamic_persistent_menu ul.dynamic-persistent-menu-sub-menu").each(function() {
