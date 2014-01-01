@@ -127,6 +127,11 @@ drupal_add_feed(url('feed/bideo'), t('Aiaraldea - Bideoak'));
 drupal_add_feed(url('feed/flickr_image_set'), t('Aiaraldea - Argazki bildumak'));
 
   $vars['head'] = drupal_get_html_head();
+$vars['head'] .= '<link '. drupal_attributes(array(
+    'rel' => 'stylesheet',
+    'type' => 'text/css',
+    'href' => '//fonts.googleapis.com/css?family=Open+Sans|Exo+2:400,100')
+  ) ." />\n";
 }
 
 /**
@@ -421,3 +426,4 @@ function aiaraldeacom_twitter_signin_button() {
 
   //return l(theme('image', $img, t('Sign in with Twitter')), 'twitter/redirect/ddd', array('html' => TRUE));
 }
+
