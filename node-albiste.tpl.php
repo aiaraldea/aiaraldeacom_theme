@@ -70,23 +70,22 @@
     <?php if ($submitted || $terms): ?>
     <div class="meta">
         <?php if ($submitted): ?>
-      <div class="submitted">
-
+        <div class="submitted">
             <?php
             $nodeUser->uid = $node->uid;
             profile_load_profile($nodeUser);
             ?>
 
-        <span id="detail_albiste_izen_abizenak">
-              <?php print $nodeUser->profile_izen_abizenak; ?>
-        </span>
-        <span id="detail_etiketak_non">
-              <?php print aiaraldeacom_taxonomy_links($node, 2, "albisteak/"); ?>
-        </span>
-        <span id="detail_albiste_data" class="node_date">
-              <?php print format_date($node->created, 'custom' , 'Y.M.d h:m'); ?>
-        </span>
-      </div>
+            <span id="detail_albiste_izen_abizenak" class="zerrendak-egilea">
+                <?php print $nodeUser->profile_izen_abizenak; ?>
+            </span>
+            <span id="detail_etiketak_non">
+                <?php print aiaraldeacom_taxonomy_links($node, 2, "albisteak/"); ?>
+            </span>
+            <span id="detail_albiste_data" class="node_date">
+                <?php print format_date($node->created, 'custom', 'Y.M.d h:m'); ?>
+            </span>
+         </div>
         <?php endif; ?>
     </div>
     <?php endif; ?>

@@ -24,6 +24,22 @@
     background-position: center left;
     background-repeat: no-repeat;
 }
+
+.label() {
+    color: @brown;
+    font-weight: bolder;
+}
+.gradient() {
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffffff 0%, #f6f6f6 62%, #ededed 75%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(62%,#f6f6f6), color-stop(75%,#ededed)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#f6f6f6 62%,#ededed 75%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #ffffff 0%,#f6f6f6 62%,#ededed 75%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #ffffff 0%,#f6f6f6 62%,#ededed 75%); /* IE10+ */
+    background: linear-gradient(top,  #ffffff 0%,#f6f6f6 62%,#ededed 75%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+}
+
 .section_title {
     font-size: 1em;
     padding-left: 1em;
@@ -51,57 +67,12 @@
     border: solid 6px @green;
 }
 
-.list_item_title {
-    font-weight: bolder;
-    color: @dark_green;
-    padding-top: .4em;
-    a {
-        color: @dark_green;
-        text-decoration: none;
-    }
-}
-
 .label_container {
     margin: .4em;
     padding: .3em;
     background-color: @pale_gray;
     .rounded_border;
 }
-
-.label() {
-    color: @brown;
-    font-weight: bolder;
-}
-.gradient() {
-    background: #ffffff; /* Old browsers */
-    background: -moz-linear-gradient(top,  #ffffff 0%, #f6f6f6 62%, #ededed 75%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(62%,#f6f6f6), color-stop(75%,#ededed)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,  #ffffff 0%,#f6f6f6 62%,#ededed 75%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top,  #ffffff 0%,#f6f6f6 62%,#ededed 75%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top,  #ffffff 0%,#f6f6f6 62%,#ededed 75%); /* IE10+ */
-    background: linear-gradient(top,  #ffffff 0%,#f6f6f6 62%,#ededed 75%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
-}
-
 .view-komunitatearen-home .views-row {
     margin: 40px 0px;
-}
-
-.zerrendak-egilea {
-    color: #7a6e0c;
-    display: inline;
-    font-variant: small-caps;
-    a {color: #7a6e0c;}
-}
-
-.zerrendak-izenburua {
-    border-top: @brown solid 1px;
-    /*    font-weight: bolder;*/
-    font-weight: bold;
-    color: #2d3c01;
-    padding: 5px 0;
-    font-size: 22px;
-    line-height: 1em;
-    font-family: @news_title_fonts;
-    margin: 1px 0 5px 0;
 }

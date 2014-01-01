@@ -45,6 +45,7 @@ stylesheets[all][]   = css/base.less
 stylesheets[all][]   = css/bideoak.less
 stylesheets[all][]   = css/argazkiak.less
 stylesheets[all][]   = css/comments.less
+stylesheets[all][]   = css/content.less
 stylesheets[all][]   = css/ads.css
 stylesheets[all][]   = css/short_notices.less
 stylesheets[all][]   = css/irratia.less
