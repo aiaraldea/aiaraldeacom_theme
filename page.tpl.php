@@ -269,6 +269,10 @@
             </ul>
         </div>
         <div id="ej_logo" style="text-align: right"><a href="http://euskadi.net"></a></div>
+<div style="padding:10px; text-align:center;">
+<span><a href="/aiaraldea/lege-oharra">Lege oharra</a></span> | 
+<span><a href="/aiaraldea/nor-gara">Nor gara</a></span>
+</div>
     </div>
   <?php endif; ?>
 

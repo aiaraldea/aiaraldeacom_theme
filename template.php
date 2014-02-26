@@ -130,7 +130,7 @@ drupal_add_feed(url('feed/flickr_image_set'), t('Aiaraldea - Argazki bildumak'))
 $vars['head'] .= '<link '. drupal_attributes(array(
     'rel' => 'stylesheet',
     'type' => 'text/css',
-    'href' => '//fonts.googleapis.com/css?family=Open+Sans:400italic,400,700|Exo:700,200')
+    'href' => '//fonts.googleapis.com/css?family=Open+Sans:400italic,400,700|Exo:700,400,200')
   ) ." />\n";
 }
 
