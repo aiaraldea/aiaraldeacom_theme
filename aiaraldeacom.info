@@ -49,6 +49,8 @@ stylesheets[all][]   = css/ads.css
 stylesheets[all][]   = css/short_notices.less
 stylesheets[all][]   = css/irratia.less
 stylesheets[all][]   = css/komunitatea.less
+stylesheets[all][]   = css/search.less
+stylesheets[all][]   = css/chrome-font-fix.css
 stylesheets[all][]   = mediaelement/mediaelementplayer.min.css
 stylesheets[print][] = css/print.css
 
@@ -71,6 +73,7 @@ scripts[] = js/egutegia.js
 scripts[] = mediaelement/mediaelement-and-player.min.js
 scripts[] = js/irratia.js
 scripts[] = js/aktualitatea.js
+;scripts[] = js/chrome-font-fix.js
 
   ; The regions defined in Zen's default page.tpl.php file.  The name in
   ; brackets is the name of the variable in the page.tpl.php file, (e.g.

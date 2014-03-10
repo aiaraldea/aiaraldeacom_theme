@@ -85,8 +85,6 @@
 <head>
   <title><?php print $head_title; ?></title>
   <?php print $head; ?>
-  <?php print $styles; ?>
-  <?php print $scripts; ?>
 </head>
 
     <?php
@@ -290,6 +288,8 @@
     </div>
   <?php endif; ?>
 
+  <?php print $styles; ?>
+  <?php print $scripts; ?>
   <?php print $closure; ?>
 
 </body>

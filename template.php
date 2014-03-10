@@ -115,7 +115,7 @@ function aiaraldeacom_preprocess(&$vars, $hook) {
  */
 function aiaraldeacom_preprocess_page(&$vars, $hook) {
   // Add page template suggestions based on node type, if we aren't editing the node.
-  if ($vars['node'] && arg(2) != 'edit') {
+  if (array_key_exists('node', $vars) && arg(2) != 'edit') {
     $vars['template_files'][] = 'page-nodetype-'. $vars['node']->type;
   }
 
