@@ -22,8 +22,8 @@ a {
 }
 
 h2.pane-title {
-    color: #2d3c01;
-    border-bottom: solid 2px #2d3c01;
+    color: @dark_green;
+    border-bottom: solid 2px @dark_green;
     padding-left: 20px;
     text-transform: uppercase;
     font-weight: 400;
@@ -34,8 +34,8 @@ h2.pane-title {
 #panel_detaile_argazki_bildumak .submitted,
 #panel_detaile_bideo .submitted,
 #panel_detaile_albiste .submitted {
-    border-bottom: 2px solid #7a6e0c;
-    color: #7a6e0c;
+    border-bottom: 2px solid @brown;
+    color: @brown;
 }
 #logo {
     float: none;
@@ -129,11 +129,14 @@ div#panels-ipe-control-container {
         text-decoration: none;
     }
 }
+.zerrendak-ilara {
+  clear:both;
+}
 
 .zerrendak-izenburua {
     border-top: #ccc solid 1px;
     font-weight: bold;
-    color: #2d3c01;
+    color: @dark_green;
     padding: 5px 0;
     font-size: 26px;
     line-height: 1.1em;
@@ -142,13 +145,43 @@ div#panels-ipe-control-container {
 }
 
 .zerrendak-egilea {
-    color: #7a6e0c;
+    color: @brown;
     display: inline;
     font-variant: small-caps;
-    a {color: #7a6e0c;}
+    a {color: @brown;}
 }
 
+.zerrendak-egilea:after {
+    content: ".";
+}
+.zerrendak-herria {
+    display: inline;
+    .label;
+    a {color: @brown;}
+}
+.zerrendak-argitaratze-data {
+    color: @brown;
+    display: inline;
+}
 
+.zerrendak-argitaratze-data:before {
+    content: ".";
+}
+
+.zerrendak-irudia {
+  float: left;
+  margin: 5px 10px 5px 0;
+}
+
+.zerrendak-iruzkina {
+  text-align: right;
+  a{
+    color: @dark_gray;
+    font-weight: bolder;
+    text-decoration: none;
+    font-style: italic;
+  }
+}
 
 /* Etiketen alboko barra */
 .view-albokoa-etiketak .view-content,
