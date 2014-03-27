@@ -1,0 +1,38 @@
+/*++++++++++++++++++++++++++++++++++++++++++++++++++
+Copyright (c) 2001-2014. Matteo Bicocchi (Pupunzi);
+http://pupunzi.com/mb.components/mb.miniAudioPlayer/demo/skinMaker.html
+
+MAP custom skin: aiaraldea
+borderRadius: 5
+background: rgba(45, 60, 1, 1)
+icons: rgba(255, 255, 255, 1)
+border: rgba(255, 255, 255, 1)
+borderLeft: #333333
+borderRight: #000000
+mute: #cccccc
+download: rgba(230, 230, 128, 1)
+downloadHover: #000000
+++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+/* Older browser (IE8) 
+   not supporting rgba() */ 
+.mbMiniPlayer.aiaraldea table span{background-color:#2d3c01;}
+.mbMiniPlayer.aiaraldea .map_download{color: #e6e680;}
+.mbMiniPlayer.aiaraldea table span{color: #ffffff;}
+.mbMiniPlayer.aiaraldea table {border: 1px solid #ffffff !important;}
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.mbMiniPlayer.aiaraldea table{background-color:transparent; border-radius:5px !important;}
+.mbMiniPlayer.aiaraldea.shadow table{box-shadow:0 0 3px #000000;}
+.mbMiniPlayer.aiaraldea table span{background-color:rgba(45, 60, 1, 1);}
+.mbMiniPlayer.aiaraldea table span.map_play{border-left:1px solid #333333; border-radius:0 4px 4px 0 !important;}
+.mbMiniPlayer.aiaraldea table span.map_volume{border-right:1px solid #000000; border-radius:4px 0 0 4px !important;}
+.mbMiniPlayer.aiaraldea table span.map_volume.mute{color: #cccccc;}
+.mbMiniPlayer.aiaraldea .map_download{color: rgba(230, 230, 128, 1);}
+.mbMiniPlayer.aiaraldea .map_download:hover{color: #ffffff;}
+.mbMiniPlayer.aiaraldea table span{color: rgba(255, 255, 255, 1);text-shadow: 1px -1px 1px #000!important;}
+.mbMiniPlayer.aiaraldea table span{color: rgba(255, 255, 255, 1);}
+.mbMiniPlayer.aiaraldea table {border: 1px solid rgba(255, 255, 255, 1) !important;}
+.mbMiniPlayer.aiaraldea table span.map_title{color: #000; text-shadow:none!important}
+/*++++++++++++++++++++++++++++++++++++++++++++++++*/

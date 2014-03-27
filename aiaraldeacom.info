@@ -51,6 +51,7 @@ stylesheets[all][]   = css/irratia.less
 stylesheets[all][]   = css/komunitatea.less
 stylesheets[all][]   = css/search.less
 stylesheets[all][]   = css/chrome-font-fix.css
+stylesheets[all][]   = css/miniplayer-aiaraldea.css
 stylesheets[all][]   = mediaelement/mediaelementplayer.min.css
 stylesheets[print][] = css/print.css
 
