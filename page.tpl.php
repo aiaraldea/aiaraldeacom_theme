@@ -84,10 +84,44 @@
 
 <head>
   <title><?php print $head_title; ?></title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
   <?php print $head; ?>
   <?php print $styles; ?>
   <?php print $scripts; ?>
+  
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="/favicon-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<meta name="msapplication-TileColor" content="#3d3e06">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+  
   <meta property="twitter:account_id" content="1512917237" />
+  <?php if ($is_front): ?>
+<script type="application/ld+json">
+{
+   "@context": "http://schema.org",
+   "@type": "WebSite",
+   "url": "http://www.aiaraldea.eus/",
+   "potentialAction": {
+     "@type": "SearchAction",
+     "target": "http://www.aiaraldea.eus/search/apachesolr_search/{search_term_string}",
+     "query-input": "required name=search_term_string"
+   }
+}
+</script>
+  <?php endif; ?>
 </head>
 <body class="<?php print $body_classes; ?>">
 
@@ -271,6 +305,7 @@
         <div id="ej_logo" style="text-align: right"><a href="http://euskadi.net"></a></div>
 <div style="padding:10px; text-align:center;">
 <span><a href="/aiaraldea/lege-oharra">Lege oharra</a></span> | 
+<span><a href="/aiaraldea/cookiak">Cookie-ak</a></span> | 
 <span><a href="/aiaraldea/nor-gara">Nor gara</a></span>
 </div>
     </div>

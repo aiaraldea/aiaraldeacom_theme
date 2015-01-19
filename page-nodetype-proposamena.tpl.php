@@ -273,6 +273,7 @@
 
 <div style="padding:10px; text-align:center;">
 <span><a href="/aiaraldea/lege-oharra">Lege oharra</a></span> | 
+<span><a href="/aiaraldea/cookiak">Cookie-ak</a></span> | 
 <span><a href="/aiaraldea/nor-gara">Nor gara</a></span>
 </div>
 

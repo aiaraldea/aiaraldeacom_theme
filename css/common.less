@@ -117,6 +117,7 @@ div#panels-ipe-control-container {
 }
 
 .etiketak,
+#content-area .content .etiketak,
 #deialdi_etiketak,
 #albiste_etiketak {
     padding: .2em;
@@ -183,6 +184,19 @@ div#panels-ipe-control-container {
   }
 }
 
+.alboko-menuak {
+  background-color: #ebebeb;
+  color: #544b3c;
+  font-weight: bolder;
+  margin: 0.4em;
+  padding: 0.3em;
+  text-transform: uppercase;
+}
+
+.kutxa-nabarmendua {
+  padding: 6px;
+  background-color: #e9e6e2;
+}
 /* Etiketen alboko barra */
 .view-albokoa-etiketak .view-content,
 .view-albokoa-etiketak .view-content {
@@ -212,4 +226,14 @@ div#panels-ipe-control-container {
 
 .pane-orri-nagusiko-agenda .panel-region-separator {
     height: 5px;
+}
+
+
+.node_date {
+    color: @brown;
+    display: inline;
+}
+
+.node_date:before {
+    content: ".";
 }

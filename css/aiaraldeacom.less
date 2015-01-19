@@ -636,7 +636,7 @@ and for any blocks placed in the footer region */
 .more-link /* Aggregator, blog, and forum more link */
 {
     text-align: right;
-    background-color: #E9E6E2;
+    background-color: @pale_gray;
     padding: 4px 8px;
     margin: 8px 0;
 }
@@ -807,221 +807,7 @@ h1.title{
     line-height: 1.1em;
 }
 
-/* Goiko menua */
-/* goiko menuaren menu nagusia */
-#block-dynamic_persistent_menu-0 {
-    background-color: @dark_gray;
-    min-height: 3.6em;
-    .rounded_border;
-}
-.block-dynamic_persistent_menu ul.dynamic-persistent-menu-menu {
-    margin: 0;
-    padding: 0.2em;
-    background-color: #cccc00;
-    border-radius: .5em .5em 0em 0em;
-    -webkit-border-top-left-radius: .5em;
-    -webkit-border-top-right-radius: .5em;
-    -moz-border-radius: .5em .5em 0em 0em;
-    -ms-border-radius: .5em .5em 0em 0em;
-    -khtml-border-radius: .5em .5em 0em 0em;
-    border-bottom: solid 1px white;
-}
-.block-dynamic_persistent_menu ul.dynamic-persistent-menu-menu li {
-    list-style: none;
-    padding: 0.2em .6em;
-    border-right: #ffffff solid 1px;
-}
-.block-dynamic_persistent_menu ul.dynamic-persistent-menu-menu li a {
-    color: #969e60;
-    /*font-weight: bold;*/
-    font-weight: bolder;
-    text-decoration: none;
-    padding: .2em .5em;
-    border-radius: .5em .5em 0em 0em;
-    -webkit-border-top-left-radius: .5em;
-    -webkit-border-top-right-radius: .5em;
-    -moz-border-radius: .5em .5em 0em 0em;
-    -ms-border-radius: .5em .5em 0em 0em;
-    -khtml-border-radius: .5em .5em 0em 0em;
-}
-.block-dynamic_persistent_menu ul.dynamic-persistent-menu-menu li.dynamic-persistent-menu-children-active a {
-    background-color: #969e80;
-    color: #2d3c01;
-}
-.block-dynamic_persistent_menu ul.dynamic-persistent-menu-menu li.active-trail a,
-.block-dynamic_persistent_menu ul.dynamic-persistent-menu-menu li a.active {
-    color: #2d3c01;
-}
-
-.block-dynamic_persistent_menu ul.dynamic-persistent-menu-sub-menu {
-    margin-top: 1px;
-    background-color: #969e80;
-    padding: 0.2em;
-    border-radius: .5em .5em 0em 0em;
-    -webkit-border-bottom-left-radius: .5em;
-    -webkit-border-bottom-right-radius: .5em;
-    -moz-border-radius: 0em 0em .5em .5em;
-    -ms-border-radius: 0em 0em .5em .5em;
-    -khtml-border-radius: 0em 0em .5em .5em;
-}
-
-.block-dynamic_persistent_menu ul.dynamic-persistent-menu-sub-menu li {
-    border: none;
-}
-.block-dynamic_persistent_menu ul.dynamic-persistent-menu-sub-menu li a {
-    color: #2d3c01;
-    font-weight: bolder;
-    text-decoration: none;
-}
-.block-dynamic_persistent_menu ul.dynamic-persistent-menu-sub-menu li {
-    padding: 0.2em 1.5em;
-}
-
-
-
-#block-menu-menu-goiko-menua,
-.goiko-menua {
-    margin-bottom: .1em;
-}
-#block-menu-menu-goiko-menua li {
-    display: inline;
-    list-style: none;
-    padding: 0.2em .6em;
-    border-right: #ffffff solid 1px;
-}
-#block-menu-menu-goiko-menua li.last,
-.goiko-menua li.last {
-    display: inline;
-    list-style: none;
-    border-right: none;
-}
-#block-menu-menu-goiko-menua li.active-trail a,
-.goiko-menua li.active-trail a {
-    color: #2d3c01;
-}
-#block-menu-menu-goiko-menua li a {
-    color: @dark_green;
-    /*font-weight: bold;*/
-    font-weight: bolder;
-    text-decoration: none;
-    padding: .2em .5em;
-    border-radius: .5em .5em 0em 0em;
-    -webkit-border-top-left-radius: .5em;
-    -webkit-border-top-right-radius: .5em;
-    -moz-border-radius: .5em .5em 0em 0em;
-    -ms-border-radius: .5em .5em 0em 0em;
-    -khtml-border-radius: .5em .5em 0em 0em;
-}
-#block-menu-menu-goiko-menua ul {
-    margin: 0;
-    padding: 0.2em;
-    background-color: #cccc00;
-    border-radius: .5em .5em 0em 0em;
-    -webkit-border-top-left-radius: .5em;
-    -webkit-border-top-right-radius: .5em;
-    -moz-border-radius: .5em .5em 0em 0em;
-    -ms-border-radius: .5em .5em 0em 0em;
-    -khtml-border-radius: .5em .5em 0em 0em;
-}
-
-/* goiko menuaren herrien zerrenda */
-.view-menu-herri-zerrenda div,
-.view-menuaren-herri-zerrenda div {
-    display: inline;
-}
-
-#block-views-menu_herri_zerrenda-b_albisteak h2,
-#block-views-menu_herri_zerrenda-b_deialdiak h2,
-#block-views-menu_herri_zerrenda-b_bideoak h2,
-#block-views-menu_herri_zerrenda-b_argazkiak h2,
-#block-views-menuaren_herri_zerrenda-block_3 h2,
-#block-views-menuaren_herri_zerrenda-block_2 h2,
-#block-views-menuaren_herri_zerrenda-block_1 h2,
-#block-panels_mini-proposamenak_menu h2 {
-    display: none;
-}
-
-#block-block-1 {
-    height: 1.2em;
-    background-color: #969e80;
-    padding: 0.2em;
-    border-radius: 0em 0em .5em .5em;
-    -webkit-border-bottom-left-radius: .5em;
-    -webkit-border-bottom-right-radius: .5em;
-    -moz-border-radius: 0em 0em .5em .5em;
-    -ms-border-radius: 0em 0em .5em .5em;
-    -khtml-border-radius: 0em 0em .5em .5em;
-}
-
-#block-views-menu_herri_zerrenda-b_albisteak,
-#block-views-menu_herri_zerrenda-b_deialdiak,
-#block-views-menu_herri_zerrenda-b_bideoak,
-#block-views-menu_herri_zerrenda-b_argazkiak,
-#block-views-menuaren_herri_zerrenda-block_3,
-#block-views-menuaren_herri_zerrenda-block_2,
-#block-views-menuaren_herri_zerrenda-block_1,
-#block-panels_mini-proposamenak_menu {
-    display: none;
-    background-color: #969e80;
-    padding: 0.2em;
-    border-radius: 0em 0em .5em .5em;
-    -webkit-border-bottom-left-radius: .5em;
-    -webkit-border-bottom-right-radius: .5em;
-    -moz-border-radius: 0em 0em .5em .5em;
-    -ms-border-radius: 0em 0em .5em .5em;
-    -khtml-border-radius: 0em 0em .5em .5em;
-}
-
-#block-views-menu_herri_zerrenda-b_albisteak a,
-#block-views-menu_herri_zerrenda-b_deialdiak a,
-#block-views-menu_herri_zerrenda-b_bideoak a,
-#block-views-menu_herri_zerrenda-b_argazkiak a,
-#block-views-menuaren_herri_zerrenda_2-block_3 a,
-#block-views-menuaren_herri_zerrenda_2-block_2 a,
-#block-views-menuaren_herri_zerrenda_2-block_1 a,
-#block-views-menuaren_herri_zerrenda-block_3 a,
-#block-views-menuaren_herri_zerrenda-block_2 a,
-#block-views-menuaren_herri_zerrenda-block_1 a,
-#block-panels_mini-proposamenak_menu a {
-    color: #2d3c01;
-    font-weight: bolder;
-    text-decoration: none;
-}
-#block-views-menu_herri_zerrenda-b_albisteak .views-row,
-#block-views-menu_herri_zerrenda-b_deialdiak .views-row,
-#block-views-menu_herri_zerrenda-b_bideoak .views-row,
-#block-views-menu_herri_zerrenda-b_argazkiak .views-row,
-#block-views-menuaren_herri_zerrenda-block_3 .views-row,
-#block-views-menuaren_herri_zerrenda-block_2 .views-row,
-#block-views-menuaren_herri_zerrenda-block_1 .views-row,
-#block-panels_mini-proposamenak_menu .views-row {
-    padding: 0.2em 1.5em;
-}
-
-#block-menu-menu-goiko-menua .goiko_menua_irekia a {
-    background-color: #969e80;
-    color: #2d3c01;
-}
-#block-menu-menu-goiko-menua .goiko_menua_irekia a {
-}
-
-/* Goiko menuaren proposamen motak */
-#block-panels_mini-proposamenak_menu {
-    height: 1.2em;
-}
-#block-panels_mini-proposamenak_menu div {
-    display: inline;
-}
-#block-panels_mini-proposamenak_menu div.views-admin-links {
-    display: none;
-}
-/* Goiko menuaren bukaera */
-
 /* Albisteen zerrendak */
-#mini-panel-orri_nagusiko_bideo_berriak div.panel-separator {
-    display: none;
-}
-
 #detail_etiketak_non a {
     text-decoration: none;
     color: #7a6e0c;
@@ -1048,6 +834,7 @@ h1.title{
     background: linear-gradient(top,  #ffffff 0%,#eddfc6 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eddfc6',GradientType=0 ); /* IE6-9 */
 }
+
 #closure-blocks {
     color: @dark_gray;
     width: 960px;
@@ -1106,7 +893,6 @@ body.front #user-login-form div.item-list {
     width: 400px;
 }
 
-
 /* pager */
 .item-list .pager {
     clear:both;
@@ -1115,7 +901,6 @@ body.front #user-login-form div.item-list {
     background-color:@pale_gray;
     .rounded_border;
 }
-
 
 #detail_service_links,
 #detail_bideo_service_links,
@@ -1129,77 +914,6 @@ body.front #user-login-form div.item-list {
     border-top: solid 2px #cccc00;
     margin-top: 0;
     padding: 6px 0;
-}
-
-/* Agenda */
-div.view-egutegia {
-    background-color: #cccc00;
-    padding: 1em 0;
-    .rounded_border;
-}
-
-div.view-egutegia div.attachment{
-    padding: 1em;
-    color: #2d3c01;
-}
-
-div.view-egutegia div.attachment a {
-    color: #2d3c01;
-    text-decoration: none;
-}
-
-#agenda_albokobarra_harremanetan div.pane-content {
-    background-color: #969e80;
-    padding: 10px;
-    .rounded_border;
-}
-#agenda_albokobarra_harremanetan .agenda_eposta {
-    text-align: right;
-    color:#e6e680;
-    font-size: 125%;
-}
-#agenda_albokobarra_harremanetan .agenda_eposta a {
-    color:#e6e680;
-    text-decoration:none;
-}
-
-#detail_noiz_etiketa,
-#detail_non_etiketa,
-#detail_lekua_etiketa,
-#detail_mota_etiketa,
-#detail_erantsiak_etiketa {
-    padding-left: 20px;
-    margin: .5em;
-    color: #cccc00;
-    font-weight: bold;
-    .arrow_background;
-}
-
-#detail_deialdi_non,
-#detail_deialdi_lekua,
-#detail_deialdi_mota,
-#detail_deialdi_noiz {
-    font-weight: bold;
-    padding-left: 20px;    
-}
-
-#detail_deialdi_non li,
-#detail_deialdi_lekua li,
-#detail_deialdi_mota li,
-#detail_deialdi_noiz li {
-    padding-left: 0px;
-}
-
-#detail_deialdi_non li a,
-#detail_deialdi_lekua li a,
-#detail_deialdi_mota li a,
-#detail_deialdi_noiz li a {
-    text-decoration: none;
-    color: #2d3c01;
-}
-
-#detail_deialdi_irudia img {
-    border: solid 3px #2d3c01;
 }
 
 .panel-region-separator {

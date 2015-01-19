@@ -1,151 +1,158 @@
 @import "base.less";
 
 /* Agenda */
-#azala_agenda_izenburua_div {
-    padding-left: 1em;
-    background-image: url('../img/arrow_aiaraldea.png');
-    background-position: left;
-    background-repeat: no-repeat;
-}
-#azala_agenda_agenda {
-    float: left;
-}
-#azala_agenda_agenda a {
-    color: @dark_green;
-    font-weight: bolder;
-    text-decoration: none;
-}
-#azala_agenda_deialdiak {
-    float: left;
-}
-#azala_agenda_deialdiak a {
-    color: @dark_green;
-    text-decoration: none;
-}
-#azala_agenda_adi {
-    color: @dark_green;
-    font-weight: bolder;
-    text-align: right;
-    border-bottom: #cccc00 solid 2px;
-}
-
-div.pane-orri-nagusiko-agenda > .pane-content {
-    background-color: #E9E6E2;
-    padding: 10px;
-
-    .deialdi-nabarmena {
-        
-            margin: 0 -10px;
-            padding: 0 10px;
-        
-    }
-}
-
-div.view-agenda div.views-field-tid-1 {
-    display: block;
-    float: left;
-    color: #2d3c01;
-    margin-top: 0.2em;
-}
-
-div.view-agenda div.views-field-field-lekua-value {
-    display: block;
-    float: left;
-     color: #000;
-    font-weight: 600;
-}
-
-div.view-agenda div.views-field-field-lekua-value:after {
-    content: ". ";
-}
-
-div.view-agenda div.views-field-title {
-    display: block;
-    color: #2d3c01;
-    font-weight: bolder;
-    margin-top: .2em;
-}
-div.view-agenda div.views-field-title a {
-    color: #2d3c01;
-    font-weight: bolder;
-    margin-top: .2em;
-}
-div.view-agenda div.views-field-title:before {
-    content: ":";
-}
-
-div.view-agenda div.views-field-tid {
-    display: block;
-    color: @dark_green;
-    font-weight: bolder;
-    // border-bottom: @dark_green solid 1px;
-    text-transform: uppercase;
-    margin-top: .4em;
-}
 .view-agenda-azala .views-row {
-border-bottom: 1px solid #ccc;
-margin-bottom: 5px;
-padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 5px;
+  padding-bottom: 10px;
 }
 
 .view-agenda-azala .views-row .views-row-first {
-border-bottom: 1px solid #ccc;
-margin-bottom: 5px;
-padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 5px;
+  padding-bottom: 10px;
 }
 
 .view-agenda-azala .views-row .views-row-last {
-border-bottom: none;
-
+  border-bottom: none;
 }
 
-.view-display-id-panel_pane_3 .views-row {
-margin-bottom: 0;
-
+div.view-agenda div.views-field-tid-1 {
+  display: block;
+  float: left;
+  color: @dark_green;
+  margin-top: 0.2em;
 }
 
+div.view-agenda div.views-field-field-lekua-value {
+  display: block;
+  float: left;
+  color: #000;
+  font-weight: 600;
+}
+
+div.view-agenda div.views-field-field-lekua-value:after {
+  content: ". ";
+}
+
+div.view-agenda div.views-field-title {
+  display: block;
+  color: @dark_green;
+  font-weight: bolder;
+  margin-top: .2em;
+}
+
+div.view-agenda div.views-field-title a {
+  color: @dark_green;
+  font-weight: bolder;
+  margin-top: .2em;
+}
+div.view-agenda div.views-field-title:before {
+  content: ":";
+}
+
+div.view-agenda div.views-field-tid {
+  display: block;
+  color: @dark_green;
+  font-weight: bolder;
+  // border-bottom: @dark_green solid 1px;
+  text-transform: uppercase;
+  margin-top: .4em;
+}
 
 div.view-agenda div.views-field-field-noiz-value {
-    display: block;
-    color: #000;
+  display: block;
+  color: #000;
 }
 
 div.view-agenda div.views-field-body {
-    margin: 0 1em 1em 1em;
+  margin: 0 1em 1em 1em;
 }
 div.view-agenda div.views-field-body p {
-    margin: 0.2em;
+  margin: 0.2em;
 }
 
 #mini-panel-agenda_alboko_barra div.view-proposamenak-list.view-display-id-block_1 {
-    background-color: #e6e680;
-    padding: 1em;
-    border-radius: 6px;
-    -ms-border-radius: 6px;
-    -khtml-border-radius: 6px;
-    -moz-border-radius: 6px;
-    -webkit-border-radius: 6px;
-}
-
-
-.view-azala-azken-iruzkinak-1-2 .views-row {
-    border-bottom: 1px solid #CCCCCC;
-    margin: 10px 0;
-    padding: 10px 0;
-}
-
-.view-id-agenda_azala .views-field-tid-2 {
-    margin-top: 5px;
+  background-color: @pale_green;
+  padding: 1em;
+  .rounded_border();
 }
 
 .pane-agenda div.view-agenda div.views-field-tid {
- border-bottom: @dark_green solid 1px;
+  border-bottom: @dark_green solid 1px;
 }
 
+.view-display-id-panel_pane_3 .views-row {
+  margin-bottom: 0;
+}
 
+/* Agenda Nodoa */
+div.view-egutegia {
+  background-color: #cccc00;
+  padding: 1em 0;
+  .rounded_border;
+}
 
+div.view-egutegia div.attachment{
+  padding: 1em;
+  color: #2d3c01;
+}
 
+div.view-egutegia div.attachment a {
+  color: #2d3c01;
+  text-decoration: none;
+}
 
+#agenda_albokobarra_harremanetan div.pane-content {
+  background-color: #969e80;
+  padding: 10px;
+  .rounded_border;
+}
+#agenda_albokobarra_harremanetan .agenda_eposta {
+    text-align: right;
+    color:#e6e680;
+    font-size: 125%;
+}
+#agenda_albokobarra_harremanetan .agenda_eposta a {
+    color:#e6e680;
+    text-decoration:none;
+}
 
+#detail_noiz_etiketa,
+#detail_non_etiketa,
+#detail_lekua_etiketa,
+#detail_mota_etiketa,
+#detail_erantsiak_etiketa {
+    padding-left: 20px;
+    margin: .5em;
+    color: #cccc00;
+    font-weight: bold;
+    .arrow_background;
+}
 
+#detail_deialdi_non,
+#detail_deialdi_lekua,
+#detail_deialdi_mota,
+#detail_deialdi_noiz {
+    font-weight: bold;
+    padding-left: 20px;    
+}
 
+#detail_deialdi_non li,
+#detail_deialdi_lekua li,
+#detail_deialdi_mota li,
+#detail_deialdi_noiz li {
+    padding-left: 0px;
+}
+
+#detail_deialdi_non li a,
+#detail_deialdi_lekua li a,
+#detail_deialdi_mota li a,
+#detail_deialdi_noiz li a {
+    text-decoration: none;
+    color: #2d3c01;
+}
+
+#detail_deialdi_irudia img {
+    border: solid 3px #2d3c01;
+}

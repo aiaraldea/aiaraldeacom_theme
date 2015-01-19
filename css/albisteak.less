@@ -10,22 +10,105 @@
     clear: both;
 }
 
-#detail_albiste_izen_abizenak:after {
-    content: ".";
+#detail_albiste_meta {
+    margin: 0 0 10px 0;
+    .herria_datak {
+        background-color: @pale_gray;
+        color: @dark_green;
+        margin: 0 0 5px 0;
+        .herria {
+            display: inline-block;
+            padding: 5px;
+            margin-right: 5px;
+            background-color: @dark_green;
+            font-weight: bold;
+            a {
+                color: @white;                
+            }
+        }
+        .eguneratze_data, .sortze_data {
+            font-size: 85%;
+        }
+        .eguneratze_data {
+            display: block;
+            float: right;
+            padding: 5px;
+            .label:after {
+                content: ":";
+            }
+        }
+    }
+    .egilea {
+        font-size: 150%;
+        font-weight: bold;
+        img {margin-right: 5px;}
+    }
 }
 
-#detail_etiketak_non {
-    display: inline;
-    .label;
+#detail_albiste_content {
+    .irudi_nagusia {
+        margin-bottom: 5px;
+        img {
+            display: block;
+            width: 100%;
+        }
+        .deskripzioa {
+            color: @dark_green;
+            background-color: @pale_gray;
+            padding: 5px;
+        }
+    }
+    .irudi_txikiak {
+        .irudi_txikia {
+            display: inline-block;
+        }
+        .deskripzioa {
+            display: none;
+        }
+    }
+    .etiketak {
+        margin: 10px 0;
+        padding: 0px !important;
+        .label {
+            .label;
+        }
+        .field-label:after {
+            content: ":";
+        }
+    }
+    .field-label {
+        .label;
+    }
+    .field-field-erantsi .field-items {
+        margin: 5px 10px;
+        a {
+            text-decoration: none;
+        }
+    }
 }
 
-.node_date {
-    color: @brown;
-    display: inline;
-}
-
-.node_date:before {
-    content: ".";
+#detail_albiste_erlazionatuak {
+    .field-label {
+        .label;
+    }
+    ul {
+        padding: 0px;
+        margin: 0px;
+        list-style: none;
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+        li {
+            max-width: 300px;
+            margin: 5px;
+            image {
+                width:100%;
+            }
+        }
+    }
+    a {
+        text-decoration: none;
+    }
 }
 
 .view-albisteak .views-field-comment-count {
@@ -113,31 +196,6 @@ body.node-type-albiste div.panel-col-last {
     width:220px;
     margin-left: 10px;
     margin-right: 10px;
-}
-
-#panel_detaile_albiste .field-field-embeddedimages .field-items,
-#panel_detaile_albiste .field-field-erantsi .field-items {
-    background-color: #cccc00;
-    padding: 10px;
-    .rounded_border;
-}
-#panel_detaile_albiste .field-field-bideo-erlazionatuak .field-items div.emvideo-preview,
-#panel_detaile_albiste .field-field-embeddedimages .field-items img {
-    border: solid 3px #2d3c01;
-}
-#panel_detaile_albiste .view-field-bideo-erlazionatuak {
-    background-color: @pale_gray;
-    padding: 10px;
-    .rounded_border;
-}
-#panel_detaile_albiste .view-field-bideo-erlazionatuak li,
-#panel_detaile_albiste .view-field-bideo-erlazionatuak ul {
-    padding: 0px;
-    margin: 0px;
-    list-style: none;
-}
-#panel_detaile_albiste .view-field-bideo-erlazionatuak img {
-    border: solid 3px #2d3c01;
 }
 
 #panel_detaile_albiste .panel-col-last .pane-field-erlazionatuak h2,

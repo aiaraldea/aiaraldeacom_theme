@@ -63,45 +63,84 @@
     <div class="unpublished"><?php print t('Unpublished'); ?></div>
     <?php endif; ?>
 
-    <div id="detail_service_links">
-      <?php print $node->service_links_rendered; ?>
+    <div id="detail_albiste_meta" class="meta">
+        <div class="herria_datak">
+            <div class="herria">
+                <?php print aiaraldeacom_taxonomy_links($node, 2, "aktualitatea/"); ?>
+            </div>
+            <span class="sortze_data">
+                <?php print format_date($node->created, 'custom', 'Fk j, Y, h:i'); ?>
+            </span>
+            <span class="eguneratze_data">
+                <?php $eguneratzeData = $node->field_eguneratze_data[0]['value']; ?>
+                <?php if (isset($eguneratzeData) && $eguneratzeData > $node->created + 300): ?>
+                <span class="label">Eguneratua</span> 
+                    <?php print format_date($node->changed, 'custom', 'Fk j, Y, h:i'); ?><br>
+                <?php endif; ?>
+            </span>
+        </div>
+        <div class="egilea">
+            <span class="">
+                <?php
+                $nodeUser->uid = $node->uid;
+                profile_load_profile($nodeUser);
+                $user = user_load($uid);
+                $profileImage = theme('imagecache', 'albistea_egilea', $user->picture);
+                print l($profileImage, 'user/' . $user->uid, array('html' => TRUE));
+                print l($nodeUser->profile_izen_abizenak, 'user/' . $user->uid);
+                ?>
+            </span>
+        </div>
     </div>
-
-    <?php if ($submitted || $terms): ?>
-    <div class="meta">
-        <?php if ($submitted): ?>
-        <div class="submitted">
-            <?php
-            $nodeUser->uid = $node->uid;
-            profile_load_profile($nodeUser);
-            ?>
-
-            <span id="detail_albiste_izen_abizenak" class="zerrendak-egilea">
-                <?php print $nodeUser->profile_izen_abizenak; ?>
-            </span>
-            <span id="detail_etiketak_non">
-                <?php print aiaraldeacom_taxonomy_links($node, 2, "albisteak/"); ?>
-            </span>
-            <span id="detail_albiste_data" class="node_date">
-                <?php print format_date($node->created, 'custom', 'Y.M.d h:m'); ?>
-            </span>
-         </div>
-        <?php endif; ?>
-    </div>
-    <?php endif; ?>
 
     <div id="detail_albiste_content" class="content">
 
-      <div id="detail_albiste_body">
-        <?php print $node->content['body']['#value']; ?>
-      </div>
-      <div id="detail_albiste_ezk_alb_bar">
-        <?php print $node->content['field_embeddedimages']['#children'] ?>
-        <?php print $node->content['field_bideo_erlazionatuak']['#children'] ?>
+        <?php if (!empty($node->field_embeddedimages)): ?>
+            <div class="irudi_nagusia">
+                <?php
+                $imageField = $node->field_embeddedimages[0];
+                print theme('imagecache', 'albistea_nagusia', $imageField['filepath'], $imageField['data']['description']);
+                //print l($image, $imageField['filepath'], array('attributes'=>array('class'=>'ttt'),'html'=>TRUE));
+                ?>
+                <div class="deskripzioa"><?php print $imageField['data']['description']; ?></div>
+            </div>
+        <?php endif ?>
+        <?php if (count($node->field_embeddedimages) > 1): ?>
+            <div class="irudi_txikiak">
+            <?php foreach ($node->field_embeddedimages as $imageField): ?>
+                <div class="irudi_txikia">
+                    <?php 
+                    $image = theme('imagecache', 'albistea_irudi_txikia', $imageField['filepath'], $imageField['data']['description']);
+                    $target = imagecache_create_url('albistea_nagusia', $imageField['filepath']);
+                    print l($image, $target, array('html' => TRUE));
+                    ?>
+                    <div class="deskripzioa"><?php print $imageField['data']['description']; ?></div>
+                </div>
+            <?php endforeach ?>
+            </div>
+        <?php endif ?>
+
+        <div id="detail_albiste_body">
+            <?php print $node->content['body']['#value']; ?>
+        </div>
         <?php print $node->content['field_erantsi']['#children'] ?>
-      </div>
+        <div class="etiketak">
+            <span class="field-label">Etiketak</span>
+            <span class="etiketa_zerrenda">
+                <?php print aiaraldeacom_taxonomy_links($node, 1, "aktualitatea/"); ?>
+            </span>
+        </div>
       <?php // print $content; ?>
     </div>
+    <div id="detail_albiste_erlazionatuak">
+      <?php print $node->content['field_bideo_erlazionatuak']['#children'] ?>
+    </div>
+    
+
+    <div id="detail_service_links">
+      <?php print $node->service_links_rendered; ?>
+    </div>
+    
     <?php if(user_is_anonymous()): ?>
     <div id="comment-form" class="comentar-link"> <a href="/komunitatea-login">Sartu</a> edo <a href="/komunitatea-login/">erregistratu</a> iruzkina idazteko </div>
     <?php endif ?>
