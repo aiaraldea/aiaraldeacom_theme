@@ -5,18 +5,18 @@
 #block-dynamic_persistent_menu-0 {
     background-color: @dark_gray;
     min-height: 3.6em;
-    .rounded_border;
+    /*.rounded_border;*/
 }
 .block-dynamic_persistent_menu ul.dynamic-persistent-menu-menu {
     margin: 0;
     padding: 0.2em;
     background-color: #cccc00;
-    border-radius: .5em .5em 0em 0em;
+/*    border-radius: .5em .5em 0em 0em;
     -webkit-border-top-left-radius: .5em;
     -webkit-border-top-right-radius: .5em;
     -moz-border-radius: .5em .5em 0em 0em;
     -ms-border-radius: .5em .5em 0em 0em;
-    -khtml-border-radius: .5em .5em 0em 0em;
+    -khtml-border-radius: .5em .5em 0em 0em;*/
     border-bottom: solid 1px white;
 }
 .block-dynamic_persistent_menu ul.dynamic-persistent-menu-menu li {
@@ -30,12 +30,12 @@
     font-weight: bolder;
     text-decoration: none;
     padding: .2em .5em;
-    border-radius: .5em .5em 0em 0em;
+/*    border-radius: .5em .5em 0em 0em;
     -webkit-border-top-left-radius: .5em;
     -webkit-border-top-right-radius: .5em;
     -moz-border-radius: .5em .5em 0em 0em;
     -ms-border-radius: .5em .5em 0em 0em;
-    -khtml-border-radius: .5em .5em 0em 0em;
+    -khtml-border-radius: .5em .5em 0em 0em;*/
 }
 .block-dynamic_persistent_menu ul.dynamic-persistent-menu-menu li.dynamic-persistent-menu-children-active a {
     background-color: #969e80;
@@ -50,12 +50,12 @@
     margin-top: 1px;
     background-color: #969e80;
     padding: 0.2em;
-    border-radius: .5em .5em 0em 0em;
+/*    border-radius: .5em .5em 0em 0em;
     -webkit-border-bottom-left-radius: .5em;
     -webkit-border-bottom-right-radius: .5em;
     -moz-border-radius: 0em 0em .5em .5em;
     -ms-border-radius: 0em 0em .5em .5em;
-    -khtml-border-radius: 0em 0em .5em .5em;
+    -khtml-border-radius: 0em 0em .5em .5em;*/
 }
 
 .block-dynamic_persistent_menu ul.dynamic-persistent-menu-sub-menu li {
@@ -98,23 +98,23 @@
     font-weight: bolder;
     text-decoration: none;
     padding: .2em .5em;
-    border-radius: .5em .5em 0em 0em;
+/*    border-radius: .5em .5em 0em 0em;
     -webkit-border-top-left-radius: .5em;
     -webkit-border-top-right-radius: .5em;
     -moz-border-radius: .5em .5em 0em 0em;
     -ms-border-radius: .5em .5em 0em 0em;
-    -khtml-border-radius: .5em .5em 0em 0em;
+    -khtml-border-radius: .5em .5em 0em 0em;*/
 }
 #block-menu-menu-goiko-menua ul {
     margin: 0;
     padding: 0.2em;
     background-color: #cccc00;
-    border-radius: .5em .5em 0em 0em;
+/*    border-radius: .5em .5em 0em 0em;
     -webkit-border-top-left-radius: .5em;
     -webkit-border-top-right-radius: .5em;
     -moz-border-radius: .5em .5em 0em 0em;
     -ms-border-radius: .5em .5em 0em 0em;
-    -khtml-border-radius: .5em .5em 0em 0em;
+    -khtml-border-radius: .5em .5em 0em 0em;*/
 }
 
 /* goiko menuaren herrien zerrenda */
@@ -138,12 +138,13 @@
     height: 1.2em;
     background-color: #969e80;
     padding: 0.2em;
-    border-radius: 0em 0em .5em .5em;
+/*    border-radius: 0em 0em .5em .5em;
     -webkit-border-bottom-left-radius: .5em;
     -webkit-border-bottom-right-radius: .5em;
     -moz-border-radius: 0em 0em .5em .5em;
     -ms-border-radius: 0em 0em .5em .5em;
-    -khtml-border-radius: 0em 0em .5em .5em;
+    -khtml-border-radius: 0em 0em .5em .5em;*/
+    margin-bottom: 0;
 }
 
 #block-views-menu_herri_zerrenda-b_albisteak,
@@ -157,12 +158,13 @@
     display: none;
     background-color: #969e80;
     padding: 0.2em;
-    border-radius: 0em 0em .5em .5em;
-    -webkit-border-bottom-left-radius: .5em;
+    /*border-radius: 0em 0em .5em .5em;*/
+/*    -webkit-border-bottom-left-radius: .5em;
     -webkit-border-bottom-right-radius: .5em;
     -moz-border-radius: 0em 0em .5em .5em;
     -ms-border-radius: 0em 0em .5em .5em;
-    -khtml-border-radius: 0em 0em .5em .5em;
+    -khtml-border-radius: 0em 0em .5em .5em;*/
+    margin-bottom: 0;
 }
 
 #block-views-menu_herri_zerrenda-b_albisteak a,
@@ -207,6 +209,19 @@
 }
 #block-panels_mini-proposamenak_menu div.views-admin-links {
     display: none;
+}
+
+#header-blocks.f-nav{  /* To fix main menu container */
+    z-index: 9999;
+    position: fixed;
+    /*left: 0;*/
+    top: 0;
+    width: 960px;
+    margin-bottom: 0;    
+}
+#header-blocks {
+    background-color: #fff;
+    margin-bottom: 1em;
 }
 /* Goiko menuaren bukaera */
  

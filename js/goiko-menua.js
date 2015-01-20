@@ -166,3 +166,18 @@ $(document).ready(function () {
         }
     });
 });
+
+$("document").ready(function($){
+    if (screen.width > 960) {
+        var nav = $('#header-blocks');
+        var offset = nav.offset().top;
+
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > offset) {
+                nav.addClass("f-nav");
+            } else {
+                nav.removeClass("f-nav");
+            }
+        });
+    }
+});
