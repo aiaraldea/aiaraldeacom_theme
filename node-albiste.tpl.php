@@ -64,18 +64,16 @@
     <?php endif; ?>
 
     <div id="detail_albiste_meta" class="meta">
-        <div class="herria_datak">
+        <div class="herria_datak clearfix">
             <div class="herria">
                 <?php print aiaraldeacom_taxonomy_links($node, 2, "aktualitatea/"); ?>
             </div>
-            <span class="sortze_data">
-                <?php print format_date($node->created, 'custom', 'Fk j, Y, h:i'); ?>
-            </span>
+            <span class="sortze_data"><?php print format_date($node->created, 'custom', 'Fk j, Y, h:i'); ?></span>
             <span class="eguneratze_data">
                 <?php $eguneratzeData = $node->field_eguneratze_data[0]['value']; ?>
                 <?php if (isset($eguneratzeData) && $eguneratzeData > $node->created + 300): ?>
                 <span class="label">Eguneratua</span> 
-                    <?php print format_date($node->changed, 'custom', 'Fk j, Y, h:i'); ?><br>
+                <span><?php print format_date($node->changed, 'custom', 'Fk j, Y, h:i'); ?></span>
                 <?php endif; ?>
             </span>
         </div>

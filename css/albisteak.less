@@ -16,8 +16,10 @@
         background-color: @pale_gray;
         color: @dark_green;
         margin: 0 0 5px 0;
+        .clear;
         .herria {
-            display: inline-block;
+            display: block;
+            float: left;
             padding: 5px;
             margin-right: 5px;
             background-color: @dark_green;
@@ -27,13 +29,13 @@
             }
         }
         .eguneratze_data, .sortze_data {
-            display: inline-block;
+            display: block;
             font-size: 85%;
+            float:left;
+            padding: 5px;
         }
         .eguneratze_data {
-            display: block;
             float: right;
-            padding: 5px;
             .label:after {
                 content: ":";
             }
