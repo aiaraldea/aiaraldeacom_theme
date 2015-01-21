@@ -1,15 +1,5 @@
 @import "base.less"; 
 
-.view-albisteak .views-row {
-    padding-bottom: 0.6em;
-    clear: both;
-}
-
-.view-albisteak.view-display-id-panel_pane_1 .views-row {
-    padding-bottom: 2em;
-    clear: both;
-}
-
 #detail_albiste_meta {
     margin: 0 0 10px 0;
     .herria_datak {
@@ -115,6 +105,15 @@
     }
 }
 
+.view-albisteak .views-row {
+    padding-bottom: 0.6em;
+    clear: both;
+}
+
+.view-albisteak.view-display-id-panel_pane_1 .views-row {
+    padding-bottom: 2em;
+    clear: both;
+}
 .view-albisteak .views-field-comment-count {
     text-align: right;
 }
@@ -165,94 +164,6 @@
 }
 .view-albisteak .views-field-body {
     color: #2d3c01;
-}
-
-/* Albiste nodoa */
-/* Node albiste */
-body.node-type-albiste div.panel-panel .inside {
-    margin: 0;
-}
-body.node-type-albiste div.panel-col-first .pane-field-embeddedimages h2 {
-    margin-top: 2px;
-}
-body.node-type-albiste div.panel-col-first {
-    width: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-}
-body.node-type-albiste.albiste_has_sidebar div.panel-col-first {
-    width: 300px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-body.node-type-albiste div.panel-col {
-    width: 700px;
-    margin-left: 0px;
-    margin-right: 0px;
-    padding-top: 10px;
-}
-body.node-type-albiste.albiste_has_sidebar div.panel-col {
-    width: 380px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-body.node-type-albiste div.panel-col-last {
-    width:220px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-#panel_detaile_albiste .panel-col-last .pane-field-erlazionatuak h2,
-#panel_detaile_albiste .panel-col-last .pane-albisteak h2 {
-    padding-bottom: 2px;
-    color: #2d3c01;
-    margin: 0;
-    border-bottom: solid 1px #cccc00;
-    .arrow_background;
-}
-#panel_detaile_albiste .panel-col-last .pane-field-erlazionatuak,
-#panel_detaile_albiste .panel-col-last .pane-albisteak {
-    background-color: @pale_green;
-    padding: 2px 0 10px 0;
-    border: solid 1px @green;
-    .rounded_border;
-}
-#panel_detaile_albiste .panel-col-last .view-albisteak .views-field-title {
-    border-top: none;
-    font-weight: normal;
-    font-size: 13px;
-    font-family: @body_fonts;
-    color: @dark_green;
-}
-
-#panel_detaile_albiste .panel-col-last .view-albisteak .views-field-changed {
-    text-align: right;
-    display: block;
-}
-
-#panel_detaile_albiste .panel-col-last .view-albisteak .views-field-changed:before {
-    content: ">";
-}
-
-#panel_detaile_albiste .panel-col-last .field-field-erlazionatuak .field-item a,
-#panel_detaile_albiste .panel-col-last .view-albisteak .views-field-title a {
-    color: @dark_green;
-    text-decoration: none;
-}
-
-#panel_detaile_albiste .panel-col-last .field-field-erlazionatuak .odd,
-#panel_detaile_albiste .panel-col-last .view-albisteak .views-row-odd {
-    background-color: @pale_gray;
-}
-
-#panel_detaile_albiste .panel-col-last .field-field-erlazionatuak .even,
-#panel_detaile_albiste .panel-col-last .view-albisteak .views-row-even {
-    background-color: #e6e680;
-}
-
-#panel_detaile_albiste .panel-col-last .field-field-erlazionatuak .field-item,
-#panel_detaile_albiste .panel-col-last .view-albisteak .views-row {
-    padding: 10px;
 }
 
 #albiste_eranskin_mota {
