@@ -134,9 +134,7 @@
       <?php print $node->content['field_bideo_erlazionatuak']['#children'] ?>
     </div>
     
-
-    <div id="detail_service_links">
-      <?php print $node->service_links_rendered; ?>
+    <div id="detail_share_links">
     </div>
     
     <?php if(user_is_anonymous()): ?>
