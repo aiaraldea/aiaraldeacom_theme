@@ -31,10 +31,8 @@ stylesheets[all][]   = css/html-elements.css
 ; stylesheets[all][] = block-editing.css
 ; stylesheets[all][] = wireframes.css
 stylesheets[all][]   = css/aiaraldeacom.less
-stylesheets[all][]   = css/layout_aiaraldea_960.css
 stylesheets[all][]   = css/calendar.css
 stylesheets[all][]   = css/960.css
-;stylesheets[all][]  = css/960gs.less
 stylesheets[all][]   = css/aiaraldea_banner.css
 stylesheets[all][]   = css/common.less
 stylesheets[all][]   = css/menu.less
@@ -52,12 +50,10 @@ stylesheets[all][]   = css/irratia.less
 stylesheets[all][]   = css/komunitatea.less
 stylesheets[all][]   = css/search.less
 stylesheets[all][]   = css/share.less
-stylesheets[all][]   = css/chrome-font-fix.css
 stylesheets[all][]   = css/miniplayer-aiaraldea.css
 stylesheets[all][]   = mediaelement/mediaelementplayer.min.css
 stylesheets[print][] = css/print.css
 
-conditional-stylesheets[if lt IE 7][all][] = css/layout_aiaraldea_960_ie6.css
   ; To prevent stylesheets of a base theme or of a module from being included in
   ; our sub-theme, we specify it in our .info file (and we don't need to have a
   ; stylesheet in our sub-theme with that name.) For example, we prevent the
@@ -68,15 +64,10 @@ stylesheets[all][]   = zen.css
 ; conditional-stylesheets[if IE][all][] = ie.css
 
   ; Optionally add some jquery scripts to your theme.
-; scripts[] = script.js
 scripts[] = js/goiko-menua.js
 scripts[] = js/node-albiste.js
-  ; scripts[] = js/azala-bideoak.js
 scripts[] = js/egutegia.js
 scripts[] = mediaelement/mediaelement-and-player.min.js
-;scripts[] = js/irratia.js
-;scripts[] = js/aktualitatea.js
-;scripts[] = js/chrome-font-fix.js
 scripts[] = js/share.js
 
   ; The regions defined in Zen's default page.tpl.php file.  The name in

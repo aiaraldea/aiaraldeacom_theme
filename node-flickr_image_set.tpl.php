@@ -80,6 +80,7 @@
     <div class="etiketak">
         <span class="field-label">Etiketak</span>
         <span class="etiketa_zerrenda">
+            <?php // var_dump($node->taxonomy); ?>
             <?php print aiaraldeacom_taxonomy_links($node, 1, "aktualitatea/"); ?>
         </span>
     </div>

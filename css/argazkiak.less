@@ -1,17 +1,10 @@
 @import "base.less";
-@import "960gs.less";
-
-#mini-panel-flickr_image_sets_main_page_1_2 td {
-width:33%;
-vertical-align: top;
-}
 
 div.flickr-photoset div.flickr-photoset-img {
     float: left;
     margin: 0 12px 12px 0;
 }
 div.flickr-photoset, div.flickr-photoset-meta, div.field-field-season {
-/*    float: left;*/
     clear: both;
 }
 
@@ -39,54 +32,6 @@ div.view-flickr-image-sets .views-field-title {
     text-decoration:none;
   }
 }
-.view-flickr-image-sets-main-page a {
-    text-decoration: none;
-}
-
-.view-flickr-image-sets-main-page img,
-div.view-flickr-image-sets img {
-    .green_boxed_image;
-}
-
-.view-flickr-image-sets-main-page.last-one {
-  .clearfix;
-  .views-field-title {
-    padding: 8px 0 8px 255px;
-    font-size: 200%;
-    line-height: 120%;
-  }
-  img {float: left;.clearfix;}
-}
-
-.view-flickr-image-sets-main-page.latest-ones {
-  clear: both;
-  .views-row {
-    float: left;
-    width: 106px;
-    padding: 4px;
-  }
-}
-#mini-panel-flickr_image_sets_main_page_1_2, 
-#mini-panel-orri_nagusiko_mult_geh .view-flickr-image-sets-main-page-1-2 {
-    background-color: @dark_green;
-    padding: 8px;
-    .rounded_border;
-      color: white;
-    a {
-      color: white;
-    }
-    img {
-/*    border: solid 6px @pale_gray;*/
-    }
-}
-
-.view-flickr-image-sets-main-page-1-2.last-one .views-field-title {
-    font-family: @news_title_fonts;
-    padding: 8px 0 8px 0px;
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 1em;
-}
 
 .zerrendak-argazkiak-izenburua {
     font-family: @news_title_fonts;
@@ -100,8 +45,7 @@ div.view-flickr-image-sets img {
     text-align: center;
 }
 
-
 .view-id-argazkiak_home .flickr-photoset img {
-  max-width: 350px;
+  max-width: 100%;
   height: auto;
 }
