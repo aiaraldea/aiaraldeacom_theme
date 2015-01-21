@@ -63,7 +63,7 @@
     <div class="unpublished"><?php print t('Unpublished'); ?></div>
     <?php endif; ?>
 
-    <div id="detail_albiste_meta" class="meta">
+    <div id="detail_meta" class="meta">
         <div class="herria_datak clearfix">
             <div class="herria">
                 <?php print aiaraldeacom_taxonomy_links($node, 2, "aktualitatea/"); ?>
@@ -91,7 +91,7 @@
         </div>
     </div>
 
-    <div id="detail_albiste_content" class="content">
+    <div id="detail_content" class="content">
 
         <?php if (!empty($node->field_embeddedimages)): ?>
             <div class="irudi_nagusia">

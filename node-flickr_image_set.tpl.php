@@ -61,28 +61,29 @@
   <?php if ($unpublished): ?>
     <div class="unpublished"><?php print t('Unpublished'); ?></div>
   <?php endif; ?>
-    
-    <div class="submitted">
-        <span id="detail_etiketak_non">
-              <?php print aiaraldeacom_taxonomy_links($node, 2, "argazkiak/"); ?>
-        </span>
-      <span class="node_date" id="detail_bideo_date">
-          <?php print format_date($node->created, 'custom' , 'Y.M.d'); ?>
-      </span>
+   
+    <div id="detail_meta" class="meta">
+        <div class="herria_datak clearfix">
+            <div class="herria">
+                <?php print aiaraldeacom_taxonomy_links($node, 2, "aktualitatea/"); ?>
+            </div>
+            <span class="sortze_data"><?php print format_date($node->created, 'custom', 'Fk j, Y'); ?></span>
+        </div>
     </div>
-  <div class="content">
+    
+  <div id="detail_content" class="content">
     <div id="detail_node_body">
     <?php print $node->content['body']['#value']; ?>
     </div>
     <?php print $field_photo_set_rendered; ?>
-  </div>
 
-        <div class="etiketak">
-            <span class="field-label">Etiketak</span>
-            <span class="etiketa_zerrenda">
-                <?php print aiaraldeacom_taxonomy_links($node, 1, "aktualitatea/"); ?>
-            </span>
-        </div>
+    <div class="etiketak">
+        <span class="field-label">Etiketak</span>
+        <span class="etiketa_zerrenda">
+            <?php print aiaraldeacom_taxonomy_links($node, 1, "aktualitatea/"); ?>
+        </span>
+    </div>
+  </div>
     
     <div id="detail_share_links">
     </div>

@@ -30,3 +30,84 @@
         /*background-color: @pale_green;*/
     }
 }
+
+#detail_meta {
+    margin: 0 0 10px 0;
+    .herria_datak {
+        background-color: @pale_gray;
+        color: @dark_green;
+        margin: 0 0 5px 0;
+        .clear;
+        .herria {
+            display: block;
+            float: left;
+            padding: 5px;
+            margin-right: 5px;
+            background-color: @dark_green;
+            font-weight: bold;
+            a {
+                color: @white;                
+            }
+        }
+        .eguneratze_data, .sortze_data {
+            display: block;
+            font-size: 85%;
+            float:left;
+            padding: 5px;
+        }
+        .eguneratze_data {
+            float: right;
+            .label:after {
+                content: ":";
+            }
+        }
+    }
+    .egilea {
+        font-size: 150%;
+        font-weight: bold;
+        img {margin-right: 5px;}
+    }
+}
+
+#detail_content {
+    .irudi_nagusia {
+        margin-bottom: 5px;
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        .deskripzioa {
+            color: @dark_green;
+            background-color: @pale_gray;
+            padding: 5px;
+        }
+    }
+    .irudi_txikiak {
+        .irudi_txikia {
+            display: inline-block;
+        }
+        .deskripzioa {
+            display: none;
+        }
+    }
+    .etiketak {
+        margin: 10px 0;
+        padding: 0px !important;
+        .label {
+            .label;
+        }
+        .field-label:after {
+            content: ":";
+        }
+    }
+    .field-label {
+        .label;
+    }
+    .field-field-erantsi .field-items {
+        margin: 5px 10px;
+        a {
+            text-decoration: none;
+        }
+    }
+}
