@@ -99,8 +99,7 @@
   <div class="content">
     <?php print $content; ?>
   </div>
-  <div id="detail_share_links">
-  </div>
+  <div id="detail_share_links"></div>
   
   <div class="k-koment">
     <?php if(user_is_anonymous()): ?>

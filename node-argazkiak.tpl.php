@@ -99,6 +99,7 @@
   <div class="content">
     <?php print $content; ?>
   </div>
+  <div id="detail_share_links"></div>
   <div class="k-koment">
     <?php if(user_is_anonymous()): ?>
       <div id="comment-form" class="comentar-link"> <a href="/komunitatea-login">Sartu</a> edo <a href="/komunitatea-login/">erregistratu</a> iruzkina idazteko </div>

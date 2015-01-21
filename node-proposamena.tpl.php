@@ -86,9 +86,8 @@
       </div>
 
     </div>
-      <div id="detail_proposamena_service_links">
-      <?php print $node->service_links_rendered; ?>
-      </div>
+    
+    <div id="detail_share_links"></div>
 
     <?php print $links; ?>
 

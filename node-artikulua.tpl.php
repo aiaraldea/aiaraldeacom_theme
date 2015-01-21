@@ -100,9 +100,8 @@
    <?php print $field_artikulua_img_rendered ?>
    <?php print $field_artikulua_testua_rendered ?>
    <?php print $field_artikulua_rendered ?>
-
-
   </div>
+  <div id="detail_share_links"></div>
   
   <div class="k-koment">
     <?php if(user_is_anonymous()): ?>
