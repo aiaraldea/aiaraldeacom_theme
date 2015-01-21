@@ -92,11 +92,10 @@
         </div>
       <?php endif ?>
 
-      <div id="detail_bideo_service_links">
-      <?php print $node->service_links_rendered; ?>
-      </div>
     </div>
 
+    <div id="detail_share_links"></div>
+    
     <?php if(user_is_anonymous()): ?>
     <div id="comment-form" class="comentar-link"> <a href="/komunitatea-login">Sartu</a> edo <a href="/komunitatea-login/">erregistratu</a> iruzkina idazteko </div>
     <?php endif ?>    
