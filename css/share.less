@@ -7,8 +7,18 @@
         border-radius: 2px;
         a {
             display: block;
+            
+            @media (max-device-width: 960px) {
+                font-size: 200%;
+                background-size: 32px 32px;
+                background-position: .4em .4em;
+            }
+            
+            @media (min-device-width: 960px) {
+                background-position: .4em .8em;
+            }
+            
             background-repeat: no-repeat;
-            background-position: .4em .8em;
             padding: .8em .8em .8em 2em;
             color:white;
             letter-spacing: 0.4px;
