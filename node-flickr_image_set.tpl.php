@@ -77,11 +77,14 @@
     <?php print $field_photo_set_rendered; ?>
   </div>
 
-    <span id="detail_etiketak_etiketak" class="etiketak">
-              <?php print aiaraldeacom_taxonomy_links($node, 1, "argazkiak/"); ?>
-        </span>
-    <div id="detail_service_links">
-      <?php print $service_links_rendered; ?>
+        <div class="etiketak">
+            <span class="field-label">Etiketak</span>
+            <span class="etiketa_zerrenda">
+                <?php print aiaraldeacom_taxonomy_links($node, 1, "aktualitatea/"); ?>
+            </span>
+        </div>
+    
+    <div id="detail_share_links">
     </div>
     
     <?php if(user_is_anonymous()): ?>
