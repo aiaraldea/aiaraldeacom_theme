@@ -1,5 +1,6 @@
 $(document).ready(function () {
 
+    if (screen.width > 960) {
     // Albisteak
     $("#block-menu-menu-goiko-menua ul.menu li.first").mouseover(function() {
         $("#block-block-1").hide();
@@ -146,9 +147,6 @@ $(document).ready(function () {
         }
     });
 
-
-
- 
     $(".block-dynamic_persistent_menu ul.dynamic-persistent-menu-sub-menu").css("overflow", "hidden");
     $(".block-dynamic_persistent_menu ul.dynamic-persistent-menu-sub-menu").css("height", "1.2em");
     $(".block-dynamic_persistent_menu ul.dynamic-persistent-menu-sub-menu").each(function() {
@@ -165,6 +163,7 @@ $(document).ready(function () {
             $(".block-dynamic_persistent_menu ul.dynamic-persistent-menu-sub-menu").css("height", "1.2em");
         }
     });
+    }
 });
 
 $("document").ready(function($){
@@ -180,4 +179,8 @@ $("document").ready(function($){
             }
         });
     }
+    
+    $('#block-aiaraldea_menua-mobile-menu-button').click(function() {
+        $('#block-menu-menu-goiko-menua').toggle();
+    });
 });

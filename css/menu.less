@@ -70,24 +70,49 @@
     padding: 0.2em 1.5em;
 }
 
-
+#block-aiaraldea_menua-mobile-menu-button {
+    
+        @media (min-device-width: 960px) {
+            display: none;
+        }
+        @media (max-device-width: 960px) {
+            font-size: 200%;
+            background-color: @dark_green;
+            color: @white;
+            font-weight: bold;
+            padding:1em;
+            margin-bottom: 1px;
+        }
+        
+/*            .block-inner{
+                border: @white solid 1px;
+                padding: 1px;
+                
+            }*/
+}
 
 #block-menu-menu-goiko-menua,
 .goiko-menua {
     margin-bottom: .1em;
+    @media (max-device-width: 960px) {display:none;}
+    li {
+        list-style: none;
+        @media (min-device-width: 960px) {
+            display: inline;
+            border-right: #ffffff solid 1px;
+            padding: 0.2em .6em;
+        }
+        @media (max-device-width: 960px) {
+            font-size: 200%;
+            padding: 1em;
+            border-bottom: #ffffff solid 1px;
+        }
+    }
+    li.last {
+        border-right: none;
+    }
 }
-#block-menu-menu-goiko-menua li {
-    display: inline;
-    list-style: none;
-    padding: 0.2em .6em;
-    border-right: #ffffff solid 1px;
-}
-#block-menu-menu-goiko-menua li.last,
-.goiko-menua li.last {
-    display: inline;
-    list-style: none;
-    border-right: none;
-}
+
 #block-menu-menu-goiko-menua li.active-trail a,
 .goiko-menua li.active-trail a {
     color: #2d3c01;
@@ -135,6 +160,7 @@
 }
 
 #block-block-1 {
+    @media (max-device-width: 960px) {display:none;}
     height: 1.2em;
     background-color: #969e80;
     padding: 0.2em;
