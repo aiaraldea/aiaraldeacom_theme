@@ -28,6 +28,7 @@
     margin-left: auto;
     margin-right: auto;
     /*width: 100%;*/
+    width: 960px;
     max-width: 960px;
   }
 
@@ -74,9 +75,3 @@
     overflow: visible;
     word-wrap: break-word; /* A very nice CSS3 property */
   }
-
-  #navbar
-  {
-    overflow: hidden; /* May need to be removed if using a dynamic drop-down menu */
-  }
-
