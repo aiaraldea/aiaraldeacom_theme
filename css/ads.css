@@ -3,25 +3,25 @@
   height: auto;
 }
 
-#top-blocks .block-openx {
+#top-blocks .block-publizitatea {
     display: block;
     margin-bottom: 2px;
     float: left;
 }
-#top-blocks .block-openx .content {
+#top-blocks .block-publizitatea .content {
     background: url(../img/publizitatea_b.gif) no-repeat left;
     padding-left: 10px;
     height: auto;
 }
 
-#block-openx-0 {
+#block-publizitatea-0 {
     width: 100%;
     max-width: 738px;
     height: auto;
     border: 1px solid #f5f5cc;
     margin-right: 4px;
 }
-#block-openx-1 {
+#block-publizitatea-1 {
     width: 214px;
     height: 90px;
     border: 1px solid #f5f5cc;
