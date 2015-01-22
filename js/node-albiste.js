@@ -4,11 +4,11 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-    $('#detail_albiste_content .irudi_txikia').click(function (e) {
+    $('#detail_content .irudi_txikia').click(function (e) {
         var b = $(this);
-        $('#detail_albiste_content .irudi_nagusia img').attr('src', b.find('a').attr('href')).
+        $('#detail_content .irudi_nagusia img').attr('src', b.find('a').attr('href')).
                 load(function () {
-                    $('#detail_albiste_content .irudi_nagusia .deskripzioa').
+                    $('#detail_content .irudi_nagusia .deskripzioa').
                             text(b.find('.deskripzioa').text());
                 });
         return false;
