@@ -28,6 +28,7 @@
 }
 .orrilapurra  a {width:300px; height: 250px;display: block;}
 .orrilapurra {
+    width:300px; height: 250px;
     background: url(../img/publizitatea_h.gif) no-repeat right top;
     padding: 10px 0 0 0;
 }
