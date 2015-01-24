@@ -43,22 +43,24 @@
     font-style: italic;
 }
 
+.view-albisteak .views-field-field-erlazionatuak-nid,
 .view-albisteak .views-field-field-bideo-erlazionatuak-nid {
     color: #2d3c01;
     font-weight: bolder;
-    float: right;
-}
-
-.view-albisteak .views-field-field-erantsi-fid {
-    color: #2d3c01;
-    font-weight: bolder;
-    float: right;
-}
-
-.view-albisteak .views-field-field-embeddedimages-fid {
-    color: #2d3c01;
-    font-weight: bolder;
-    float: right;
+    padding-left: 2em;
+    .field-item {
+        font-family: "Exo", Verdana, serif;
+        a {
+            padding: .2em;
+            display:block;
+        }
+        a:before { 
+            margin-left: -20px;
+            padding-right: 14px;
+            display:inline-block;
+            content: '❱❯❭‣';
+        }
+    }
 }
 
 .view-albisteak .views-field-field-embeddedimages-fid-1 {

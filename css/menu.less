@@ -52,18 +52,22 @@
 }
 
 #block-aiaraldea_menua-mobile-menu-button {
-    
-        @media (min-device-width: 960px) {
-            display: none;
-        }
-        @media (max-device-width: 960px) {
-            font-size: 200%;
-            background-color: @dark_green;
-            color: @white;
-            font-weight: bold;
-            padding:1em;
-            margin-bottom: 1px;
-        }
+
+    @media (min-device-width: 960px) {
+        display: none;
+    }
+    @media (max-device-width: 960px) {
+        font-size: 200%;
+        background-color: @dark_green;
+        color: @white;
+        font-weight: bold;
+        padding:1em;
+        margin-bottom: 1px;
+    }
+    .content:before {
+        content: '\2630';
+        padding-right: .2em;
+    }
 }
 
 #block-menu-menu-goiko-menua,
